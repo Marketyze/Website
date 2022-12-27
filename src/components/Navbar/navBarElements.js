@@ -9,10 +9,9 @@ const secondary_color = "#91D7DD"
 export const Nav = styled.nav`
     background: ${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
     transition: ${({active}) => active ? "0.3s all ease" : "0.4s all ease"};
-    height: 80px; 
+    height: 80px;
     display: flex; 
     justify-content: center; 
-    font-size: 1rem; 
     position: sticky; 
     top: 0; 
     z-index: 999; 
@@ -36,7 +35,7 @@ export const NavLogo = styled(Link) `
     justify-self: flex-start;
     cursor: pointer; 
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     display: flex; 
     align-items: center; 

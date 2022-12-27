@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from "styled-components"
-import {colors} from '../../globals/colors.js'
+import {colors} from '../globals/colors.js'
 
 
-const Values = () => {
+const Internships = () => {
   return (
     <MainDiv>
-        <Title>Why Marketyze?</Title> 
+        <Title>Internships</Title> 
         <Description>The mission of Marketyze is to empower young adults</Description>
         <Goaldiv>
             <GoalOutline>
@@ -19,12 +19,6 @@ const Values = () => {
                 <GoalIcon/>
                 <Goaltitle>Personal Growth</Goaltitle>
                 <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
-            </GoalOutline>
-
-            <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Networking</Goaltitle>
-                <GoalSubtitle>Ultimately, we push for students to have fun and enjoy themselves, whether it be in running tournaments or playing in them.</GoalSubtitle>
             </GoalOutline>
 
         </Goaldiv>
@@ -126,9 +120,9 @@ const Goaldiv = styled.div`
     max-width: 1150px; 
     margin: 0 auto; 
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     align-items: center; 
-    grid-column-gap: 5rem;
+    grid-column-gap: 15rem;
     padding: 0 50px;     
     justify-content: center;
     @media screen and (max-width: 1150px)
@@ -168,4 +162,4 @@ const GoalOutline = styled.div`
 
 
 
-export default Values
+export default Internships

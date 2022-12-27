@@ -22,6 +22,7 @@ const Navbar = () => {
         }
     }
 
+    //add the scroll effect with navbar 
     useEffect(() => {
         changeNav()
         window.addEventListener("scroll", changeNav)
@@ -41,6 +42,7 @@ const Navbar = () => {
                                     formats={["auto", "webp", "avif"]}
                                     alt=""
                                     placeholder="transparent"
+                                    style={{ marginRight: `0.5rem` }}
                                 />
                              MARKETYZE
                         </NavLogo>
@@ -51,7 +53,7 @@ const Navbar = () => {
                         
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks to="/">Purpose</NavLinks>
+                                <NavLinks to="/aboutUs">About Us</NavLinks>
                             </NavItem>
 
                             <NavItem>
@@ -63,15 +65,11 @@ const Navbar = () => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to="/">Programs</NavLinks>
+                                <NavLinks to="/programs">Programs</NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to="/">Careers</NavLinks>
-                            </NavItem>
-
-                            <NavItem>
-                                <NavLinks to="/">Contact</NavLinks>
+                                <NavLinks to="/career">Career/Contact</NavLinks>
                             </NavItem>
                         </NavMenu>
 

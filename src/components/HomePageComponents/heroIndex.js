@@ -1,10 +1,36 @@
+import React from 'react'
 import styled from 'styled-components'
 import {Link} from "gatsby"
-import marketyzeFamily from '../../../images/family.jpg'
+import marketyzeFamily from '../../images/family.jpg'
 
 const secondary_color = "#91D7DD"
 
-export const HeroContainer = styled.div`
+const HeroSection = () => {
+    return (
+        
+        <HeroContainer>
+
+            <HeroH1>
+                GET AHEAD OF THE COMPETITION
+                <HeroP>
+                    Marketyze is committed to preparing the next generation of young adults for the future
+                    <HeroButtonContainer>
+                        <Button>
+                            Learn More
+                       </Button>
+                    </HeroButtonContainer>
+                </HeroP>
+            </HeroH1>
+
+        </HeroContainer>
+        
+    )
+}
+
+export default HeroSection
+
+
+const HeroContainer = styled.div`
     background-image: url(${marketyzeFamily});
     background-position: center; 
     background-repeat: no-repeat; 
@@ -16,15 +42,16 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.76);
     margin-top: -80px
 `
 
-export const HeroH1 = styled.h1`
+const HeroH1 = styled.h1`
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 5rem; 
     margin-top: 0px; 
+    text-align: center;
 
     @media screen and (max-width: 960px) {
         font-size: 70px;
@@ -35,7 +62,7 @@ export const HeroH1 = styled.h1`
     }
 `
 
-export const HeroP = styled.p`
+const HeroP = styled.p`
     margin-top: 8px; 
     color: white; 
     font-size: 1.5rem; 
@@ -48,7 +75,7 @@ export const HeroP = styled.p`
 
 
 //button styling
-export const HeroButtonContainer = styled(Link)`
+const HeroButtonContainer = styled(Link)`
     position: relative; 
     height: 40px;
     width: 180px;
@@ -77,14 +104,12 @@ export const HeroButtonContainer = styled(Link)`
 `
 
 
-export const Button = styled(Link)`
+const Button = styled(Link)`
 font-family: 'Poppins', sans-serif;
 color: white;
 justify-content: center;
 text-align: center;
-margin-left: 1.6rem;
 position: relative;
-top: 0.3rem;
 text-decoration: none;
 
 &:hover{

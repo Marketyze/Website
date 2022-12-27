@@ -4,9 +4,10 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import HeroSection from "../components/HomePageComponents/HeroSection/heroIndex"
-import Values from "../components/HomePageComponents/values/valuesIndex"
-import Testimonials from "../components/HomePageComponents/Testimonials/testimonialsIndex"
+import HeroSection from "../components/HomePageComponents/heroIndex"
+import Values from "../components/HomePageComponents/valuesIndex"
+import Testimonials from "../components/HomePageComponents/testimonialsIndex"
+import MarketyzeEvents from "../components/HomePageComponents/eventsIndex"
 
 
 const IndexPage = () => (
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <HeroSection/>
     <Values/>
     <Testimonials/>
+    <MarketyzeEvents/>
   </Layout>
 )
 

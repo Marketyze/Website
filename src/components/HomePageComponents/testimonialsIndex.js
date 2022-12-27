@@ -1,7 +1,7 @@
     import React from 'react'
     import styled from 'styled-components'
     import Img from 'gatsby-image'
-    import {colors} from '../../globals/colors.js'
+    import {colors} from '../globals/colors.js'
 
 
     const Testimonials = () => {
