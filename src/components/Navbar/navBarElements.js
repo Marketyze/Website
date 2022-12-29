@@ -7,9 +7,9 @@ const secondary_color = "#91D7DD"
 
 //with styled components, we can pass in props (active classes)
 export const Nav = styled.nav`
-    background: ${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
+    background: ${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
     transition: ${({active}) => active ? "0.3s all ease" : "0.4s all ease"};
-    height: 80px;
+    height: 70px;
     display: flex; 
     justify-content: center; 
     position: sticky; 

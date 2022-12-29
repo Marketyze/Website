@@ -3,14 +3,37 @@ import {FaBars, FaTimes} from "react-icons/fa"
 import {IconContext} from "react-icons/lib" //this will change all icons from one given wrapper
 import {MobileIcon, Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLinks} from "./navBarElements"
 import { StaticImage } from "gatsby-plugin-image"
-
+import EventsDropDown from './dropdownEvents'
 
 // for reference = () => are arrow functions 
 const Navbar = () => {
+    //click functions for the mobile dropdown
     const [click, setClick] = useState(false)
+    //scroll effect for the navbar
     const [scroll, setScroll] = useState(false)
-
+    //function to toggle the click state
     const handleClick = () => setClick(!click)
+    
+    //dropdown to toggle the dropdown state
+    const [dropdown, setDropdown] = useState(false)
+   
+    //dropdown hover 
+    const onMouseEnter = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(false)
+        }
+        else {
+            setDropdown(true)
+        }
+    }
+    const onMouseLeave = () => {
+        if (window.innerWidth < 960) {
+            setDropdown(false)
+        }
+        else {
+            setDropdown(false)
+        }
+    }
 
 
     // function to apply the navbar change effect
@@ -60,8 +83,9 @@ const Navbar = () => {
                                 <NavLinks to="/">Our Team</NavLinks>
                             </NavItem>
 
-                            <NavItem>
-                                <NavLinks to="/">Events</NavLinks>
+                            <NavItem onMouseEnter = {onMouseEnter} onMouseLeave = {onMouseLeave}>
+                                <NavLinks to="/mainEvents">Events</NavLinks>
+                                {dropdown && <EventsDropDown/>}
                             </NavItem>
 
                             <NavItem>
