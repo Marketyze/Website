@@ -1,112 +1,49 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
+import { StaticImage } from 'gatsby-plugin-image'
+import {Link} from 'gatsby'
 
+
+//ADD COUNT UP NUMBER FOR BACKGROUND 
 
 const MarketyzeEvents = () => {
   return (
     <MainDiv>
         <Title>Ready to Make an Impact?</Title> 
-        <Description>Join Marketyze's latest event: GSMC 2023</Description>
+        <Description>Every year, more than 100 competitors from all over the world come to join Marketyze's events</Description>
+        <Description>This year is no different, therfore we are exicted to introduce our new event this year: PITCH IT</Description>
+        
         <Goaldiv>
             <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Youth Empowerment</Goaltitle>
-                <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
+                <StaticImage
+                    src= '../../images/family.jpg'
+                    loading="eager"
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt=""
+                    width={1000}
+                    placeholder="transparent"
+                    style={{position: `relative`, border: `1px transparent`, borderRadius: `20px`, zIndex: '2'}}/>
             </GoalOutline>
-
-            <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Personal Growth</Goaltitle>
-                <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
-            </GoalOutline>
-
-            <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Networking</Goaltitle>
-                <GoalSubtitle>Ultimately, we push for students to have fun and enjoy themselves, whether it be in running tournaments or playing in them.</GoalSubtitle>
-            </GoalOutline>
-
         </Goaldiv>
+
+        <Title>So what are you waiting for?</Title> 
+        <EventsButtonContainer>
+            <Button>Join Now</Button>    
+        </EventsButtonContainer>
+        <BackgroundNumber>100+</BackgroundNumber>
     </MainDiv>
   )
 }
 
-const GoalIcon = styled.img`
-    display: flex;
-    align-items: center;
-    height: 150px; 
-    width: 150px; 
-    margin-bottom: 10px; 
-`
-
-const Goaltitle = styled.h1`
-    color: black;
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 9rem;
-    text-align: center;
-    justify-content: center;
-`
-
-const GoalSubtitle = styled.h3`
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5em;
-    position: absolute;
-    text-align: center;
-    width: 250px;
-    margin-top: 13rem;
-    font-family: 'UsualRegular', sans-serif;
-    @media screen and (max-width: 1000px)
-    {
-        width: 50%;
-    }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
-    }
-    @media screen and (max-width: 450px)
-    {
-        width: 80%;
-    }
-`
-
-const Title = styled.h1`
-    color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 3.4rem;
-    line-height: 1.05em;
-    margin-top: 0;
-    display: block;
-    text-align: center;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
-`
-
-const Description = styled.p`
-    color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 1rem;
-    line-height: 1.05em;
-    margin-top: 1rem;
-    display: block;
-    text-align: center;
-    
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
-`
-
 const MainDiv = styled.div`
-    height: 600px;
+    height: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    background: 'transparent'; 
-    margin-bottom: 0;
+    background: #fcfcfc; 
 
     @media screen and (max-width: 1000px)
     {
@@ -122,11 +59,49 @@ const MainDiv = styled.div`
     }
 `
 
+const BackgroundNumber = styled.div`
+    color: ${colors.primaryTeal};
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 700px;
+    text-align: center;
+    position: relative;
+    bottom: 40rem;
+    z-index: 1;
+    opacity: 0.3;
+    `
+
+const Title = styled.h1`
+    color: ${colors.primaryTeal};
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 3.4rem;
+    display: block;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
+`
+
+const Description = styled.p`
+    color: ${colors.black};
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    position: relative;
+    
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
+`
+
 const Goaldiv = styled.div`
     max-width: 1150px; 
     margin: 0 auto; 
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr; 
     align-items: center; 
     grid-column-gap: 5rem;
     padding: 0 50px;     
@@ -166,6 +141,56 @@ const GoalOutline = styled.div`
     }
 `
 
+//button styling
+const EventsButtonContainer = styled(Link)`
+    display: flex;
+    position: relative; 
+    
+    width: 220px;
+    margin: auto;
+    top: 1rem;
+    border: solid;
+    border-radius: 5px; 
+    border-color: ${colors.primaryTeal};
+    border-width: 1px;
+    text-decoration: none;
+    z-index: 5;
+    padding: 0.5rem;
 
+    &:hover{
+        background-color: ${colors.lightTeal};
+        cursor: pointer;
+        transition: 1s ease;
+        border-color: ${colors.lightTeal};
+
+    }
+
+    @media screen and (max-width: 480px){
+        width: 105px;
+    }
+
+`
+
+
+const Button = styled(Link)`
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+font-family: 'Quicksand', sans-serif;
+color: ${colors.primaryTeal};
+justify-content: center;
+text-align: center;
+display: flex;
+position: relative;
+font-size: 3rem;
+
+&:hover{
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 480px){
+    top: 0.45rem;
+}
+
+`
 
 export default MarketyzeEvents

@@ -42,8 +42,7 @@
 
     const TestimonialsContainer = styled.div`
         width: 100%;
-        background: #fcfcfc;
-        color: #000;
+        background: linear-gradient(90deg, rgba(0,140,160,1) 10%, rgba(145,215,221,1) 100%, rgba(226,225,238,1) 100%);
         padding: 5rem calc((100vw - 1300px) / 2);
         height: 100%;
     `
@@ -53,7 +52,7 @@
         margin-bottom: 5rem;
         font-size: clamp(1.5rem, 5vw, 2rem);
         font-weight: bold;
-        color: ${colors.primaryTeal};
+        color: ${colors.black};
         font-family: "Arial", sans-serif; 
 
     `
@@ -85,11 +84,11 @@
         h5 {
             margin-bottom: 1rem;
             font-size: 1.2rem;
-            color: #3b3b3b;
+            color: black;
         }
 
         p {
-            color: #3b3b3b;
+            color: black;
         }
 
     `

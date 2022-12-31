@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
-
-const secondary_color = "#91D7DD"
+import {colors} from '../globals/colors.js'
 
 const HeroSection = () => {
     return (
@@ -14,7 +13,7 @@ const HeroSection = () => {
                 GET AHEAD OF THE COMPETITION
                 <HeroP>
                     Marketyze is committed to preparing the next generation of young adults for the future
-                    <HeroButtonContainer>
+                    <HeroButtonContainer to = '/aboutUs'>
                         <Button>
                             Learn More
                        </Button>
@@ -47,7 +46,8 @@ const HeroContainer = styled.div`
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+    font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 5rem; 
     margin-top: 0px; 
@@ -87,13 +87,14 @@ const HeroButtonContainer = styled(Link)`
     border-color: white;
     border-width: 1px;
     display: block;
+    text-decoration: none;
     z-index: 5;
 
     &:hover{
-        background-color: ${secondary_color};
+        background-color: ${colors.lightTeal};
         cursor: pointer;
         transition: 1s ease;
-        border-color: ${secondary_color};
+        border-color: ${colors.lightTeal};
 
     }
 
@@ -105,12 +106,13 @@ const HeroButtonContainer = styled(Link)`
 
 
 const Button = styled(Link)`
-font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+font-family: 'Quicksand', sans-serif;
 color: white;
 justify-content: center;
 text-align: center;
 position: relative;
-text-decoration: none;
+top: 0.25rem;
 
 &:hover{
     cursor: pointer;

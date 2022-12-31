@@ -15,6 +15,7 @@ export const Nav = styled.nav`
     position: sticky; 
     top: 0; 
     z-index: 999; 
+    opacity: 0.95;
 
     @media screen and (max-width: 960px){
         background: ${({click}) => (click ? "#fff" : "transparent")};
@@ -25,7 +26,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
     display: flex; 
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     width: 100%; 
     max-width: 1000px;
 `
