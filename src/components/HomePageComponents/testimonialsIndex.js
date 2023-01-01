@@ -89,6 +89,7 @@
 
         p {
             color: black;
+            font-size: 1.2rem;
         }
 
     `

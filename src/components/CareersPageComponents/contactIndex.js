@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
+import {colors} from '../globals/colors';
 
+//fix emailjs
 const ContactUs = () => {
   const form = useRef();
 
@@ -26,6 +28,10 @@ const ContactUs = () => {
 
   return (
     <MainDiv>
+      <ContactTitle>Have Questions?</ContactTitle>
+      <ContactDescription>Feel free to send us an Email or message us at any of our social media platforms!</ContactDescription>
+        
+      <ContactFormDiv>
         <StyledContactForm>
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
@@ -36,7 +42,9 @@ const ContactUs = () => {
                 <textarea name="message" />
                 <input type="submit" value="Send" />
             </form>
-        </StyledContactForm>
+          </StyledContactForm>
+        </ContactFormDiv>
+
     </MainDiv>
   );
 };
@@ -46,10 +54,27 @@ export default ContactUs
 // Styles
 const MainDiv = styled.div`
     justify-content: center;
+    flex-direction: column;
     display: flex;
-    height: 50vh;
+    height: 80vh;
 `
 
+const ContactTitle = styled.h1`
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+`
+
+const ContactDescription = styled.p`
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+`
+
+const ContactFormDiv = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
 const StyledContactForm = styled.div`
   width: 40vw;
@@ -69,7 +94,7 @@ const StyledContactForm = styled.div`
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid ${colors.lightTeal};
       }
     }
 
@@ -84,7 +109,7 @@ const StyledContactForm = styled.div`
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid ${colors.lightTeal};
       }
     }
 
@@ -95,7 +120,7 @@ const StyledContactForm = styled.div`
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: ${colors.primaryTeal};
       color: white;
       border: none;
     }

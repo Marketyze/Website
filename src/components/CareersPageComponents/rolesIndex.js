@@ -8,43 +8,283 @@ const Careers = () => {
     <MainDiv>
         <Title>Positions</Title> 
 
-        <Goaldiv>
-            <GoalOutline>
-                <Description>Senior Leadership</Description>
-                <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
-                <GoalSubtitle>Remote</GoalSubtitle>
-            </GoalOutline>
+        {/*Senior Leadership*/}
+        <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Senior Leadership</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
 
-            <GoalOutline>
-                <Goaltitle>Applications Closed</Goaltitle>
-            </GoalOutline>
-        </Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
 
-        <Goaldiv>
-            <GoalOutline>
-                <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
-                <GoalSubtitle>Remote</GoalSubtitle>
-            </GoalOutline>
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
 
-            <GoalOutline>
-                <Goaltitle>Applications Closed</Goaltitle>
-            </GoalOutline>
-        </Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
 
-        <Goaldiv>
-            <GoalOutline>
-                <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                <GoalSubtitle>Remote</GoalSubtitle>
-            </GoalOutline>
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
 
-            <GoalOutline>
-                <Goaltitle>Applications Closed</Goaltitle>
-            </GoalOutline>
-        </Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+         {/*Operations Department*/}
+         <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Operations Department</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+         {/*Marketing Department*/}
+         <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Marketing Department</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+        {/*Finance Department*/}
+         <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Finance Department</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+        {/*Strategy Department*/}
+         <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Strategy Department</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+
+            <Goaldiv>
+                <GoalOutline>
+                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+        {/*Programs Department*/}
+        <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Programs Department</Description>
+                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>Applications Closed</Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
 
     </MainDiv>
   )
 }
+const MainDiv = styled.div`
+    height: 2800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: 'transparent'; 
+    margin-bottom: 0;
+
+    @media screen and (max-width: 1000px)
+    {
+        height: 1260px; 
+    }
+    @media screen and (max-width: 768px)
+    {
+        height: 1350px; 
+    }
+    @media screen and (max-width: 480px)
+    {
+        /* height: 900px;  */
+    }
+`
+
+const SectionDiv = styled.div`
+    display: flex;
+    jiustify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+`
+
+const Title = styled.h1`
+    color: ${colors.primaryTeal};
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 3.4rem;
+    display: block;
+    text-align: center;
+    position: relative;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
+`
 
 
 const Goaltitle = styled.h1`
@@ -78,19 +318,6 @@ const GoalSubtitle = styled.h3`
     }
 `
 
-const Title = styled.h1`
-    color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 3.4rem;
-    line-height: 1.05em;
-    margin-top: 0;
-    display: block;
-    text-align: center;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
-`
-
 const Description = styled.p`
     color: ${colors.black};
     font-family: 'UsualExtraBold', sans-serif;
@@ -101,28 +328,6 @@ const Description = styled.p`
 
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
-    }
-`
-
-const MainDiv = styled.div`
-    height: 1000px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: 'transparent'; 
-    margin-bottom: 0;
-
-    @media screen and (max-width: 1000px)
-    {
-        height: 1260px; 
-    }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
     }
 `
 

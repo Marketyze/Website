@@ -28,8 +28,8 @@ if(!Array.isArray(slides) || slides.length <= 0) {
 
 
     return(
-        <div>
-            <h1>our story </h1>
+        <MasterDiv>
+            <Title>Our Story </Title>
         <Section>
             <ArrowLeft onClick = {previousSlide}/>
             <ArrowRight onClick = {nextSlide}/>
@@ -41,7 +41,7 @@ if(!Array.isArray(slides) || slides.length <= 0) {
                 )
             })}
         </Section>
-        </div>
+        </MasterDiv>
     )
 }
 
@@ -50,6 +50,17 @@ if(!Array.isArray(slides) || slides.length <= 0) {
 
 export default Timeline
 
+const MasterDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+const Title = styled.h1`
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+`
 
 const Section = styled.div`
     position: relative;
@@ -60,29 +71,37 @@ const Section = styled.div`
 `
 
 const SlideImage = styled.img`
-    width: 1000px;
-    height: 600px; 
-    border-radius: 10px;
+    width: 800px;
+    height: 450px; 
+    border-radius: 30px;
 `
 
 const ArrowLeft = styled(FaArrowAltCircleLeft)`
     position: absolute;
     top: 50%;
-    left: 32px;
+    left: 20rem;
     font-size: 3rem;
     color: black;
     z-index: 10; 
     cursor: pointer;
     user-select: none;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `
 
 const ArrowRight = styled(FaArrowAltCircleRight)`
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 20rem;
     font-size: 3rem;
     color: black;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `

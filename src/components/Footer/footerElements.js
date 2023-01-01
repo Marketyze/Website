@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'gatsby'
 import {colors} from '../globals/colors.js'
-
+import {StaticImage} from 'gatsby-plugin-image'
 
 /**
  * 
@@ -17,24 +17,41 @@ const Footer = () => {
 
             <FooterLinksWrapper>
                 <FooterDesc>
-                    <h1>Marketyze</h1>
+
+                    <NavLogo to ="/">
+                        <StaticImage
+                                    src= '../../images/White_logo.png'
+                                    loading="eager"
+                                    width={65}
+                                    quality={100}
+                                    formats={["auto", "webp", "avif"]}
+                                    alt=""
+                                    placeholder="transparent"
+                                    style={{ marginRight: `0.5rem` }}
+                                />
+                             MARKETYZE
+                    </NavLogo>
+
                     <p>Pioneering in providing accessible marketing opportunities to youth</p>
                 </FooterDesc>
 
                 <FooterLinkItems>
-                    <FooterLinkTitle>Quick Links</FooterLinkTitle>
-                    <FooterLink>About</FooterLink>
-                    <FooterLink>Events</FooterLink>
-                    <FooterLink>Programs</FooterLink>
+                    <FooterLinkTitle>General</FooterLinkTitle>
+                    <FooterLink>About Us</FooterLink>
+                    <FooterLink>Our Team</FooterLink>
                 </FooterLinkItems>
 
-            </FooterLinksWrapper>
-            
-            <FooterLinksWrapper>
 
                 <FooterLinkItems>
-                    <FooterLink>Careers</FooterLink>
-                    <FooterLink>Contact</FooterLink>
+                    <FooterLinkTitle>Events</FooterLinkTitle>
+                    <FooterLink>PITCH IT</FooterLink>
+                </FooterLinkItems>
+
+
+                <FooterLinkItems>
+                    <FooterLinkTitle>More</FooterLinkTitle>
+                    <FooterLink>Programs</FooterLink>
+                    <FooterLink>Career/Contact</FooterLink>
                 </FooterLinkItems>
 
             </FooterLinksWrapper>
@@ -46,6 +63,18 @@ const Footer = () => {
 }
 
 export default Footer
+
+const NavLogo = styled(Link) `
+    color: white;
+    justify-self: flex-start;
+    cursor: pointer; 
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    font-family: "Arial", sans-serif; 
+`
 
 const FooterContainer = styled.div`
     padding: 5rem calc((100vw - 1100px)/2);
@@ -59,8 +88,8 @@ const FooterContainer = styled.div`
 const FooterDesc = styled.div`
     padding: 0 2;   
 
-    h1 {
-        margin-bottom: 3rem;     
+    p {
+        margin-top: 3rem;     
     }
 
     @media screen and (max-width: 400px){
@@ -70,17 +99,17 @@ const FooterDesc = styled.div`
 
 const FooterLinksWrapper = styled.div`
     display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10rem;
 
     @media screen and (max-width: 820px){
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
     }
 `
 const FooterLinkItems = styled.div`
     display: flex; 
     flex-direction: column; 
     align-items: flex-start;
-    padding: 1rem 2rem; 
 
     @media screen and (max-width: 400px){
         padding: 1rem; 

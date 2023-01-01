@@ -46,8 +46,9 @@ const HeroContainer = styled.div`
 `
 
 const HeroH1 = styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-    font-family: 'Quicksand', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');    
+    font-weight: 400;    
+    font-family: "Quicksand", sans-serif;
     color: white;
     font-size: 5rem; 
     margin-top: 0px; 

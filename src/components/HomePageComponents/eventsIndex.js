@@ -15,20 +15,18 @@ const MarketyzeEvents = () => {
         <Description>This year is no different, therfore we are exicted to introduce our new event this year: PITCH IT</Description>
         
         <Goaldiv>
-            <GoalOutline>
                 <StaticImage
                     src= '../../images/family.jpg'
                     loading="eager"
-                    quality={95}
+                    quality={100}
                     formats={["auto", "webp", "avif"]}
                     alt=""
-                    width={1000}
+                    width={700}
                     placeholder="transparent"
-                    style={{position: `relative`, border: `1px transparent`, borderRadius: `20px`, zIndex: '2'}}/>
-            </GoalOutline>
+                    style={{position: `relative`, border: `1px transparent`, borderRadius: `20px`, zIndex: '2', top: '4rem'}}/>
         </Goaldiv>
 
-        <Title>So what are you waiting for?</Title> 
+        <TitleJoin>So what are you waiting for?</TitleJoin> 
         <EventsButtonContainer>
             <Button>Join Now</Button>    
         </EventsButtonContainer>
@@ -65,9 +63,9 @@ const BackgroundNumber = styled.div`
     font-size: 700px;
     text-align: center;
     position: relative;
-    bottom: 40rem;
+    bottom: 55rem;
     z-index: 1;
-    opacity: 0.3;
+    opacity: 0.2;
     `
 
 const Title = styled.h1`
@@ -76,6 +74,21 @@ const Title = styled.h1`
     font-size: 3.4rem;
     display: block;
     position: relative;
+    top: 3rem;
+    z-index: 99;
+    text-align: center;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
+`
+
+const TitleJoin = styled.h1`
+    color: ${colors.primaryTeal};
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 3.4rem;
+    display: block;
+    position: relative;
+    top: 5rem;
     z-index: 99;
     text-align: center;
     @media screen and (max-width: 750px) {
@@ -86,11 +99,12 @@ const Title = styled.h1`
 const Description = styled.p`
     color: ${colors.black};
     font-family: 'UsualExtraBold', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     display: block;
     text-align: center;
     position: relative;
+    top: 3rem;
     
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -100,10 +114,8 @@ const Description = styled.p`
 const Goaldiv = styled.div`
     max-width: 1150px; 
     margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: 1fr; 
+    display: flex; 
     align-items: center; 
-    grid-column-gap: 5rem;
     padding: 0 50px;     
     justify-content: center;
     @media screen and (max-width: 1150px)
@@ -122,35 +134,15 @@ const Goaldiv = styled.div`
     }   
 `
 
-const GoalOutline = styled.div`
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center;
-    max-height: 600px; 
-    width: 300px;
-    height: 400px;
-    padding: 50px; 
-    @media screen and (max-width: 1150px)
-    {
-        width: 250px;
-    }
-    @media screen and (max-width: 1000px)
-    {
-        width: 100%;
-    }
-`
-
 //button styling
 const EventsButtonContainer = styled(Link)`
     display: flex;
     position: relative; 
-    
-    width: 220px;
+    top: 7rem;
+    width: 185px;
     margin: auto;
-    top: 1rem;
     border: solid;
-    border-radius: 5px; 
+    border-radius: 20px; 
     border-color: ${colors.primaryTeal};
     border-width: 1px;
     text-decoration: none;
@@ -180,7 +172,7 @@ justify-content: center;
 text-align: center;
 display: flex;
 position: relative;
-font-size: 3rem;
+font-size: 2.5rem;
 
 &:hover{
     cursor: pointer;

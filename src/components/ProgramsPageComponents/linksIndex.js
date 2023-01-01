@@ -1,24 +1,34 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
-
+import { Link } from 'gatsby'
 
 const Internships = () => {
   return (
     <MainDiv>
         <Title>Internships</Title> 
-        <Description>The mission of Marketyze is to empower young adults</Description>
+        <Description>At Marketyze, we offer two internships</Description>
         <Goaldiv>
             <GoalOutline>
                 <GoalIcon/>
-                <Goaltitle>Youth Empowerment</Goaltitle>
-                <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
+                <Goaltitle>Marketyze Ambassador Program</Goaltitle>
+                <GoalSubtitle>Remote</GoalSubtitle>
+                <InternButtonContainer to = '/aboutUs'>
+                        <Button>
+                            Join Now
+                       </Button>
+                </InternButtonContainer>
             </GoalOutline>
 
             <GoalOutline>
                 <GoalIcon/>
-                <Goaltitle>Personal Growth</Goaltitle>
-                <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
+                <Goaltitle>Marketyze Internship Program</Goaltitle>
+                <GoalSubtitle>Remote</GoalSubtitle>
+                <InternButtonContainer to = '/aboutUs'>
+                        <Button>
+                            Join Now
+                       </Button>
+                </InternButtonContainer>
             </GoalOutline>
 
         </Goaldiv>
@@ -158,6 +168,58 @@ const GoalOutline = styled.div`
     {
         width: 100%;
     }
+`
+
+//button styling 
+const InternButtonContainer = styled(Link)`
+    position: relative; 
+    height: 40px;
+    width: 180px;
+    justify-self: center;
+    margin: auto;
+    top: 1rem;
+    border: 1px solid;
+    border-radius: 5px; 
+    border-color: white;
+    border-width: 1px;
+    display: block;
+    text-decoration: none;
+    z-index: 5;
+
+    &:hover{
+        background-color: ${colors.lightTeal};
+        cursor: pointer;
+        transition: 1s ease;
+        border-color: ${colors.lightTeal};
+
+    }
+
+    @media screen and (max-width: 480px){
+        width: 105px;
+    }
+
+`
+
+
+const Button = styled(Link)`
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+font-family: 'Quicksand', sans-serif;
+color: black;
+justify-content: center;
+text-align: center;
+position: relative;
+top: 0.25rem;
+
+&:hover{
+    cursor: pointer;
+    color: white;
+
+}
+
+@media screen and (max-width: 480px){
+    top: 0.45rem;
+}
+
 `
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../globals/colors.js'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const ParagraphSection = () => {
     return (
@@ -22,6 +23,17 @@ const ParagraphSection = () => {
 
                 <HeroP>
                 Pro tip: apply soon! Since all of our currently open positions are part of our ongoing recruitment process, positions will be removed once they are filled. Don’t miss out on your chance to join us at Marketyze!                </HeroP>
+
+                <StaticImage
+                src= '../../images/marketyze_logo.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `1050px`, height: `560px`, bottom: '32rem', zIndex: '1', opacity: '0.2'  }}
+                />
+
 
             </HeroH1>
 
