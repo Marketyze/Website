@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import marketyzeFamily from '../../images/family.jpg'
+import './animationsCareer.css'
 
 const HeroSection = () => {
     return (
@@ -13,6 +14,13 @@ const HeroSection = () => {
                     Enriching experiences while making an impact
                 </HeroP>
             </HeroH1>
+
+             {/** mouse scrolling animation */}
+             <div id="mouse-scrollCareer">
+                    <div class="mouseCareer">
+                        <div class="mouse-inCareer"></div>
+                    </div>
+            </div>
 
         </HeroContainer>
         
@@ -34,7 +42,7 @@ const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.76);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.88);
     margin-top: -80px;
 `
 
@@ -42,8 +50,9 @@ const HeroH1 = styled.h1`
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 5rem; 
-    margin-top: 0px; 
     text-align: center;
+    position: relative;
+    top: 15rem;
 
     @media screen and (max-width: 960px) {
         font-size: 70px;

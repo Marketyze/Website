@@ -80,7 +80,7 @@ const FooterContainer = styled.div`
     padding: 5rem calc((100vw - 1100px)/2);
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    background-color: ${colors.primaryTeal};
+    background-color: ${colors.darkTeal};
     color: ${colors.white};
     font-family: "Arial", sans-serif; 
 `

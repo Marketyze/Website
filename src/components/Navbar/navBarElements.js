@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     position: sticky; 
     top: 0; 
     z-index: 999; 
-    opacity: 0.95;
+    opacity: 0.97;
 
     @media screen and (max-width: 960px){
         background: ${({click}) => (click ? "#fff" : "transparent")};

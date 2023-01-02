@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
 import {colors} from '../globals/colors.js'
+import './animationsHome.css'
 
 const HeroSection = () => {
     return (
@@ -21,6 +22,20 @@ const HeroSection = () => {
                 </HeroP>
             </HeroH1>
 
+            {/** mouse scrolling animation */}
+            <a href="/aboutUs">
+                <div id="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                    <div>
+                        <span class="down-arrow-1"></span>
+                        <span class="down-arrow-2"></span>
+                        <span class="down-arrow-3"></span>
+                    </div>
+                </div>
+            </a>
+
         </HeroContainer>
         
     )
@@ -37,11 +52,10 @@ const HeroContainer = styled.div`
     height: 100vh;
     width: 100%;
     display: flex; 
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.76);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.88);
     margin-top: -80px
 `
 
@@ -51,8 +65,10 @@ const HeroH1 = styled.h1`
     font-family: "Quicksand", sans-serif;
     color: white;
     font-size: 5rem; 
-    margin-top: 0px; 
-    text-align: center;
+    width: 40%;
+    position: relative;
+    right: 14rem;
+    top: 3rem;
 
     @media screen and (max-width: 960px) {
         font-size: 70px;
@@ -68,6 +84,10 @@ const HeroP = styled.p`
     color: white; 
     font-size: 1.5rem; 
     text-decoration: none;
+    line-height: 2.5rem;
+    width: 55%;
+    position: relative;
+    left: 1rem;
 
     @media screen and (max-width: 768px) {
         font-size: 30px;
@@ -82,7 +102,6 @@ const HeroButtonContainer = styled(Link)`
     width: 180px;
     justify-self: center;
     margin: auto;
-    top: 1rem;
     border: 1px solid;
     border-radius: 5px; 
     border-color: white;
@@ -90,6 +109,7 @@ const HeroButtonContainer = styled(Link)`
     display: block;
     text-decoration: none;
     z-index: 5;
+    left: 50rem;
 
     &:hover{
         background-color: ${colors.lightTeal};

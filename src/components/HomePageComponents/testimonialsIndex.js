@@ -2,9 +2,24 @@
     import styled from 'styled-components'
     import Img from 'gatsby-image'
     import {colors} from '../globals/colors.js'
-
+    import { useStaticQuery, graphql } from 'gatsby'
 
     const Testimonials = () => {
+        const data = useStaticQuery(graphql` 
+        query {
+            allFile(filter: {name: {in: ["portrait" , "portrait2"]}}) {
+              edges {
+                node {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+          }`)
+
         return (
             <TestimonialsContainer>
 
@@ -30,7 +45,8 @@
 
                     </ColumnOne>
                     <ColumnTwo>
-                        <Images/>
+                    {data.allFile.edges.map((image, key) => ( <Images key={key} fluid = {image.node.childImageSharp.fluid}/>))}
+                    
                     </ColumnTwo>
                     
                 </ContentWrapper>
@@ -47,7 +63,6 @@
         height: 100%;
     `
     const Description = styled.div`
-        text-align: center;
         padding-left: 2rem;
         margin-bottom: 5rem;
         font-size: clamp(1.5rem, 5vw, 2rem);

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import { Link } from 'gatsby'
+import temporary from '../../images/family.jpg'
 
 const Internships = () => {
   return (
@@ -10,9 +11,9 @@ const Internships = () => {
         <Description>At Marketyze, we offer two internships</Description>
         <Goaldiv>
             <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Marketyze Ambassador Program</Goaltitle>
-                <GoalSubtitle>Remote</GoalSubtitle>
+                <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                </ValuesDiv>               
                 <InternButtonContainer to = '/aboutUs'>
                         <Button>
                             Join Now
@@ -21,10 +22,9 @@ const Internships = () => {
             </GoalOutline>
 
             <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Marketyze Internship Program</Goaltitle>
-                <GoalSubtitle>Remote</GoalSubtitle>
-                <InternButtonContainer to = '/aboutUs'>
+                <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                </ValuesDiv>                                <InternButtonContainer to = '/aboutUs'>
                         <Button>
                             Join Now
                        </Button>
@@ -36,44 +36,20 @@ const Internships = () => {
   )
 }
 
-const GoalIcon = styled.img`
-    display: flex;
-    align-items: center;
-    height: 150px; 
-    width: 150px; 
-    margin-bottom: 10px; 
+//valuesDiv
+const ValuesDiv = styled.div`
+    width: 450px;
+    height: 450px;
+    background-image: url(${temporary});
+    border-radius: 20px;
 `
 
-const Goaltitle = styled.h1`
-    color: black;
+const ValuesTitle = styled.h1`
+    font-family: 'UsualExtraBold', sans-serif;
+    position: relative;
+    top: 20rem;
+    left: 1.5rem;
     font-size: 1.5rem;
-    position: absolute;
-    margin-top: 9rem;
-    text-align: center;
-    justify-content: center;
-`
-
-const GoalSubtitle = styled.h3`
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5em;
-    position: absolute;
-    text-align: center;
-    width: 250px;
-    margin-top: 13rem;
-    font-family: 'UsualRegular', sans-serif;
-    @media screen and (max-width: 1000px)
-    {
-        width: 50%;
-    }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
-    }
-    @media screen and (max-width: 450px)
-    {
-        width: 80%;
-    }
 `
 
 const Title = styled.h1`
@@ -81,9 +57,9 @@ const Title = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
-    margin-top: 0;
+    position: relative;
+    left: 27rem;
     display: block;
-    text-align: center;
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
@@ -95,8 +71,9 @@ const Description = styled.p`
     font-size: 1rem;
     line-height: 1.05em;
     margin-top: 1rem;
-    display: block;
-    text-align: center;
+    display: flex;
+    position: relative;
+    left: 27rem;
     
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -108,9 +85,7 @@ const MainDiv = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
     background: 'transparent'; 
-    margin-bottom: 0;
 
     @media screen and (max-width: 1000px)
     {

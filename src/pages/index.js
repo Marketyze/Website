@@ -8,6 +8,7 @@ import HeroSection from "../components/HomePageComponents/heroIndex"
 import Values from "../components/HomePageComponents/valuesIndex"
 import Testimonials from "../components/HomePageComponents/testimonialsIndex"
 import MarketyzeEvents from "../components/HomePageComponents/eventsIndex"
+import JoinNow from "../components/HomePageComponents/joinNow"
 
 
 const IndexPage = () => (
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <Values/>
     <Testimonials/>
     <MarketyzeEvents/>
+    <JoinNow/>
   </Layout>
 )
 

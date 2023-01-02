@@ -29,7 +29,7 @@ const ParagraphSection = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `1050px`, height: `560px`, bottom: '24rem', zIndex: '1', opacity: '0.2'  }}
+                style={{width: `1050px`, height: `560px`, bottom: '23.25rem', zIndex: '1', opacity: '0.2'  }}
                 />
 
             </HeroH1>
@@ -48,7 +48,6 @@ const HeroContainer = styled.div`
     width: 100%;
     display: flex; 
     justify-content: center;
-    text-align: center;
 
 `
 
@@ -56,7 +55,6 @@ const HeroH1 = styled.h1`
     font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
     font-size: 2rem; 
-    text-align: center;
     margin-top: 8rem;
 
     @media screen and (max-width: 960px) {

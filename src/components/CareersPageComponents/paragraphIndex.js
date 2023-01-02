@@ -48,7 +48,6 @@ const HeroContainer = styled.div`
     width: 100%;
     display: flex; 
     justify-content: center;
-    text-align: center;
     
 
 `
@@ -57,7 +56,6 @@ const HeroH1 = styled.h1`
     font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
     font-size: 2rem; 
-    text-align: center;
     margin-top: 8rem;
     z-index: 2;
 

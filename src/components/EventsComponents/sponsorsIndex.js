@@ -1,53 +1,99 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
-
+import {StaticImage} from 'gatsby-plugin-image'
 
 const Sponsors = () => {
   return (
     <MainDiv>
         <Title>Past Sponsors</Title> 
-        <Description>Below are some of our past spponsors for our events</Description>
+        <Description>Below are some of our past sponsors for our events</Description>
 
         <Goaldiv>
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/maker.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `700px`, height: `auto`}}
+                />
+
             </GoalOutline>
 
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/pizzaVille.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `400px`, height: `auto`}}
+                />
+
             </GoalOutline>
 
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/nextDoor.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `300px`, height: `auto`}}
+                />
+
             </GoalOutline>
         </Goaldiv>
 
         <Goaldiv>
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/alphaTrim.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `200px`, height: `auto`}}
+                />
+
             </GoalOutline>
 
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/creativeGenius.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '7rem'}}
+                />
+
             </GoalOutline>
 
             <GoalOutline>
-                <GoalIcon/>
+            <StaticImage
+                src= '../../images/sweetsEarth.png'
+                loading="eager"
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt=""
+                placeholder="transparent"
+                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '4rem'}}
+                />
+
             </GoalOutline>
         </Goaldiv>
 
     </MainDiv>
   )
 }
-
-const GoalIcon = styled.img`
-    display: flex;
-    align-items: center;
-    height: 150px; 
-    width: 150px; 
-    margin-bottom: 10px; 
-`
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
@@ -105,7 +151,7 @@ const Goaldiv = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     align-items: center; 
-    grid-column-gap: 5rem;
+    grid-column-gap: 8rem;
     padding: 0 50px;     
     justify-content: center;
     @media screen and (max-width: 1150px)

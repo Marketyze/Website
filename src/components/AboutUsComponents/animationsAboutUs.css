@@ -1,0 +1,100 @@
+#mouse-scrollAboutUs {
+    position: relative;
+    left: 1rem;
+    margin: auto;
+    top: 13.2rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+    opacity: 0.25;
+  }
+  #mouse-scrollAboutUs span{
+    display: block;
+    width: 5px; 
+    height: 5px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid #fff; 
+    border-bottom: 2px solid #fff;
+    margin: 0 0 3px 5px;
+  }
+  #mouse-scrollAboutUs .mouseAboutUs {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid #ffffff;
+    top: 170px;
+  }
+ 
+  #mouse-scrollAboutUs .mouse-inAboutUs {
+    height: 5px;
+    width: 2px;
+    display: block; 
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+  }
+  #mouse-scrollAboutUs .mouse-inAboutUs {
+      animation : animated-mouse 1.2s ease infinite;
+   -webkit-animation: animated-mouse 1.2s ease infinite;
+    -moz-animation: mouse-animated 1.2s ease infinite;
+  }
+  
+  @-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+  
+  @keyframes animated-mouse {
+      0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+      }
+      100% {
+         opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+      }
+    }
+  
+  @-webkit-keyframes mouse-scrollAboutUs {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+  
+  @keyframes mouse-scrollAboutUs {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
