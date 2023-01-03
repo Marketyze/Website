@@ -4,6 +4,7 @@ import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
 import {colors} from '../globals/colors.js'
 import './animationsHome.css'
+import './animationsHome.scss'
 
 const HeroSection = () => {
     return (
@@ -14,12 +15,10 @@ const HeroSection = () => {
                 GET AHEAD OF THE COMPETITION
                 <HeroP>
                     Marketyze is committed to preparing the next generation of young adults for the future
-                    <HeroButtonContainer to = '/aboutUs'>
-                        <Button>
-                            Learn More
-                       </Button>
-                    </HeroButtonContainer>
                 </HeroP>
+
+                <a href="#" class="buttonHome">Learn More</a>             
+
             </HeroH1>
 
             {/** mouse scrolling animation */}
@@ -108,7 +107,6 @@ const HeroButtonContainer = styled(Link)`
     border-width: 1px;
     display: block;
     text-decoration: none;
-    z-index: 5;
     left: 50rem;
 
     &:hover{
@@ -122,27 +120,5 @@ const HeroButtonContainer = styled(Link)`
     @media screen and (max-width: 480px){
         width: 105px;
     }
-
-`
-
-
-const Button = styled(Link)`
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-font-family: 'Quicksand', sans-serif;
-color: white;
-justify-content: center;
-text-align: center;
-position: relative;
-top: 0.25rem;
-
-&:hover{
-    cursor: pointer;
-    color: white;
-
-}
-
-@media screen and (max-width: 480px){
-    top: 0.45rem;
-}
 
 `
