@@ -19,11 +19,6 @@ const Purposes = () => {
               <GoalOutline>
               <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
-                        <AboutButtonContainer to = '/'>
-                            <div class="btnAbout btn-threeAbout">
-                                <span>Sign Up</span>
-                            </div>
-                        </AboutButtonContainer>
                 </ValuesDiv>    
                 <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>   
               </GoalOutline>
@@ -31,11 +26,6 @@ const Purposes = () => {
               <GoalOutline>
               <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
-                        <AboutButtonContainer to = '/'>
-                            <div class="btnAbout btn-threeAbout">
-                                <span>Sign Up</span>
-                            </div>
-                        </AboutButtonContainer>
                 </ValuesDiv>
                 <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>          
               </GoalOutline>
@@ -45,11 +35,6 @@ const Purposes = () => {
               <GoalOutline>
               <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
-                        <AboutButtonContainer to = '/'>
-                            <div class="btnAbout btn-threeAbout">
-                                <span>Sign Up</span>
-                            </div>
-                        </AboutButtonContainer>
                 </ValuesDiv>
                 <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>
               </GoalOutline>
@@ -57,11 +42,6 @@ const Purposes = () => {
               <GoalOutline>
               <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
-                        <AboutButtonContainer to = '/'>
-                            <div class="btnAbout btn-threeAbout">
-                                <span>Sign Up</span>
-                            </div>
-                        </AboutButtonContainer>
                 </ValuesDiv>  
                 <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>        
               </GoalOutline>
