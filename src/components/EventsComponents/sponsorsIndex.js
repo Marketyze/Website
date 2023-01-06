@@ -101,8 +101,11 @@ const Title = styled.h1`
     font-size: 3.4rem;
     line-height: 1.05em;
     margin-top: 0;
-    display: block;
-    text-align: center;
+    display: flex;
+    width: 50%;
+    position: relative;
+    left: 27rem;
+
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
@@ -114,8 +117,10 @@ const Description = styled.p`
     font-size: 1rem;
     line-height: 1.05em;
     margin-top: 1rem;
-    display: block;
-    text-align: center;
+    display: flex;
+    width: 50%;
+    position: relative;
+    left: 27rem;
     
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -123,12 +128,12 @@ const Description = styled.p`
 `
 
 const MainDiv = styled.div`
-    height: 1000px;
+    height: 800px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    background: 'transparent'; 
+    background: 'transparent';
     margin-bottom: 0;
 
     @media screen and (max-width: 1000px)

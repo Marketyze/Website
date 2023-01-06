@@ -2,15 +2,15 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import { Link } from 'gatsby'
-import './animationsHome.css'
+import './animationsAboutUs.css'
 
-const JoinNow = () => {
+const FinalMessage = () => {
   return (
     <MainDiv>
-        <Title>So what are you waiting for?</Title> 
-        <Description>Marketyze is here to give students an opportunity of a lifetime</Description>
+        <Title>Wondering what we do?</Title> 
+        <Description>Come check out our newest event!</Description>
         <JoinButtonContainer>
-            <a href = '/' className = 'buttonHome'>Learn More</a>             
+            <a href = '/' className = 'buttonAbout'>Learn More</a>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -84,4 +84,4 @@ const JoinButtonContainer = styled(Link)`
 
 
 
-export default JoinNow
+export default FinalMessage

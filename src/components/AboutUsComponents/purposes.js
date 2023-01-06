@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
+import temporary from '../../images/family.jpg'
+import { Link } from 'gatsby'
 
 //four sections similar to the value cards 
 //our purpose 
@@ -11,32 +13,57 @@ const Purposes = () => {
     return (
       <MainDiv>
           <Title>Our Purposes</Title> 
-          <Description>Uniting across the nation</Description>
+          <Description>Our story has inspire us to form Marketyze and to this day we continue to follow four main purposes to achieve our goals </Description>
+          
           <Goaldiv>
               <GoalOutline>
-                  <GoalIcon/>
-                  <Goaltitle>Youth Empowerment</Goaltitle>
-                  <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
+              <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                        <AboutButtonContainer to = '/'>
+                            <div class="btnAbout btn-threeAbout">
+                                <span>Sign Up</span>
+                            </div>
+                        </AboutButtonContainer>
+                </ValuesDiv>    
+                <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>   
               </GoalOutline>
   
               <GoalOutline>
-                  <GoalIcon/>
-                  <Goaltitle>Personal Growth</Goaltitle>
-                  <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
+              <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                        <AboutButtonContainer to = '/'>
+                            <div class="btnAbout btn-threeAbout">
+                                <span>Sign Up</span>
+                            </div>
+                        </AboutButtonContainer>
+                </ValuesDiv>
+                <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>          
               </GoalOutline>
           </Goaldiv>
 
           <Goaldiv>
               <GoalOutline>
-                  <GoalIcon/>
-                  <Goaltitle>Youth Empowerment</Goaltitle>
-                  <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
+              <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                        <AboutButtonContainer to = '/'>
+                            <div class="btnAbout btn-threeAbout">
+                                <span>Sign Up</span>
+                            </div>
+                        </AboutButtonContainer>
+                </ValuesDiv>
+                <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>
               </GoalOutline>
   
               <GoalOutline>
-                  <GoalIcon/>
-                  <Goaltitle>Personal Growth</Goaltitle>
-                  <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
+              <ValuesDiv>
+                    <ValuesTitle>Youth Empowerment</ValuesTitle>
+                        <AboutButtonContainer to = '/'>
+                            <div class="btnAbout btn-threeAbout">
+                                <span>Sign Up</span>
+                            </div>
+                        </AboutButtonContainer>
+                </ValuesDiv>  
+                <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders.</PurposeSubtitle>        
               </GoalOutline>
           </Goaldiv>
 
@@ -44,45 +71,22 @@ const Purposes = () => {
     )
   }
   
-  const GoalIcon = styled.img`
-      display: flex;
-      align-items: center;
-      height: 150px; 
-      width: 150px; 
-      margin-bottom: 10px; 
-  `
-  
-  const Goaltitle = styled.h1`
-      color: black;
-      font-size: 1.5rem;
-      position: absolute;
-      margin-top: 9rem;
-      text-align: center;
-      justify-content: center;
-  `
-  
-  const GoalSubtitle = styled.h3`
-      color: black;
-      font-size: 1rem;
-      line-height: 1.5em;
-      position: absolute;
-      text-align: center;
-      width: 250px;
-      margin-top: 13rem;
-      font-family: 'UsualRegular', sans-serif;
-      @media screen and (max-width: 1000px)
-      {
-          width: 50%;
-      }
-      @media screen and (max-width: 650px)
-      {
-          width: 70%;
-      }
-      @media screen and (max-width: 450px)
-      {
-          width: 80%;
-      }
-  `
+//valuesDiv
+const ValuesDiv = styled.div`
+    width: 550px;
+    height: 500px;
+    background-image: url(${temporary});
+    border-radius: 20px;
+`
+
+const ValuesTitle = styled.h1`
+    font-family: 'UsualExtraBold', sans-serif;
+    position: relative;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    top: 22rem;
+`
+
   
   const Title = styled.h1`
       color: ${colors.primaryTeal};
@@ -90,8 +94,10 @@ const Purposes = () => {
       font-size: 3.4rem;
       line-height: 1.05em;
       margin-top: 0;
-      display: block;
-      text-align: center;
+      display: flex;
+      position: relative;
+      left: 27rem;
+
       @media screen and (max-width: 750px) {
           font-size: 7.85vw;
       }
@@ -103,8 +109,9 @@ const Purposes = () => {
       font-size: 1rem;
       line-height: 1.05em;
       margin-top: 1rem;
-      display: block;
-      text-align: center;
+      display: flex;
+      position: relative;
+      left: 27rem;
       
       @media screen and (max-width: 750px) {
           font-size: 7.85vw;
@@ -112,7 +119,7 @@ const Purposes = () => {
   `
   
   const MainDiv = styled.div`
-      height: 1000px;
+      height: 1400px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -140,7 +147,7 @@ const Purposes = () => {
       display: grid; 
       grid-template-columns: 1fr 1fr;
       align-items: center; 
-      grid-column-gap: 15rem;
+      grid-column-gap: 3rem;
       padding: 0 50px;     
       justify-content: center;
       @media screen and (max-width: 1150px)
@@ -165,8 +172,6 @@ const Purposes = () => {
       justify-content: flex-start; 
       align-items: center;
       max-height: 600px; 
-      width: 300px;
-      height: 400px;
       padding: 50px; 
       @media screen and (max-width: 1150px)
       {
@@ -177,7 +182,39 @@ const Purposes = () => {
           width: 100%;
       }
   `
+
+
+const PurposeSubtitle = styled.h3`
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5em;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    top: 3rem;
+    font-family: 'UsualRegular', sans-serif;
+    @media screen and (max-width: 1000px)
+    {
+        width: 50%;
+    }
+    @media screen and (max-width: 650px)
+    {
+        width: 70%;
+    }
+    @media screen and (max-width: 450px)
+    {
+        width: 80%;
+    }
+`
   
+//button styling 
+const AboutButtonContainer = styled(Link)`
+position: relative; 
+height: 50px;
+width: 250px;
+top: 23rem;
+left: 1.5rem;
+`
   
   
   export default Purposes

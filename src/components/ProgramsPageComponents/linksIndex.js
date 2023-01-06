@@ -9,37 +9,40 @@ const Internships = () => {
     <MainDiv>
         <Title>Internships</Title> 
         <Description>At Marketyze, we offer two internships</Description>
+        
         <Goaldiv>
             <GoalOutline>
                 <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
+                        <InternButtonContainer to = '/'>
+                            <div class="btnPrograms btn-threePrograms">
+                                <span>Sign Up</span>
+                            </div>
+                        </InternButtonContainer>
                 </ValuesDiv>               
-                <InternButtonContainer to = '/aboutUs'>
-                        <Button>
-                            Join Now
-                       </Button>
-                </InternButtonContainer>
             </GoalOutline>
 
             <GoalOutline>
                 <ValuesDiv>
                     <ValuesTitle>Youth Empowerment</ValuesTitle>
-                </ValuesDiv>                                <InternButtonContainer to = '/aboutUs'>
-                        <Button>
-                            Join Now
-                       </Button>
-                </InternButtonContainer>
+                    <InternButtonContainer to = '/'>
+                    <div class="btnPrograms btn-threePrograms">
+                        <span>Sign Up</span>
+                    </div>
+                    </InternButtonContainer>
+                </ValuesDiv>                                
             </GoalOutline>
-
         </Goaldiv>
+
     </MainDiv>
+
   )
 }
 
 //valuesDiv
 const ValuesDiv = styled.div`
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 500px;
     background-image: url(${temporary});
     border-radius: 20px;
 `
@@ -47,9 +50,9 @@ const ValuesDiv = styled.div`
 const ValuesTitle = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     position: relative;
-    top: 20rem;
     left: 1.5rem;
     font-size: 1.5rem;
+    top: 22rem;
 `
 
 const Title = styled.h1`
@@ -58,7 +61,9 @@ const Title = styled.h1`
     font-size: 3.4rem;
     line-height: 1.05em;
     position: relative;
+    width: 30%;
     left: 27rem;
+
     display: block;
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -73,15 +78,17 @@ const Description = styled.p`
     margin-top: 1rem;
     display: flex;
     position: relative;
+    width: 50%;
     left: 27rem;
     
+
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
 `
 
 const MainDiv = styled.div`
-    height: 600px;
+    height: 750px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -102,12 +109,12 @@ const MainDiv = styled.div`
 `
 
 const Goaldiv = styled.div`
-    max-width: 1150px; 
+    max-width: 1150px;
     margin: 0 auto; 
     display: grid; 
     grid-template-columns: 1fr 1fr;
     align-items: center; 
-    grid-column-gap: 15rem;
+    grid-column-gap: 1rem;
     padding: 0 50px;     
     justify-content: center;
     @media screen and (max-width: 1150px)
@@ -132,8 +139,6 @@ const GoalOutline = styled.div`
     justify-content: flex-start; 
     align-items: center;
     max-height: 600px; 
-    width: 300px;
-    height: 400px;
     padding: 50px; 
     @media screen and (max-width: 1150px)
     {
@@ -148,55 +153,10 @@ const GoalOutline = styled.div`
 //button styling 
 const InternButtonContainer = styled(Link)`
     position: relative; 
-    height: 40px;
-    width: 180px;
-    justify-self: center;
-    margin: auto;
-    top: 1rem;
-    border: 1px solid;
-    border-radius: 5px; 
-    border-color: white;
-    border-width: 1px;
-    display: block;
-    text-decoration: none;
-    z-index: 5;
-
-    &:hover{
-        background-color: ${colors.lightTeal};
-        cursor: pointer;
-        transition: 1s ease;
-        border-color: ${colors.lightTeal};
-
-    }
-
-    @media screen and (max-width: 480px){
-        width: 105px;
-    }
-
+    height: 50px;
+    width: 250px;
+    top: 23rem;
+    left: 1.5rem;
 `
-
-
-const Button = styled(Link)`
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-font-family: 'Quicksand', sans-serif;
-color: black;
-justify-content: center;
-text-align: center;
-position: relative;
-top: 0.25rem;
-
-&:hover{
-    cursor: pointer;
-    color: white;
-
-}
-
-@media screen and (max-width: 480px){
-    top: 0.45rem;
-}
-
-`
-
-
 
 export default Internships

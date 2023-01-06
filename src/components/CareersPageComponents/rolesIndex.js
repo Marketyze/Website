@@ -7,6 +7,7 @@ const Careers = () => {
   return (
     <MainDiv>
         <Title>Positions</Title> 
+        <TitleDescription>At Marketyze, we offer a variety of positions</TitleDescription>
 
         {/*Senior Leadership*/}
         <SectionDiv>
@@ -18,7 +19,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -29,7 +32,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -40,7 +45,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -55,7 +62,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -66,7 +75,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -77,7 +88,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -88,7 +101,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -103,7 +118,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -114,7 +131,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -125,7 +144,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -136,7 +157,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -151,7 +174,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -162,7 +187,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -173,7 +200,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -184,7 +213,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -195,7 +226,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -210,7 +243,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
@@ -221,7 +256,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -236,7 +273,9 @@ const Careers = () => {
                 </GoalOutline>
 
                 <GoalOutline>
-                    <Goaltitle>Applications Closed</Goaltitle>
+                    <Goaltitle>
+                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
+                    </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
@@ -272,6 +311,9 @@ const SectionDiv = styled.div`
     flex-direction: column;
     position: relative;
     margin-top: 5rem;
+    font-family: 'UsualExtraBold', sans-serif;
+    margin-left: 15rem;
+
 `
 
 const Title = styled.h1`
@@ -279,8 +321,22 @@ const Title = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     display: block;
-    text-align: center;
+    width: 30%;
     position: relative;
+    left: 27rem;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
+`
+
+const TitleDescription = styled.p`
+    color: black;
+    font-family: 'UsualExtraBold', sans-serif;
+    font-size: 2rem;
+    display: block;
+    position: relative;
+    left: 27rem;
+    width: 50%;
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
@@ -288,11 +344,10 @@ const Title = styled.h1`
 
 
 const Goaltitle = styled.h1`
-    color: black;
+    color: ${colors.primaryTeal};
     font-size: 1.5rem;
     position: absolute;
     margin-top: 9rem;
-    text-align: center;
     justify-content: center;
 `
 
@@ -300,7 +355,6 @@ const GoalSubtitle = styled.h3`
     color: black;
     font-size: 1rem;
     position: absolute;
-    text-align: center;
     width: 250px;
     margin-top: 11.5rem;
     font-family: 'UsualRegular', sans-serif;
@@ -324,7 +378,8 @@ const Description = styled.p`
     font-size: 2rem;
     display: flex;
     margin-top: 4rem;
-    position: absolute;
+    position: relative;
+    right: 4.5rem;
 
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -337,9 +392,7 @@ const Goaldiv = styled.div`
     margin: 0 auto; 
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    align-items: center; 
-    grid-column-gap: 5rem;
-    justify-content: center;
+    grid-column-gap: 8rem;
     @media screen and (max-width: 1150px)
     {
         grid-column-gap: 3rem;
@@ -361,7 +414,6 @@ const GoalOutline = styled.div`
     display: flex; 
     flex-direction: column; 
     justify-content: flex-start; 
-    align-items: center;
     height: 300px;
     width: 500px;
     @media screen and (max-width: 1150px)

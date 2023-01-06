@@ -98,3 +98,50 @@
       opacity: 1;
     }
   }
+
+  .buttonCareers{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+  }
+  
+    .buttonCareers:hover {
+      color: white;
+    }
+    .buttonCareers:hover::before{
+      width: 100%;
+    }
+  
+    .buttonCareers:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #008CA0;
+      border-radius: 10rem;
+      z-index: -2;
+    }
+  
+    .buttonCareers:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width:  0%;
+      height: 100%;
+      background-color: #91D7DD;
+      transition: all .5s;
+      border-radius: 10rem;
+      z-index: -1;
+    }

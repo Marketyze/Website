@@ -1,69 +1,46 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
-
+import { Link } from 'gatsby'
+import temporary from '../../images/family.jpg'
 
 const NewestEvent = () => {
   return (
     <MainDiv>
         <Title>Join our Newest event</Title> 
-        <Description>The mission of Marketyze is to empower young adults</Description>
+        <Description>This year, we are so excited to start it off with our newest event: PITCH IT</Description>
+       
         <Goaldiv>
-            <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Youth Empowerment</Goaltitle>
-                <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
-            </GoalOutline>
-
-            <GoalOutline>
-                <GoalIcon/>
-                <Goaltitle>Personal Growth</Goaltitle>
-                <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
-            </GoalOutline>
-
+            <EventsDiv>
+                    <EventsTitle>PITCH IT</EventsTitle>
+                        <InternButtonContainer to = '/'>
+                            <div class="btnEvents btn-threeEvents">
+                                <span>Sign Up</span>
+                            </div>
+                        </InternButtonContainer>
+                </EventsDiv>               
         </Goaldiv>
+    
     </MainDiv>
   )
 }
 
-const GoalIcon = styled.img`
-    display: flex;
-    align-items: center;
-    height: 150px; 
-    width: 150px; 
-    margin-bottom: 10px; 
+
+//Events
+const EventsDiv = styled.div`
+    width: 1050px;
+    height: 500px;
+    background-image: url(${temporary});
+    border-radius: 30px;
+    margin-top: 50px;
 `
 
-const Goaltitle = styled.h1`
-    color: black;
+const EventsTitle = styled.h1`
+    font-family: 'UsualExtraBold', sans-serif;
+    position: relative;
+    left: 1.5rem;
     font-size: 1.5rem;
-    position: absolute;
-    margin-top: 9rem;
-    text-align: center;
-    justify-content: center;
-`
-
-const GoalSubtitle = styled.h3`
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5em;
-    position: absolute;
-    text-align: center;
-    width: 250px;
-    margin-top: 13rem;
-    font-family: 'UsualRegular', sans-serif;
-    @media screen and (max-width: 1000px)
-    {
-        width: 50%;
-    }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
-    }
-    @media screen and (max-width: 450px)
-    {
-        width: 80%;
-    }
+    top: 22rem;
 `
 
 const Title = styled.h1`
@@ -72,8 +49,11 @@ const Title = styled.h1`
     font-size: 3.4rem;
     line-height: 1.05em;
     margin-top: 0;
-    display: block;
-    text-align: center;
+    display: flex;
+    width: 50%;
+    position: relative;
+    left: 27rem;
+
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
@@ -85,16 +65,18 @@ const Description = styled.p`
     font-size: 1rem;
     line-height: 1.05em;
     margin-top: 1rem;
-    display: block;
-    text-align: center;
-    
+    display: flex;
+    width: 50%;    
+    position: relative;
+    left: 27rem;
+
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
 `
 
 const MainDiv = styled.div`
-    height: 600px;
+    height: 800px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -120,7 +102,7 @@ const Goaldiv = styled.div`
     max-width: 1150px; 
     margin: 0 auto; 
     display: grid; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center; 
     grid-column-gap: 15rem;
     padding: 0 50px;     
@@ -140,26 +122,15 @@ const Goaldiv = styled.div`
         top: 5%;
     }   
 `
+ 
 
-const GoalOutline = styled.div`
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center;
-    max-height: 600px; 
-    width: 300px;
-    height: 400px;
-    padding: 50px; 
-    @media screen and (max-width: 1150px)
-    {
-        width: 250px;
-    }
-    @media screen and (max-width: 1000px)
-    {
-        width: 100%;
-    }
+//button styling 
+const InternButtonContainer = styled(Link)`
+    position: relative; 
+    height: 50px;
+    width: 250px;
+    top: 23rem;
+    left: 1.5rem;
 `
-
-
 
 export default NewestEvent

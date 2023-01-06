@@ -50,4 +50,5 @@ const DropLi = styled.li`
     transition: ${({active}) => active ? "0.3s all ease" : "0.4s all ease"};
     background: ${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
     cursor: pointer;
+    border-radius: 0px 0px 5px 5px;
 `

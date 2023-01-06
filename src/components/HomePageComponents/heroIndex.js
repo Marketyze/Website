@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from "gatsby"
+//import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
-import {colors} from '../globals/colors.js'
+//import {colors} from '../globals/colors.js'
 import './animationsHome.css'
-import './animationsHome.scss'
 
 const HeroSection = () => {
     return (
@@ -17,7 +16,7 @@ const HeroSection = () => {
                     Marketyze is committed to preparing the next generation of young adults for the future
                 </HeroP>
 
-                <a href="#" class="buttonHome">Learn More</a>             
+                <a href = '/' className = 'buttonHome'>Learn More</a>             
 
             </HeroH1>
 
@@ -95,30 +94,3 @@ const HeroP = styled.p`
 
 
 //button styling
-const HeroButtonContainer = styled(Link)`
-    position: relative; 
-    height: 40px;
-    width: 180px;
-    justify-self: center;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 5px; 
-    border-color: white;
-    border-width: 1px;
-    display: block;
-    text-decoration: none;
-    left: 50rem;
-
-    &:hover{
-        background-color: ${colors.lightTeal};
-        cursor: pointer;
-        transition: 1s ease;
-        border-color: ${colors.lightTeal};
-
-    }
-
-    @media screen and (max-width: 480px){
-        width: 105px;
-    }
-
-`

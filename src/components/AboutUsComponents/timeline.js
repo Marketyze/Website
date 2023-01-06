@@ -1,79 +1,97 @@
 import React, {useState} from 'react'
-import {SlideData} from './timelineData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
-import styled from 'styled-components'
+import dataSlider  from './timelineData'
 import './timeline.css'
+import styled from 'styled-components'
+import Arrow from './button'
+import {colors} from '../globals/colors.js'
 
-const Timeline = ({ slides }) => {
+const Timeline = () => {
 
-//state functions
-//tracks state
-const [current, setCurrent] = useState(0)
-//tracks length of the array
-const length = slides.length
+    const [slideIndex, setSlideIndex] = useState(1)
 
-//basically loops through all index of the slide array and resets back to 0 
-const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
-}
+    const nextSlide = () => {
+        if(slideIndex !== dataSlider.length){
+            setSlideIndex(slideIndex + 1)
+        }
+        else if (slideIndex === dataSlider.length){
+            setSlideIndex(1)
+        }
+    
+    }
 
-const previousSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1)
-}
+    const prevSlide = () => {
+        if(slideIndex !== 1){
+            setSlideIndex(slideIndex - 1)
+        }
+        else if (slideIndex === 1){
+            setSlideIndex(dataSlider.length)
+        }
+        
+    }
 
-//checking if the data is an array or empty 
-if(!Array.isArray(slides) || slides.length <= 0) {
-    return null; 
-}
+    const moveDot = index => {
+        setSlideIndex(index)
+    }
 
-
-    return(
-        <MasterDiv>
-            <Title>Our Story </Title>
-        <Section>
-            <ArrowLeft onClick = {previousSlide}/>
-            <ArrowRight onClick = {nextSlide}/>
-            {SlideData.map((item, index) => {
+    return (
+    <MasterDiv>
+        <TimelineTitle>OUR STORY</TimelineTitle>
+        <TimelineDescription>Come check out our story and see how Marketyze was formed</TimelineDescription>
+        <div className = "container-slider">
+            {dataSlider.map((slide, index) => {
                 return (
-                    <div className = {index === current ? 'slide active' : 'slide'} key={index}>   
-                    {index === current && (<SlideImage src = {item.image} alt = 'image' />)}
+                    <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
+                        <img src={require(`../../images/img${index + 1}.jpg`).default}/>                            
                     </div>
                 )
             })}
-        </Section>
-        </MasterDiv>
+            <Arrow moveSlide={nextSlide} direction = {"next"}/>
+            <Arrow moveSlide={prevSlide} direction = {"prev"}/>
+
+            <div className="container-dots">
+                {Array.from({length: 5}).map((item, index) => (
+                    <div 
+                    onClick={() => moveDot(index + 1)}
+                    className={slideIndex === index + 1 ? "dot active" : "dot"}
+                    ></div>
+                ))}
+            </div>
+
+        </div>
+
+    </MasterDiv>
     )
 }
-
-//add one more section below talking about what was learnt as a team and etc. 
-
 
 export default Timeline
 
 const MasterDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    z-index: 0;
 `
 
-const Title = styled.h1`
+const TimelineTitle = styled.h1`
     font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-`
-
-const Section = styled.div`
+    margin-top: 5rem;
+    color: ${colors.primaryTeal};
+    font-weight: 700;
+    width: 50%;
     position: relative;
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 27rem;
 `
 
-const SlideImage = styled.img`
-    width: 800px;
-    height: 450px; 
-    border-radius: 30px;
+const TimelineDescription = styled.p`
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    width: 50%;
+    position: relative;
+    left: 27rem;
 `
 
 const ArrowLeft = styled(FaArrowAltCircleLeft)`
