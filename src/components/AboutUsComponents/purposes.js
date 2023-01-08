@@ -77,6 +77,7 @@ const ValuesTitle = styled.h1`
       display: flex;
       position: relative;
       left: 27rem;
+      width: 50%;
 
       @media screen and (max-width: 750px) {
           font-size: 7.85vw;
@@ -92,6 +93,7 @@ const ValuesTitle = styled.h1`
       display: flex;
       position: relative;
       left: 27rem;
+      width: 50%;
       
       @media screen and (max-width: 750px) {
           font-size: 7.85vw;

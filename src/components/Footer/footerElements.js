@@ -21,19 +21,20 @@ const Footer = () => {
 
                         <FooterLinkItems>
                             <FooterLinkTitle>General</FooterLinkTitle>
-                            <FooterLink to='/'>About Us</FooterLink>
-                            <FooterLink to='/'>Our Team</FooterLink>
+                            <FooterLink to='/aboutUs'>About Us</FooterLink>
+                            {/*<FooterLink to='/'>Our Team</FooterLink>*/}
                         </FooterLinkItems>
 
                         <FooterLinkItems>
                             <FooterLinkTitle>Events</FooterLinkTitle>
-                            <FooterLink to='/'>PITCH IT</FooterLink>
+                            <FooterLink to='/mainEvents'>Overview</FooterLink>
+                            <FooterLink to='/subEvents/latestEvent'>PITCH IT</FooterLink>
                         </FooterLinkItems>
 
                         <FooterLinkItems>
                             <FooterLinkTitle>More</FooterLinkTitle>
-                            <FooterLink to='/'>Programs</FooterLink>
-                            <FooterLink to='/'>Career/Contact</FooterLink>
+                            <FooterLink to='/programs'>Programs</FooterLink>
+                            <FooterLink to='/career'>Career/Contact</FooterLink>
                         </FooterLinkItems>
 
                     </FooterLinksWrapper>
@@ -57,11 +58,11 @@ const Footer = () => {
                         <WebsiteRights>Marketyze © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         
                         <SocialIcons>
-                            <SocialIconLink href='/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialIconLink>
+                            <SocialIconLink href='https://www.facebook.com/marketyzeca/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialIconLink>
 
-                            <SocialIconLink href='/' target='_blank' aria-label='Instagram'><FaInstagram/></SocialIconLink>
+                            <SocialIconLink href='https://www.instagram.com/marketyze.ca/?hl=en' target='_blank' aria-label='Instagram'><FaInstagram/></SocialIconLink>
 
-                            <SocialIconLink href='/' target='_blank' aria-label='Linkedin'><FaLinkedin/></SocialIconLink>
+                            <SocialIconLink href='https://ca.linkedin.com/company/marketyzeca' target='_blank' aria-label='Linkedin'><FaLinkedin/></SocialIconLink>
                         </SocialIcons>
                     
                     </SocialMediaWrap>

@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from "styled-components"
-import {colors} from '../globals/colors.js'
+import {colors} from '../../globals/colors.js'
 import { Link } from 'gatsby'
-import './animationsHome.css'
+import './newestEvents.css'
 
-const JoinNow = () => {
+const  SignUpEvent = () => {
   return (
     <MainDiv>
-        <Title>So what are you waiting for?</Title> 
-        <Description>Marketyze is here to give students an opportunity of a lifetime</Description>
-        <JoinButtonContainer to = '/mainEvents'>
-            <a className = 'buttonHome'>Learn More</a>             
+        <Title>Sign up for PITCH IT Now!</Title> 
+        <Description>Registrations close on January 20, 2023!</Description>
+        <JoinButtonContainer>
+            <a href = '/' className = 'buttonNewestEvent'>Sign Up</a>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -68,7 +68,6 @@ const Description = styled.p`
 
 //button styling
 const JoinButtonContainer = styled(Link)`
-    font-family: "Arial", sans-serif; 
     position: relative; 
     height: 50px;
     width: 250px;
@@ -85,4 +84,4 @@ const JoinButtonContainer = styled(Link)`
 
 
 
-export default JoinNow
+export default SignUpEvent

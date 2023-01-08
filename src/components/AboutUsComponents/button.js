@@ -12,3 +12,5 @@ const Arrow = ({direction, moveSlide}) => {
 }
 
 export default Arrow
+
+

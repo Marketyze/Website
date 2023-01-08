@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-//import {Link} from "gatsby"
+import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
 //import {colors} from '../globals/colors.js'
 import './animationsHome.css'
@@ -16,12 +16,13 @@ const HeroSection = () => {
                     Marketyze is committed to preparing the next generation of young adults for the future
                 </HeroP>
 
-                <a href = '/' className = 'buttonHome'>Learn More</a>             
-
+                <HeroLink to = '/aboutUs'>
+                <a className = 'buttonHome'>Learn More</a>             
+                </HeroLink>
             </HeroH1>
 
             {/** mouse scrolling animation */}
-            <a href="/aboutUs">
+            <a>
                 <div id="mouse-scroll">
                     <div class="mouse">
                         <div class="mouse-in"></div>
@@ -33,7 +34,6 @@ const HeroSection = () => {
                     </div>
                 </div>
             </a>
-
         </HeroContainer>
         
     )
@@ -90,6 +90,9 @@ const HeroP = styled.p`
     @media screen and (max-width: 768px) {
         font-size: 30px;
     }
+`
+
+const HeroLink = styled(Link)`
 `
 
 

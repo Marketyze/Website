@@ -31,7 +31,7 @@ const MarketyzeEvents = () => {
 }
 
 const MainDiv = styled.div`
-    height: 750px;
+    height: 900px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ const Title = styled.h1`
     font-size: 3.4rem;
     display: block;
     position: relative;
-    top: 3rem;
+    top: 10rem;
     z-index: 99;
     text-align: center;
     @media screen and (max-width: 750px) {
@@ -85,7 +85,7 @@ const Description = styled.p`
     display: block;
     text-align: center;
     position: relative;
-    top: 3rem;
+    top: 10rem;
     
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
@@ -98,7 +98,9 @@ const Goaldiv = styled.div`
     display: flex; 
     align-items: center; 
     padding: 0 50px;     
-    justify-content: center;
+    justify-content: center;\
+    position: relative;
+    top: 10rem;
     @media screen and (max-width: 1150px)
     {
         grid-column-gap: 3rem;

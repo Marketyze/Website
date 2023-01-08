@@ -85,9 +85,11 @@ const Navbar = () => {
                                 {dropdown && <EventsDropDown/>}
                             </NavItem>
 
+                            {/*
                             <NavItem>
                                 <NavLinks to="/ourTeam">Our Team</NavLinks>
                             </NavItem>
+                            */}
 
                             <NavItem>
                                 <NavLinks to="/programs">Programs</NavLinks>

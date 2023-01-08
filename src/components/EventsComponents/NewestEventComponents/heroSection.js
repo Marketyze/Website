@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import marketyzeFamily from '../../images/family.jpg'
-import '../NewestEventComponents/animationsEvents.css'
+import marketyzeFamily from '../../../images/family.jpg'
+import '../../EventsComponents/animationsEvents.css'
 
 const HeroSection = () => {
     return (
@@ -9,9 +9,9 @@ const HeroSection = () => {
         <HeroContainer>
 
             <HeroH1>
-                Our Events
+                PITCH IT
                 <HeroP>
-                    Further your skills and knowledge 
+                    Financial Innovation Competition
                 </HeroP>
             </HeroH1>
 
@@ -42,7 +42,7 @@ const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.76);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.9);
     margin-top: -80px;
 `
 

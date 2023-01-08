@@ -4,6 +4,7 @@
     margin: 100px auto 0;
     position: relative;
     overflow: hidden;
+    border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   @media screen and (max-width: 700px){
@@ -47,14 +48,31 @@
   }
   .prev {
     top: 50%;
+    font-size: 3rem;
+    color: black;
+    z-index: 10; 
+    cursor: pointer;
+    user-select: none;
     left: 20px;
-    transform: translateY(-60%);
   }
+  .prev:hover {
+      transform: scale(1.1);
+  }
+  
   .next {
     top: 50%;
-    right: 20px;
-    transform: translateY(-60%);
+    translate: 50%;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    right: 40px;
   }
+  .next:hover {
+      transform: scale(1.1);
+  }
+  
   
   
   .container-dots {

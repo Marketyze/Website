@@ -9,8 +9,8 @@ const FinalMessage = () => {
     <MainDiv>
         <Title>Wondering what we do?</Title> 
         <Description>Come check out our newest event!</Description>
-        <JoinButtonContainer>
-            <a href = '/' className = 'buttonAbout'>Learn More</a>             
+        <JoinButtonContainer to = '/subEvents/latestEvent'>
+            <a className = 'buttonAbout'>Learn More</a>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -68,6 +68,7 @@ const Description = styled.p`
 
 //button styling
 const JoinButtonContainer = styled(Link)`
+    font-family: "Arial", sans-serif;
     position: relative; 
     height: 50px;
     width: 250px;

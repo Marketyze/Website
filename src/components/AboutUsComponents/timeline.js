@@ -94,32 +94,3 @@ const TimelineDescription = styled.p`
     left: 27rem;
 `
 
-const ArrowLeft = styled(FaArrowAltCircleLeft)`
-    position: absolute;
-    top: 50%;
-    left: 20rem;
-    font-size: 3rem;
-    color: black;
-    z-index: 10; 
-    cursor: pointer;
-    user-select: none;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-`
-
-const ArrowRight = styled(FaArrowAltCircleRight)`
-    position: absolute;
-    top: 50%;
-    right: 20rem;
-    font-size: 3rem;
-    color: black;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-`

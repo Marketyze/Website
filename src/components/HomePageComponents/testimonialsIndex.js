@@ -109,6 +109,8 @@
 
     `
     const ColumnTwo = styled.div`
+        position: relative;
+        left: 30%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 2rem;
@@ -116,6 +118,7 @@
 
         @media screen and (max-width: 500px) {
             grid-template-columns: 1fr;
+            left: 0%;
         }
 
     `
