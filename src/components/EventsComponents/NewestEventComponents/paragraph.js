@@ -26,7 +26,7 @@ const ParagraphSection = () => {
                 </HeroP>
             
                 <StaticImage
-                src= '../../images/marketyze_logo.png'
+                src= '../../../images/marketyze_logo.png'
                 loading="eager"
                 quality={100}
                 formats={["auto", "webp", "avif"]}

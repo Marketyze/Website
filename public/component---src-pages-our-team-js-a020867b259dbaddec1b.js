@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[655],{1395:function(e,t,a){a.r(t);var l=a(7294),r=a(8571),u=a(9357);t.default=()=>l.createElement(r.Z,null,l.createElement(u.Z,{title:"Our Team"}))}}]);
+//# sourceMappingURL=component---src-pages-our-team-js-a020867b259dbaddec1b.js.map
