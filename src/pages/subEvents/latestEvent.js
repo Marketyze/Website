@@ -1,6 +1,6 @@
 import * as React from "react"
 import Faq from "../../components/EventsComponents/NewestEventComponents/faq"
-import HeroSection from '../../components/EventsComponents/NewestEventComponents/HeroSection'
+import HeroSection from '../../components/EventsComponents/NewestEventComponents/heroSection'
 import Learn from "../../components/EventsComponents/NewestEventComponents/learn"
 import ParagraphSection from "../../components/EventsComponents/NewestEventComponents/paragraph"
 import SignUpEvent from "../../components/EventsComponents/NewestEventComponents/signUp"

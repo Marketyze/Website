@@ -44,7 +44,7 @@ const Footer = () => {
                     <SocialMediaWrap>
                         <SocialLogo to='/'>
                             <StaticImage
-                                    src= '../../images/White_logo.png'
+                                    src= '../../images/white_logo.png'
                                     loading="eager"
                                     width={65}
                                     quality={100}
