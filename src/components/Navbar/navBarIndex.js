@@ -52,7 +52,7 @@ const Navbar = () => {
     }, [])
 
     return (
-            <IconContext.Provider value = {{color: "#141414"}}>
+            <IconContext.Provider value = {{color: '#008CA0'}}>
                 <Nav active ={scroll} click={click}>
 
                     <NavbarContainer>
@@ -60,7 +60,7 @@ const Navbar = () => {
                         <StaticImage
                                     src= '../../images/marketyze_logo.png'
                                     loading="eager"
-                                    width={64}
+                                    width={55}
                                     quality={95}
                                     formats={["auto", "webp", "avif"]}
                                     alt=""
@@ -91,10 +91,12 @@ const Navbar = () => {
                             </NavItem>
                             */}
 
+                            {/*
                             <NavItem>
                                 <NavLinks to="/programs">Programs</NavLinks>
                             </NavItem>
-
+                            */}
+                            
                             <NavItem>
                                 <NavLinks to="/career">Career/Contact</NavLinks>
                             </NavItem>

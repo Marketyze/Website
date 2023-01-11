@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import {Link} from "gatsby"
 import marketyzeFamily from '../../images/family.jpg'
-//import {colors} from '../globals/colors.js'
 import './animationsHome.css'
 
 const HeroSection = () => {
@@ -11,9 +10,9 @@ const HeroSection = () => {
         <HeroContainer>
 
             <HeroH1>
-                GET AHEAD OF THE COMPETITION
+            IT'S TIME TO TURN THE TIDE IN MARKETING 
                 <HeroP>
-                    Marketyze is committed to preparing the next generation of young adults for the future
+                    Marketyze is committed to making education accessible to the next generation of business leaders 
                 </HeroP>
 
                 <HeroLink to = '/aboutUs'>
@@ -47,20 +46,20 @@ const HeroContainer = styled.div`
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     display: flex; 
     justify-content: center;
     align-items: center;
     object-fit: contain;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.9);
-    margin-top: -80px
+    margin-top: -80px;
 `
 
 const HeroH1 = styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');    
-    font-weight: 400;    
-    font-family: "Quicksand", sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
     color: white;
     font-size: 5rem; 
     width: 40%;
@@ -85,7 +84,10 @@ const HeroP = styled.p`
     line-height: 2.5rem;
     width: 55%;
     position: relative;
-    left: 1rem;
+    left: 0.25rem;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 
     @media screen and (max-width: 768px) {
         font-size: 30px;

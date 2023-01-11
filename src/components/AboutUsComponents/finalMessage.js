@@ -39,7 +39,8 @@ const MainDiv = styled.div`
 
 const Title = styled.h1`
     color: ${colors.white};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 3.4rem;
     display: block;
     position: relative;
@@ -52,7 +53,8 @@ const Title = styled.h1`
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-top: 1rem;
     display: block;
@@ -68,7 +70,8 @@ const Description = styled.p`
 
 //button styling
 const JoinButtonContainer = styled(Link)`
-    font-family: "Arial", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     position: relative; 
     height: 50px;
     width: 250px;
