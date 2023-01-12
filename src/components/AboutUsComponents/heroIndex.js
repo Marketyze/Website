@@ -23,7 +23,6 @@ const HeroSection = () => {
                         <div class="mouse-inAboutUs"></div>
                     </div>
             </div>
-
         </HeroContainer>
         
     )
@@ -54,14 +53,8 @@ const HeroH1 = styled.h1`
     text-align: center;
     position: relative;
     top: 15rem;
+    padding: 0 1rem;
 
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 60px;
-    }
 `
 
 const HeroP = styled.p`
@@ -71,9 +64,4 @@ const HeroP = styled.p`
     font-size: 1.5rem; 
     text-decoration: none;
     margin-top: 1rem;
-
-    @media screen and (max-width: 768px) {
-        font-size: 30px;
-    }
 `
-

@@ -7,102 +7,45 @@ const Careers = () => {
   return (
     <MainDiv>
         <Title>Positions</Title> 
-        <TitleDescription>At Marketyze, we offer a variety of positions</TitleDescription>
 
-        {/*Senior Leadership*/}
-        <SectionDiv>
-            <Goaldiv>
-                <GoalOutline>
-                    <Description>Senior Leadership</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-        </SectionDiv>
-
-         {/*Operations Department*/}
+         {/*Finance Department*/}
          <SectionDiv>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Operations Department</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <Description>Finance Department</Description>
+                    <Goaltitle>Director, Fundraising (DF)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
             <Goaldiv>
                 <GoalOutline>
-                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
+                    <Goaltitle>Associate, Sponsorships (ASP)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
 
             <Goaldiv>
                 <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
+                    <Goaltitle>Associate, Fundraising (AFR)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
@@ -113,168 +56,65 @@ const Careers = () => {
             <Goaldiv>
                 <GoalOutline>
                     <Description>Marketing Department</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <Goaltitle>Associatem Promotions (AP)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
 
-        {/*Finance Department*/}
+        {/*Technology Department*/}
          <SectionDiv>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Finance Department</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <Description>Technology Department</Description>
+                    <Goaltitle>UX/UI Designer (UD)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Technology (HoT)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
         </SectionDiv>
 
-        {/*Strategy Department*/}
-         <SectionDiv>
-            <Goaldiv>
-                <GoalOutline>
-                    <Description>Strategy Department</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-
-            <Goaldiv>
-                <GoalOutline>
-                    <Goaltitle>Head of Internal Affairs (HoIA)</Goaltitle>
-                    <GoalSubtitle>Remote</GoalSubtitle>
-                </GoalOutline>
-
-                <GoalOutline>
-                    <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
-                    </Goaltitle>
-                </GoalOutline>
-            </Goaldiv>
-        </SectionDiv>
-
-        {/*Programs Department*/}
+        {/*Logistics Department*/}
         <SectionDiv>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Programs Department</Description>
-                    <Goaltitle>Head of Human Resources (HoHR)</Goaltitle>
+                    <Description>Logistics Department</Description>
+                    <Goaltitle>Associate, Logistics (AL)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
 
                 <GoalOutline>
                     <Goaltitle>
-                        <a href = '/' className = 'buttonCareers'>Learn More</a>             
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
+                    </Goaltitle>
+                </GoalOutline>
+            </Goaldiv>
+        </SectionDiv>
+
+
+        {/*Corporate Relations Department*/}
+        <SectionDiv>
+            <Goaldiv>
+                <GoalOutline>
+                    <Description>Corporate Relations Department</Description>
+                    <Goaltitle>Associate, Corporate Relations (ACR)</Goaltitle>
+                    <GoalSubtitle>Remote</GoalSubtitle>
+                </GoalOutline>
+
+                <GoalOutline>
+                    <Goaltitle>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
                     </Goaltitle>
                 </GoalOutline>
             </Goaldiv>
@@ -284,12 +124,13 @@ const Careers = () => {
   )
 }
 const MainDiv = styled.div`
-    height: 2800px;
+    height: 1400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     background: 'transparent'; 
     margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
 
     @media screen and (max-width: 1000px)
     {
@@ -311,37 +152,22 @@ const SectionDiv = styled.div`
     flex-direction: column;
     position: relative;
     margin-top: 5rem;
-    font-family: 'UsualExtraBold', sans-serif;
     margin-left: 15rem;
 
 `
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
-    display: block;
+    display: flex;
     width: 30%;
     position: relative;
-    left: 27rem;
+    left: 25rem;
+    font-weight: 900;
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;
     }
 `
-
-const TitleDescription = styled.p`
-    color: black;
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 2rem;
-    display: block;
-    position: relative;
-    left: 27rem;
-    width: 50%;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
-`
-
 
 const Goaltitle = styled.h1`
     color: ${colors.primaryTeal};
@@ -357,7 +183,6 @@ const GoalSubtitle = styled.h3`
     position: absolute;
     width: 250px;
     margin-top: 11.5rem;
-    font-family: 'UsualRegular', sans-serif;
     @media screen and (max-width: 1000px)
     {
         width: 50%;
@@ -374,12 +199,13 @@ const GoalSubtitle = styled.h3`
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
     font-size: 2rem;
     display: flex;
     margin-top: 4rem;
     position: relative;
     right: 4.5rem;
+    font-weight: 900;
+    
 
     @media screen and (max-width: 750px) {
         font-size: 7.85vw;

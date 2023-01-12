@@ -1,12 +1,12 @@
 import React from 'react'
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import {MdKeyboardArrowRight, MdKeyboardArrowLeft} from 'react-icons/md'
 
 
 
 const Arrow = ({direction, moveSlide}) => {
     return (
         <div className = {`btn-slide ${direction}`} onClick = {moveSlide}>
-            {direction === "next" ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
+            {direction === "next" ? <MdKeyboardArrowRight/> : <MdKeyboardArrowLeft />}
         </div>
     )
 }

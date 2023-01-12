@@ -67,7 +67,7 @@ const Description = styled.p`
 
 
 //button styling
-const JoinButtonContainer = styled(Link)`
+const JoinButtonContainer = styled.div`
     position: relative; 
     height: 50px;
     width: 250px;

@@ -134,10 +134,7 @@ const ValuesTitle = styled.h1`
       grid-column-gap: 5rem;
       padding: 0 50px;     
       justify-content: center;
-      @media screen and (max-width: 1150px)
-      {
-          grid-column-gap: 3rem;
-      }
+     
       @media screen and (max-width: 1000px)
       {
           grid-template-columns: 1fr; 

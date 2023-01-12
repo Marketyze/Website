@@ -9,6 +9,7 @@ const HeroSection = () => {
         
         <HeroContainer>
 
+            <SecondaryContainer>
             <HeroH1>
             IT'S TIME TO TURN THE TIDE IN MARKETING 
                 <HeroP>
@@ -20,8 +21,10 @@ const HeroSection = () => {
                 </HeroLink>
             </HeroH1>
 
+            </SecondaryContainer>
+
             {/** mouse scrolling animation */}
-            <a>
+            <SmoothScroll>
                 <div id="mouse-scroll">
                     <div class="mouse">
                         <div class="mouse-in"></div>
@@ -32,7 +35,8 @@ const HeroSection = () => {
                         <span class="down-arrow-3"></span>
                     </div>
                 </div>
-            </a>
+            </SmoothScroll>
+            
         </HeroContainer>
         
     )
@@ -54,6 +58,16 @@ const HeroContainer = styled.div`
     object-fit: contain;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.9);
     margin-top: -80px;
+    flex-direction: column;
+
+`
+
+const SecondaryContainer = styled.div`
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 `
 
 const HeroH1 = styled.h1`
@@ -64,19 +78,21 @@ const HeroH1 = styled.h1`
     font-size: 5rem; 
     width: 40%;
     position: relative;
-    right: 14rem;
-    top: 3rem;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
+    display: flex;
+    flex-direction: column;
+    right: 10rem;
+    
+    @media screen and (max-width: 1200px) {
+        width: 60%;
+        right: 0;
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        font-size: 3.5rem;
     }
 `
 
 const HeroP = styled.p`
+    display: flex;
     margin-top: 8px; 
     color: white; 
     font-size: 1.5rem; 
@@ -89,13 +105,30 @@ const HeroP = styled.p`
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 
+    @media screen and (max-width: 1200px) {
+        width: 70%;
+    }
+
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        font-size: 1.5rem;
     }
 `
 
 const HeroLink = styled(Link)`
 `
+const SmoothScroll = styled.div`
+    position: relative;
+    top: 15%;
+
+    @media screen and (max-width: 1500px) {
+        top: 5%;
+    }   
+
+    @media screen and (max-width: 768px) {
+        top: 10%;
+    }   
+`
+
 
 
 //button styling

@@ -131,6 +131,9 @@ const InternButtonContainer = styled(Link)`
     width: 250px;
     top: 23rem;
     left: 1.5rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 `
 
 export default NewestEvent
