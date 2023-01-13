@@ -68,9 +68,13 @@ export default Timeline
 const MasterDiv = styled.div`
     font-family: 'Lato', sans-serif;
     width: 100%;
-    height: 800px;
+    height: 900px;
     background-color: white;
     z-index: 0;
+
+    @media screen and (max-width: 900px) {
+        height: 600px;
+    }
 `
 
 const TimelineTitle = styled.h1`
@@ -81,6 +85,11 @@ const TimelineTitle = styled.h1`
     width: 50%;
     position: relative;
     left: 27rem;
+
+    @media screen and (max-width: 1700px) {
+        width: 60%;
+        left: 2rem;
+    }
 `
 
 const TimelineDescription = styled.p`
@@ -91,5 +100,10 @@ const TimelineDescription = styled.p`
     width: 50%;
     position: relative;
     left: 27rem;
+
+    @media screen and (max-width: 1700px) {
+        width: 60%;
+        left: 2rem;
+    }
 `
 

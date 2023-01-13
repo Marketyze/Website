@@ -58,6 +58,12 @@ const ValuesDiv = styled.div`
     height: 400px;
     background-image: url(${temporary});
     border-radius: 20px;
+
+
+    @media screen and (max-width: 800px) {
+        width: 300px;
+        height: 200px;
+    }
 `
 
 const ValuesTitle = styled.h1`
@@ -66,6 +72,11 @@ const ValuesTitle = styled.h1`
     left: 1.5rem;
     font-size: 1.5rem;
     top: 21rem;
+
+    @media screen and (max-width: 800px) {
+        top: 10rem;
+        font-size: 1.2rem;
+    }
 `
 
   
@@ -80,9 +91,12 @@ const ValuesTitle = styled.h1`
       left: 27rem;
       width: 50%;
 
-      @media screen and (max-width: 750px) {
-          font-size: 7.85vw;
-      }
+      @media screen and (max-width: 1700px) {
+        width: 70%;
+        left: 2rem;
+    }
+
+     
   `
   
   const Description = styled.p`
@@ -96,10 +110,13 @@ const ValuesTitle = styled.h1`
       position: relative;
       left: 27rem;
       width: 40%;
+
+      @media screen and (max-width: 1700px) {
+        width: 70%;
+        left: 2rem;
+    }
       
-      @media screen and (max-width: 750px) {
-          font-size: 7.85vw;
-      }
+
   `
   
   const MainDiv = styled.div`
@@ -111,22 +128,19 @@ const ValuesTitle = styled.h1`
       background: 'transparent'; 
       margin-bottom: 0;
   
-      @media screen and (max-width: 1000px)
-      {
-          height: 1260px; 
-      }
-      @media screen and (max-width: 768px)
-      {
-          height: 1350px; 
-      }
-      @media screen and (max-width: 480px)
-      {
-          /* height: 900px;  */
-      }
+        @media screen and (max-width: 1700px) {
+            height: 2600px;
+        }
+
+        @media screen and (max-width: 800px) {
+        {
+            height: 2050px;
+        }
+      
+      
   `
   
   const Goaldiv = styled.div`
-      max-width: 1150px; 
       margin: 0 auto; 
       display: grid; 
       grid-template-columns: 1fr 1fr;
@@ -134,17 +148,22 @@ const ValuesTitle = styled.h1`
       grid-column-gap: 5rem;
       padding: 0 50px;     
       justify-content: center;
+
      
-      @media screen and (max-width: 1000px)
+      @media screen and (max-width: 1700px)
       {
           grid-template-columns: 1fr; 
       }
+
+      @media screen and (max-width: 800px)
+      {     
+            right: 0.6rem;
+            position: relative;
+            width: 350px;
+          
+      }
   
-      @media screen and (max-width: 480px){
-          margin-top: 1rem;
-          position: relative;
-          top: 5%;
-      }   
+      
   `
   
   const GoalOutline = styled.div`
@@ -154,13 +173,12 @@ const ValuesTitle = styled.h1`
       align-items: center;
       max-height: 600px; 
       padding: 50px; 
-      @media screen and (max-width: 1150px)
+      position: relative;
+      margin-top: 2rem;
+     
+      @media screen and (max-width: 800px)
       {
-          width: 250px;
-      }
-      @media screen and (max-width: 1000px)
-      {
-          width: 100%;
+        margin-top: 4.5rem;
       }
   `
 
@@ -176,28 +194,12 @@ const PurposeSubtitle = styled.h3`
     height: 50px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    @media screen and (max-width: 1000px)
-    {
-        width: 50%;
+
     }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
-    }
-    @media screen and (max-width: 450px)
-    {
-        width: 80%;
+
+    @media screen and (max-width: 800px) {
+        width: 400px;
     }
 `
-  
-//button styling 
-const AboutButtonContainer = styled(Link)`
-position: relative; 
-height: 50px;
-width: 250px;
-top: 23rem;
-left: 1.5rem;
-`
-  
   
   export default Purposes

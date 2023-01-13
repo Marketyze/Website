@@ -21,7 +21,8 @@ const ParagraphSection = () => {
                 <HeroP>
                 Another Marketyze competition will be occuring during winter. Keep an eye out on our website, social media, and newsletter for more details to come! For now, we invite you to explore our past and upcoming events.                
                 </HeroP>
-            
+
+                {/*
                 <StaticImage
                 src= '../../images/marketyze_logo.png'
                 loading="eager"
@@ -31,6 +32,7 @@ const ParagraphSection = () => {
                 placeholder="transparent"
                 style={{width: `1050px`, height: `560px`, bottom: '23.25rem', zIndex: '1', opacity: '0.2'  }}
                 />
+                */}
 
             </HeroH1>
 
@@ -43,39 +45,49 @@ export default ParagraphSection
 
 
 const HeroContainer = styled.div`
-    background: #fff; 
-    height: 70vh;
+    background: white;
+    height: 60vh;
     width: 100%;
     display: flex; 
     justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+
+    @media screen and (max-width: 1000px) {
+        height: 90vh;
+    }
 
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
-    font-size: 2rem; 
+    font-size: 3.5rem; 
     margin-top: 8rem;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
+    z-index: 2;
+    font-weight: 900;
+    position: relative;
+    right: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        right: 0rem;
     }
-`
+    `
 
 const HeroP = styled.p`
     width: 50vw;
     color: black; 
     position: relative;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     margin-top: 2rem;
     text-decoration: none;
+    z-index: 2;
+    font-weight: 400;
+    left: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        left: 0rem;
+        width: 80vw;
     }
-`
+    `
 

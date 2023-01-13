@@ -92,6 +92,8 @@ const FooterLinksContainer = styled.div`
 
     @media screen and (max-width: 820px) {
         padding-top: 32px;
+        position: relative;
+        left: 2rem;
     }
 `
 

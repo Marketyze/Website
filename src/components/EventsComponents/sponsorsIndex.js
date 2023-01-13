@@ -18,7 +18,8 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `700px`, height: `auto`}}
+                style={{width: `450px`, height: `auto`
+                }}
                 />
 
             </GoalOutline>
@@ -85,7 +86,9 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '4rem'}}
+                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '4rem',
+                }}
+                
                 />
 
             </GoalOutline>
@@ -97,38 +100,45 @@ const Sponsors = () => {
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 3.4rem;
     line-height: 1.05em;
     margin-top: 0;
     display: flex;
     width: 50%;
     position: relative;
-    left: 27rem;
+    left: 26rem;
 
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    @media screen and (max-width: 1700px)
+    {
+        left: 3rem;
+        width: 80%;
     }
+
 `
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 1rem;
-    line-height: 1.05em;
-    margin-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
     display: flex;
     width: 50%;
     position: relative;
-    left: 27rem;
-    
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    left: 26rem;
+
+    @media screen and (max-width: 1700px)
+    {
+        left: 3rem;
+        width: 70%;
     }
+    
 `
 
 const MainDiv = styled.div`
-    height: 800px;
+    height: 700px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -136,18 +146,11 @@ const MainDiv = styled.div`
     background: 'transparent';
     margin-bottom: 0;
 
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 1400px)
     {
-        height: 1260px; 
+        height: 1900px;
     }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
-    }
+
 `
 
 const Goaldiv = styled.div`
@@ -159,20 +162,13 @@ const Goaldiv = styled.div`
     grid-column-gap: 8rem;
     padding: 0 50px;     
     justify-content: center;
-    @media screen and (max-width: 1150px)
-    {
-        grid-column-gap: 3rem;
-    }
-    @media screen and (max-width: 1000px)
-    {
+
+    
+    @media screen and (max-width: 1400px)
+    {   
         grid-template-columns: 1fr; 
     }
 
-    @media screen and (max-width: 480px){
-        margin-top: 1rem;
-        position: relative;
-        top: 5%;
-    }   
 `
 
 const GoalOutline = styled.div`
@@ -182,16 +178,9 @@ const GoalOutline = styled.div`
     align-items: center;
     max-height: 600px; 
     width: 300px;
-    height: 400px;
+    height: 300px;
     padding: 50px; 
-    @media screen and (max-width: 1150px)
-    {
-        width: 250px;
-    }
-    @media screen and (max-width: 1000px)
-    {
-        width: 100%;
-    }
+
 `
 
 

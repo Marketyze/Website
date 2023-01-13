@@ -23,7 +23,7 @@ const ParagraphSection = () => {
                 </HeroP>
             </HeroH1>
 
-            
+            {/*
             <StaticImage
                 src= '../../images/marketyze_logo.png'
                 loading="eager"
@@ -34,6 +34,7 @@ const ParagraphSection = () => {
                 placeholder="transparent"
                 style={{height: `560px`, zIndex: '2',bottom: '2rem', opacity: '0.2'  }}
                 />
+            */}
 
 
         </HeroContainer>
@@ -54,6 +55,11 @@ const HeroContainer = styled.div`
     font-family: 'Lato', sans-serif;
     flex-direction: column;
 
+
+    @media screen and (max-width: 1000px) {
+        height: 100vh;
+    }
+
 `
 
 const HeroH1 = styled.h1`
@@ -62,13 +68,11 @@ const HeroH1 = styled.h1`
     margin-top: 8rem;
     z-index: 2;
     font-weight: 900;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
+    position: relative;
+    right: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        right: 0rem;
     }
 `
 
@@ -81,9 +85,11 @@ const HeroP = styled.p`
     text-decoration: none;
     z-index: 2;
     font-weight: 400;
+    left: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        left: 0rem;
+        width: 80vw;
     }
 `
 

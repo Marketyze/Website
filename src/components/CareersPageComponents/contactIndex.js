@@ -69,7 +69,11 @@ const MainDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     display: flex;
-    height: 1000px;
+    height: 1200px;
+
+    @media screen and (max-width: 768px) {
+        height: 1500px;
+    }
 `
 
 const ContactTitle = styled.h1`
@@ -80,6 +84,10 @@ const ContactTitle = styled.h1`
     left: 25rem;
     color: ${colors.primaryTeal};
     width: 50%;
+
+    @media screen and (max-width: 1300px) {
+      left: 3rem;
+    }
 `
 
 const ContactDescription = styled.p`
@@ -89,7 +97,12 @@ const ContactDescription = styled.p`
     left: 25rem;
     font-weight: 700;
     width: 60%;
+
+    @media screen and (max-width: 1300px) {
+      left: 3rem;
+    }
     `
+    
 
 const ContactFormDiv = styled.div`
     margin-top: 5rem;
