@@ -17,7 +17,7 @@ const HeroSection = () => {
                 </HeroP>
 
                 <HeroLink to = '/aboutUs'>
-                <a className = 'buttonHome'>Learn More</a>             
+                <div className = 'buttonHome'>Learn More</div>             
                 </HeroLink>
             </HeroH1>
 

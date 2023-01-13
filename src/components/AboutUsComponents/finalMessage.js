@@ -10,7 +10,7 @@ const FinalMessage = () => {
         <Title>Wondering what we do?</Title> 
         <Description>Come check out our newest event!</Description>
         <JoinButtonContainer to = '/subEvents/latestEvent'>
-            <a className = 'buttonAbout'>Learn More</a>             
+            <div className = 'buttonAbout'>Learn More</div>             
         </JoinButtonContainer>
     </MainDiv>
   )

@@ -21,7 +21,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -38,7 +38,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -54,7 +54,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -74,7 +74,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -95,7 +95,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>             
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -115,7 +115,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>             
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
@@ -137,7 +137,7 @@ const Careers = () => {
                 <MobileFix>
                 <GoalOutlineButton>
                     <GoaltitleButton>
-                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank">Apply</a>             
+                        <a href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwgif8ObEPE4ii0RP4gByUbEfpUG5r_p57KdwWMKb-_ZVD0w/viewform' className = 'buttonCareers'  target="_blank" rel="noreferrer">Apply</a>             
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>

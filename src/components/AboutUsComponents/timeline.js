@@ -41,7 +41,7 @@ const Timeline = () => {
             {dataSlider.map((slide, index) => {
                 return (
                     <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <img src={require(`../../images/img${index + 1}.jpg`).default}/>                            
+                        <img alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.jpg`).default}/>                            
                     </div>
                 )
             })}

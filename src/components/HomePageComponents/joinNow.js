@@ -10,7 +10,7 @@ const JoinNow = () => {
         <Title>Marketyze is here to give students an opportunity of a lifetime</Title> 
         <Description>Learn more to dream bigger with Marketyze</Description>
         <JoinButtonContainer to = '/mainEvents'>
-            <a className = 'buttonHome'>Learn More</a>             
+            <div className = 'buttonHome'>Learn More</div>             
         </JoinButtonContainer>
     </MainDiv>
   )

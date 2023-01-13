@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../globals/colors.js'
-import { StaticImage } from 'gatsby-plugin-image'
+//import { StaticImage } from 'gatsby-plugin-image'
 
 const ParagraphSection = () => {
     return (

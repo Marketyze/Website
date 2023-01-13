@@ -2,8 +2,11 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import temporary from '../../images/family.jpg'
+import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from 'react-countup';
 
 const Values = () => {
+  
   return (
     <MainDiv>
         <Title>Why Marketyze?</Title> 
@@ -34,12 +37,20 @@ const Values = () => {
 
         <GoaldivImpact>
             <GoalOutlineImpact>
-                <GoaltitleImpact>1700+</GoaltitleImpact>
+
+                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
+        {({ isVisible }) => (
+          <div style={{ height: 100 }}>
+            {isVisible ? <GoaltitleImpact end={1700} />: null}
+          </div>
+        )}
+      </VisibilitySensor>
+
                 <GoalSubtitleImpact>Youths reached across the world</GoalSubtitleImpact>
             </GoalOutlineImpact>
 
             <GoalOutlineImpact>
-                <GoaltitleImpact>55+</GoaltitleImpact>
+                <GoaltitleImpact end = {55}/>
                 <GoalSubtitleImpact>Total volunteers with Marketyze</GoalSubtitleImpact>
             </GoalOutlineImpact>
 
@@ -232,7 +243,7 @@ const GoalOutlineImpact = styled.div`
     }
 `
 
-const GoaltitleImpact = styled.h1`
+const GoaltitleImpact = styled(CountUp)`
     color: black;
     font-size: 4rem;
     position: absolute;

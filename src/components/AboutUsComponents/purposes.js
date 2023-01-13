@@ -2,12 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import temporary from '../../images/family.jpg'
-import { Link } from 'gatsby'
-
-//four sections similar to the value cards 
-//our purpose 
-//in order to achieve our goals at Marketyze, we strive to follow these 4 purposes
-
+//import { Link } from 'gatsby'
 
 const Purposes = () => {
     return (

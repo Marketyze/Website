@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../../globals/colors.js'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 import './newestEvents.css'
 
 const  SignUpEvent = () => {
