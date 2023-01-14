@@ -62,120 +62,138 @@ const Learn = () => {
 
 //main div
 const MainDiv = styled.div`
-    height: 1500px;
+    height: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    background: #fcfcfc; 
+    background: 'transparent'; 
+    margin-bottom: 0;
 
-    @media screen and (max-width: 1000px)
-    {
-        height: 1260px; 
+    @media screen and (max-width: 1700px) {
+        height: 3500px;
     }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
+
+    @media screen and (max-width: 1400px) {
+        height: 3400px;
     }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
+
+    @media screen and (max-width: 800px) {
+        height: 2700px;
     }
-`
+
+    `
 //title/desc for values
 const Title = styled.h1`
-    color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 3.4rem;
-    display: flex;
-    position: relative;
-    top: 3rem;
-    margin-left: 10rem;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
+color: ${colors.primaryTeal};
+font-family: 'Lato', sans-serif;
+font-weight: 900;
+font-size: 3.4rem;
+line-height: 1.05em;
+display: flex;
+position: relative;
+left: 27rem;
+width: 50%;
+
+@media screen and (max-width: 1700px) {
+  width: 70%;
+  left: 2rem;
+}
+
+
 `
 const Description = styled.div`
-    color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    top: 3rem;
-    margin-left: 10rem;
-    width: 70%;
-    font-weight: bold;
-    
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
-    }
+color: ${colors.black};
+font-family: 'Lato', sans-serif;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 1.05em;
+margin-top: 2rem;
+display: flex;
+position: relative;
+left: 27rem;
+width: 40%;
+
+@media screen and (max-width: 1700px) {
+  width: 70%;
+  left: 2rem;
+}
+
+
 `
 
 //valuesDiv
 const ValuesDiv = styled.div`
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 350px;
     background-image: url(${temporary});
     border-radius: 20px;
+
+
+    @media screen and (max-width: 800px) {
+        width: 300px;
+        height: 200px;
+    }
 `
 
 const ValuesTitle = styled.h1`
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
     position: relative;
-    top: 20rem;
     left: 1.5rem;
     font-size: 1.5rem;
-`
+    top: 19rem;
+
+    @media screen and (max-width: 800px) {
+        top: 10rem;
+        font-size: 1.2rem;
+    }
+    `
 
 //styling for values and impact
 const Goaldiv = styled.div`
-    max-width: 1150px; 
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center; 
-    grid-column-gap: 17.5rem;     
-    justify-content: center;
-    position: relative;
-    top: 6rem;
-    @media screen and (max-width: 1150px)
-    {
-        grid-column-gap: 3rem;
-    }
-    @media screen and (max-width: 1000px)
-    {
-        grid-template-columns: 1fr; 
-    }
+margin: 0 auto; 
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr;
+align-items: center; 
+padding: 0 40px;     
+justify-content: center;
 
-    @media screen and (max-width: 480px){
-        margin-top: 1rem;
-        position: relative;
-        top: 5%;
-    }   
+
+@media screen and (max-width: 1700px)
+{
+    grid-template-columns: 1fr; 
+}
+
+@media screen and (max-width: 800px)
+{     
+      right: 0.6rem;
+      position: relative;
+      width: 350px;
+    
+}
+
+
 `
 
 
 const GoalSubtitle = styled.h3`
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5em;
     position: relative;
     text-align: center;
-    width: 250px;
-    top: 3rem;
-    font-family: 'UsualRegular', sans-serif;
-    @media screen and (max-width: 1000px)
-    {
-        width: 50%;
+    width: 500px;
+    top: 1rem;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
     }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
+
+    @media screen and (max-width: 800px) {
+        width: 400px;
     }
-    @media screen and (max-width: 450px)
-    {
-        width: 80%;
-    }
-`
+    `
 
 const GoalOutline = styled.div`
     display: flex; 
@@ -183,17 +201,14 @@ const GoalOutline = styled.div`
     justify-content: flex-start; 
     align-items: center;
     max-height: 600px; 
-    width: 300px;
-    height: 700px;
     padding: 50px; 
-    @media screen and (max-width: 1150px)
+    position: relative;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 800px)
     {
-        width: 250px;
+    margin-top: 4.5rem;
     }
-    @media screen and (max-width: 1000px)
-    {
-        width: 100%;
-    }
-`
+    `
 
 export default Learn

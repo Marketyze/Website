@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../../globals/colors.js'
-import {StaticImage} from 'gatsby-plugin-image'
+//import {StaticImage} from 'gatsby-plugin-image'
 
 const ParagraphSection = () => {
     return (
@@ -24,7 +24,8 @@ const ParagraphSection = () => {
                 <HeroP>
                 Another Marketyze competition will be occuring again this year! Keep an eye out on our website and social media for more details to come! For now, we invite you to explore our past and upcoming events.                
                 </HeroP>
-            
+
+                {/** 
                 <StaticImage
                 src= '../../../images/marketyze_logo.png'
                 loading="eager"
@@ -34,6 +35,7 @@ const ParagraphSection = () => {
                 placeholder="transparent"
                 style={{width: `1050px`, height: `560px`, bottom: '23.25rem', zIndex: '1', opacity: '0.2'  }}
                 />
+            */}
 
             </HeroH1>
         </HeroContainer>
@@ -63,66 +65,104 @@ const EventParagraphContainer = styled.div`
     background: #fff;
     flex-direction: column;
     display: flex;
-    height: 700px; 
+    height: 1000px; 
     width: 100%;
+
+    @media screen and (max-width: 1000px) {
+        height: 1600px;
+    }
 `
 
 const HeroContainer = styled.div`
-    background: #fff; 
+    background: white;
+    height: 55vh;
+    width: 100%;
     display: flex; 
-    height: 375px;
     justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+
+    @media screen and (max-width: 1000px) {
+        height: 90vh;
+    }
+
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
-    font-size: 2rem; 
+    font-size: 3.5rem; 
     margin-top: 8rem;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
+    z-index: 2;
+    font-weight: 900;
+    position: relative;
+    right: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        right: 0rem;
     }
-`
+    `
 
 const HeroP = styled.p`
     width: 50vw;
     color: black; 
     position: relative;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     margin-top: 2rem;
     text-decoration: none;
+    z-index: 2;
+    font-weight: 400;
+    left: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        left: 0rem;
+        width: 80vw;
     }
-`
+    `
+
 const EligibilityContainer = styled.div`
-    background: #fff;
+    background: white;
+    height: 40vh;
     width: 100%;
-    display: flex;
+    display: flex; 
     justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+
+    @media screen and (max-width: 1000px) {
+        height: 90vh;
+    }
+
 `
 const EligibilityH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
-    font-size: 2rem;
+    font-size: 3.5rem; 
     margin-top: 8rem;
+    z-index: 2;
+    font-weight: 900;
     position: relative;
-    right: 3rem;
-`
+    right: 4rem;
+
+    @media screen and (max-width: 768px) {
+        right: 0rem;
+    }
+    `
 
 const EligibilityP = styled.p`
     width: 50vw;
-    color: black;
+    color: black; 
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.5rem; 
     margin-top: 2rem;
     text-decoration: none;
+    z-index: 2;
+    font-weight: 400;
+    left: 4rem;
 
+    @media screen and (max-width: 768px) {
+        left: 0rem;
+        width: 80vw;
+    }
 `
 

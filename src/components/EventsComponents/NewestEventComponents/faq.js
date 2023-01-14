@@ -37,36 +37,49 @@ const Faq = () => {
 export default Faq
 
 const HeroContainer = styled.div`
-    background: #fff; 
+    background: white;
+    height: 900px;
+    width: 100%;
     display: flex; 
-    height: 800px;
     justify-content: center;
-`
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+
+    @media screen and (max-width: 1500px) {
+        height: 1300px;
+    }
+
+    @media screen and (max-width: 800px) {
+        height: 1500px;
+    }
+
+    `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
-    font-size: 2rem; 
-    margin-top: 8rem;
+    font-size: 3.5rem; 
+    z-index: 2;
+    font-weight: 900;
+    position: relative;
+    right: 4rem;
+    width: 50%;
 
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 60px;
-    }
-`
+    `
 
 const HeroP = styled.p`
     width: 50vw;
     color: black; 
     position: relative;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     margin-top: 2rem;
     text-decoration: none;
+    z-index: 2;
+    font-weight: 400;
+    left: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        left: 0rem;
+        width: 80vw;
     }
 `

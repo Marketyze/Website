@@ -38,13 +38,7 @@ const Values = () => {
         <GoaldivImpact>
             <GoalOutlineImpact>
 
-                <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
-        {({ isVisible }) => (
-          <div style={{ height: 100 }}>
-            {isVisible ? <GoaltitleImpact end={1700} />: null}
-          </div>
-        )}
-      </VisibilitySensor>
+       <GoaltitleImpact end={1700} />
 
                 <GoalSubtitleImpact>Youths reached across the world</GoalSubtitleImpact>
             </GoalOutlineImpact>
