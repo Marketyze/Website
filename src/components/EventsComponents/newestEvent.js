@@ -33,19 +33,43 @@ const EventsDiv = styled.div`
     background-image: url(${temporary});
     border-radius: 30px;
     margin-top: 50px;
+
+    @media screen and (max-width: 1200px)
+    {
+        width: 700px;
+    }
+
+    @media screen and (max-width: 1000px)
+    {
+        width: 500px;
+        height: 500px;
+    }
+
+    @media screen and (max-width: 800px)
+    {
+        width: 400px;
+        height: 400px;
+    }
+
 `
 
 const EventsTitle = styled.h1`
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
     position: relative;
     left: 1.5rem;
     font-size: 1.5rem;
     top: 22rem;
+
+    @media screen and (max-width: 800px)
+    {
+        top: 18rem;
+    }
 `
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 3.4rem;
     line-height: 1.05em;
     margin-top: 0;
@@ -54,15 +78,20 @@ const Title = styled.h1`
     position: relative;
     left: 27rem;
 
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    @media screen and (max-width: 1700px)
+    {
+        left: 3rem;
+        width: 80%;
     }
+
+ 
 `
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
     line-height: 1.05em;
     margin-top: 1rem;
     display: flex;
@@ -70,9 +99,13 @@ const Description = styled.p`
     position: relative;
     left: 27rem;
 
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    @media screen and (max-width: 1700px)
+    {
+        left: 3rem;
+        width: 70%;
     }
+
+   
 `
 
 const MainDiv = styled.div`
@@ -83,44 +116,23 @@ const MainDiv = styled.div`
     margin-top: 40px;
     background: 'transparent'; 
     margin-bottom: 0;
-
-    @media screen and (max-width: 1000px)
-    {
-        height: 1260px; 
-    }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
-    }
+   
 `
 
 const Goaldiv = styled.div`
-    max-width: 1150px; 
-    margin: 0 auto; 
     display: grid; 
     grid-template-columns: 1fr;
     align-items: center; 
     grid-column-gap: 15rem;
     padding: 0 50px;     
     justify-content: center;
-    @media screen and (max-width: 1150px)
+    margin: 0 auto;
+
+    @media screen and (max-width: 800px)
     {
-        grid-column-gap: 3rem;
-    }
-    @media screen and (max-width: 1000px)
-    {
-        grid-template-columns: 1fr; 
+        width: 400px;
     }
 
-    @media screen and (max-width: 480px){
-        margin-top: 1rem;
-        position: relative;
-        top: 5%;
-    }   
 `
  
 
@@ -131,6 +143,14 @@ const InternButtonContainer = styled(Link)`
     width: 250px;
     top: 23rem;
     left: 1.5rem;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+    @media screen and (max-width: 800px)
+    {
+        top: 18.5rem;
+    }
 `
 
 export default NewestEvent

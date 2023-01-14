@@ -3,14 +3,13 @@
 
 #mouse-scroll {
   position: relative;
-  right: 23rem;
   margin: auto;
-  top: 26rem;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   z-index: 9999;
   opacity: 0.25;
 }
+
 #mouse-scroll span{
   display: block;
   width: 5px; 
@@ -131,6 +130,7 @@
 }
 
 /*Button styling*/
+ 
 
 .buttonHome {
   display: inline-block;
@@ -145,6 +145,8 @@
   overflow: hidden;
   z-index: 1;
   text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
   .buttonHome:hover {

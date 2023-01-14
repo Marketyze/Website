@@ -5,13 +5,6 @@ import {colors} from '../globals/colors.js'
 import {StaticImage} from 'gatsby-plugin-image'
 import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
 
-/**
- * 
- *  © {new Date().getFullYear()} &middot; Built with
-          {` `}
- */
-
-
 const Footer = () => {
     return(
         <FooterContainer>
@@ -79,7 +72,7 @@ export default Footer
 
 //general footer
 const FooterContainer = styled.div`
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: ${colors.darkTeal};
 `
 
@@ -99,6 +92,8 @@ const FooterLinksContainer = styled.div`
 
     @media screen and (max-width: 820px) {
         padding-top: 32px;
+        position: relative;
+        left: 2rem;
     }
 `
 

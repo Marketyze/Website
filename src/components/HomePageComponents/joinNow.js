@@ -7,10 +7,10 @@ import './animationsHome.css'
 const JoinNow = () => {
   return (
     <MainDiv>
-        <Title>So what are you waiting for?</Title> 
-        <Description>Marketyze is here to give students an opportunity of a lifetime</Description>
+        <Title>Marketyze is here to give students an opportunity of a lifetime</Title> 
+        <Description>Learn more to dream bigger with Marketyze</Description>
         <JoinButtonContainer to = '/mainEvents'>
-            <a className = 'buttonHome'>Learn More</a>             
+            <div className = 'buttonHome'>Learn More</div>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -23,45 +23,65 @@ const MainDiv = styled.div`
     flex-direction: column;
     background: linear-gradient(90deg, rgba(0,140,160,1) 10%, rgba(145,215,221,1) 100%, rgba(226,225,238,1) 100%); 
 
-    @media screen and (max-width: 1000px)
-    {
-        height: 1260px; 
+    @media screen and (max-width: 768px) {
+        height: 450px;
     }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
-    }
+
 `
 
 const Title = styled.h1`
     color: ${colors.white};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 3.4rem;
     display: block;
+    width: 50%;
     position: relative;
-    top: 7rem;
+    top: 4rem;
     margin-left: 9rem;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+
+    @media screen and (max-width: 1800px) {
+        top: 2rem;
+    }
+
+    @media screen and (max-width: 1300px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 6rem;
     }
 `
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-top: 1rem;
     display: block;
     position: relative;
     margin-left: 9rem;
-    top: 7rem;
+    top: 4rem;
     
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    @media screen and (max-width: 1800px) {
+        top: 2rem;
+    }
+
+    @media screen and (max-width: 1300px) {
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 1100px) {
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 6rem;
     }
 `
 
@@ -75,10 +95,28 @@ const JoinButtonContainer = styled(Link)`
     justify-self: center;
     margin: auto;
     left: 35rem;
-    bottom: 1rem;
+    bottom: 4rem;
 
-    @media screen and (max-width: 480px){
-        width: 105px;
+    @media screen and (max-width: 1800px){
+        bottom: 7rem;
+    }
+
+    @media screen and (max-width: 1400px){
+        left: 25rem;
+        bottom: 5rem;
+    }
+
+    @media screen and (max-width: 1200px){
+        left: 18rem;
+    }
+
+    @media screen and (max-width: 900px){
+        left: 15rem;
+    }
+
+    @media screen and (max-width: 768px){
+        left: 0;
+        top: 2rem;
     }
 
 `

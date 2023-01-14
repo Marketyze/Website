@@ -11,7 +11,7 @@ const HeroSection = () => {
             <HeroH1>
                 About Marketyze
                 <HeroP>
-                    Uniting across the nation
+                    Empowering youth across the globe 
                 </HeroP>
 
         
@@ -23,7 +23,6 @@ const HeroSection = () => {
                         <div class="mouse-inAboutUs"></div>
                     </div>
             </div>
-
         </HeroContainer>
         
     )
@@ -41,37 +40,28 @@ const HeroContainer = styled.div`
     width: 100%;
     display: flex; 
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     object-fit: contain;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.9);
     margin-top: -80px;
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: white;
     font-size: 5rem; 
     text-align: center;
     position: relative;
     top: 15rem;
+    padding: 0 1rem;
 
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 60px;
-    }
 `
 
 const HeroP = styled.p`
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     color: white; 
     font-size: 1.5rem; 
     text-decoration: none;
-
-    @media screen and (max-width: 768px) {
-        font-size: 30px;
-    }
+    margin-top: 1rem;
 `
-

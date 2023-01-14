@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {colors} from '../globals/colors.js'
-import { StaticImage } from 'gatsby-plugin-image'
+//import { StaticImage } from 'gatsby-plugin-image'
 
 const ParagraphSection = () => {
     return (
@@ -21,18 +21,21 @@ const ParagraphSection = () => {
                 <HeroP>         
                     Pro tip: to learn more about the culture at Marketyze and what we can do for you, please check out our brand-new Notion Careers Page! Since all of our currently open positions are part of our ongoing recruitment process, positions will be removed from the hiring package and the application form once they are filled. Don’t miss out on your chance to join us at Marketyze!
                 </HeroP>
+            </HeroH1>
 
-                <StaticImage
+            {/*
+            <StaticImage
                 src= '../../images/marketyze_logo.png'
                 loading="eager"
                 quality={100}
                 formats={["auto", "webp", "avif"]}
+                width = {900}
                 alt=""
                 placeholder="transparent"
-                style={{width: `1050px`, height: `560px`, bottom: '26rem', zIndex: '1', opacity: '0.2'  }}
+                style={{height: `560px`, zIndex: '2',bottom: '2rem', opacity: '0.2'  }}
                 />
+            */}
 
-            </HeroH1>
 
         </HeroContainer>
         
@@ -48,23 +51,28 @@ const HeroContainer = styled.div`
     width: 100%;
     display: flex; 
     justify-content: center;
-    
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+
+
+    @media screen and (max-width: 1000px) {
+        height: 100vh;
+    }
 
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
     color: ${colors.primaryTeal};
-    font-size: 2rem; 
+    font-size: 3rem; 
     margin-top: 8rem;
     z-index: 2;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
+    font-weight: 900;
+    position: relative;
+    right: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        right: 0rem;
     }
 `
 
@@ -72,13 +80,16 @@ const HeroP = styled.p`
     width: 50vw;
     color: black; 
     position: relative;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     margin-top: 2rem;
     text-decoration: none;
     z-index: 2;
+    font-weight: 400;
+    left: 4rem;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        left: 0rem;
+        width: 80vw;
     }
 `
 

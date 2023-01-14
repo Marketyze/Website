@@ -65,10 +65,11 @@
     const Description = styled.div`
         padding-left: 2rem;
         margin-bottom: 5rem;
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1.5rem, 5vw, 3rem);
         font-weight: bold;
         color: ${colors.black};
-        font-family: "Arial", sans-serif; 
+        font-family: "Lato", sans-serif; 
+        font-weight: 900;
 
     `
 
@@ -89,6 +90,7 @@
     const Testimonial = styled.div`
         padding-top: 1rem;
         padding-right: 2rem;
+        font-family: "Lato", sans-serif;
 
         h3 {
             margin-bottom: 1rem;
@@ -116,9 +118,16 @@
         margin-top: 2rem;
         grid-gap: 10px;
 
+        @media screen and (max-width: 1700px) {
+            left: 10%;
+        }
+
+        @media screen and (max-width: 1500px) {
+            left: 0%;
+        }
+
         @media screen and (max-width: 500px) {
             grid-template-columns: 1fr;
-            left: 0%;
         }
 
     `

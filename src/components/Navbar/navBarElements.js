@@ -9,7 +9,7 @@ const secondary_color = "#91D7DD"
 export const Nav = styled.nav`
     background: ${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
     transition: ${({active}) => active ? "0.3s all ease" : "0.4s all ease"};
-    height: 70px;
+    height: 60px;
     display: flex; 
     justify-content: center; 
     position: sticky; 
@@ -17,16 +17,12 @@ export const Nav = styled.nav`
     z-index: 999; 
     opacity: 0.97;
 
-    @media screen and (max-width: 960px){
-        background: ${({click}) => (click ? "#fff" : "transparent")};
-        transition: 0.8s all ease; 
-    }
 `
 
 export const NavbarContainer = styled.div`
     display: flex; 
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
     width: 100%; 
     max-width: 1000px;
 `
@@ -36,11 +32,14 @@ export const NavLogo = styled(Link) `
     justify-self: flex-start;
     cursor: pointer; 
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     display: flex; 
     align-items: center; 
-    font-family: "Arial", sans-serif; 
+    padding-left: 3rem;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 `
 
 //drop down menu
@@ -58,7 +57,7 @@ export const NavMenu = styled.ul`
         position: absolute;
         top: ${({click}) => (click ? "100%" : "-1000px")}; 
         opacity: 1; 
-        transition: all 0.2 ease; 
+        transition: all 0.8 ease; 
         background: #fff; 
     }
 `
@@ -67,11 +66,12 @@ export const NavLinks = styled(Link)`
     display: flex; 
     align-items: center; 
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     height: 100%;
-    font-family: "Arial", sans-serif; 
-    font-size: 1.2rem;
-    font-weight: bold;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; 
+    font-size: 1rem;
 
 
     @media screen and (max-width: 960px) {
@@ -102,12 +102,12 @@ export const MobileIcon = styled.div`
 
 
     @media screen and (max-width: 960px) {
-        display: block;
+        display: flex;
+        transition: all 0.8 ease; 
         position: absolute;
-        top: 0; 
-        right: 0;  
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem; 
+        right: 0; 
+        transform: translate(-100%, 50%);
+        font-size: 2rem; 
         cursor: pointer; 
     }
 `  

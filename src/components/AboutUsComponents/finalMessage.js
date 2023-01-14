@@ -10,7 +10,7 @@ const FinalMessage = () => {
         <Title>Wondering what we do?</Title> 
         <Description>Come check out our newest event!</Description>
         <JoinButtonContainer to = '/subEvents/latestEvent'>
-            <a className = 'buttonAbout'>Learn More</a>             
+            <div className = 'buttonAbout'>Learn More</div>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -23,62 +23,83 @@ const MainDiv = styled.div`
     flex-direction: column;
     background: linear-gradient(90deg, rgba(0,140,160,1) 10%, rgba(145,215,221,1) 100%, rgba(226,225,238,1) 100%); 
 
-    @media screen and (max-width: 1000px)
-    {
-        height: 1260px; 
-    }
-    @media screen and (max-width: 768px)
-    {
-        height: 1350px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        /* height: 900px;  */
+    @media screen and (max-width: 800px){
+        height: 350px;
     }
 `
 
 const Title = styled.h1`
     color: ${colors.white};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 3.4rem;
     display: block;
     position: relative;
     top: 7rem;
     margin-left: 9rem;
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    width: 50%;
+
+    @media screen and (max-width: 800px){
+        width: 70%;
+        margin-left: 4rem;
+        top: 2rem;
+        
     }
+   
+    
 `
 
 const Description = styled.p`
     color: ${colors.black};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-top: 1rem;
     display: block;
     position: relative;
     margin-left: 9rem;
     top: 7rem;
-    
-    @media screen and (max-width: 750px) {
-        font-size: 7.85vw;
+    left: 0.5rem;
+    width: 50%;
+
+
+    @media screen and (max-width: 800px){
+        width: 60%;
+        margin-left: 4rem;
+        top: 2rem;
+        
     }
+   
+   
 `
 
 
 //button styling
 const JoinButtonContainer = styled(Link)`
-    font-family: "Arial", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     position: relative; 
     height: 50px;
     width: 250px;
-    justify-self: center;
-    margin: auto;
-    left: 35rem;
-    bottom: 1rem;
+    left: 90rem;
+    top: 2rem;
 
-    @media screen and (max-width: 480px){
-        width: 105px;
+    @media screen and (max-width: 1700px){
+        left: 70rem;
+    }
+
+    @media screen and (max-width: 1400px){
+        left: 55rem;
+    }
+
+    @media screen and (max-width: 1200px){\
+       left: 9rem;
+       top: 8rem;
+    }
+
+    @media screen and (max-width: 800px){
+        left: 4rem;
+        top: 4rem;
     }
 
 `

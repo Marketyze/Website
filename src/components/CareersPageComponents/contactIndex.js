@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 import {colors} from '../globals/colors';
+import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
+
 
 //fix emailjs
 const ContactUs = () => {
@@ -29,9 +31,10 @@ const ContactUs = () => {
   return (
     <MainDiv>
       <ContactTitle>Have Questions?</ContactTitle>
-      <ContactDescription>Feel free to send us an Email or message us at any of our social media platforms!</ContactDescription>
+      <ContactDescription>Feel free to send us an email or message us at any of our social media platforms!</ContactDescription>
         
       <ContactFormDiv>
+        <ContactFormBox>
         <StyledContactForm>
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
@@ -43,6 +46,15 @@ const ContactUs = () => {
                 <input type="submit" value="Send" />
             </form>
           </StyledContactForm>
+
+
+          <SocialIcons>
+            <SocialIconLink href='https://www.facebook.com/marketyzeca/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialIconLink>
+            <SocialIconLink href='https://www.instagram.com/marketyze.ca/?hl=en' target='_blank' aria-label='Instagram'><FaInstagram/></SocialIconLink>
+            <SocialIconLink href='https://ca.linkedin.com/company/marketyzeca' target='_blank' aria-label='Linkedin'><FaLinkedin/></SocialIconLink>
+          </SocialIcons>
+
+          </ContactFormBox>
         </ContactFormDiv>
 
     </MainDiv>
@@ -53,27 +65,75 @@ export default ContactUs
 
 // Styles
 const MainDiv = styled.div`
+    font-family: 'Lato', sans-serif;
     justify-content: center;
     flex-direction: column;
     display: flex;
-    height: 80vh;
+    height: 1200px;
+
+    @media screen and (max-width: 768px) {
+        height: 1500px;
+    }
 `
 
 const ContactTitle = styled.h1`
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
-    text-align: center;
+    font-weight: 900;
+    position: relative;
+    left: 25rem;
+    color: ${colors.primaryTeal};
+    width: 50%;
+
+    @media screen and (max-width: 1300px) {
+      left: 3rem;
+    }
 `
 
 const ContactDescription = styled.p`
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: center;
-`
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    position: relative;
+    left: 25rem;
+    font-weight: 700;
+    width: 60%;
+
+    @media screen and (max-width: 1300px) {
+      left: 3rem;
+    }
+    `
+    
 
 const ContactFormDiv = styled.div`
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
+  `
+
+const ContactFormBox = styled.div`
+  padding: 5rem;
+  border: 2px solid transparent;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+`
+
+const SocialIcons = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+`
+
+const SocialIconLink = styled.a`
+    color: ${colors.primaryTeal};
+    font-size: 40px;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      color: ${colors.lightTeal};
+    }
 `
 
 const StyledContactForm = styled.div`
@@ -102,7 +162,7 @@ const StyledContactForm = styled.div`
       max-width: 100%;
       min-width: 100%;
       width: 100%;
-      max-height: 100px;
+      max-height: 300px;
       min-height: 100px;
       padding: 7px;
       outline: none;
@@ -123,6 +183,15 @@ const StyledContactForm = styled.div`
       background: ${colors.primaryTeal};
       color: white;
       border: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+
+
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        color: black;
+        background: ${colors.lightTeal};
+      }
     }
   }
 `

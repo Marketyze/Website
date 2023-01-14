@@ -47,30 +47,26 @@ const HeroContainer = styled.div`
 `
 
 const HeroH1 = styled.h1`
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: white;
     font-size: 5rem; 
     text-align: center;
     position: relative;
     top: 15rem;
-
-    @media screen and (max-width: 960px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 60px;
-    }
+    padding: 0 1rem;
+   
 `
 
 const HeroP = styled.p`
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     margin-top: 8px; 
     color: white; 
     font-size: 1.5rem; 
     text-decoration: none;
+    margin-top: 1rem;
 
-    @media screen and (max-width: 768px) {
-        font-size: 30px;
-    }
+   
 `
 

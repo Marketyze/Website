@@ -1,6 +1,5 @@
 #mouse-scrollEvents {
     position: relative;
-    left: 1rem;
     margin: auto;
     top: 13rem;
     transform: translateX(-50%);
@@ -107,6 +106,21 @@
   text-align: center;
   width: 250px;
   cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1200px)
+{
+  .btnEvents {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px)
+{
+  .btnEvents {
+    width: 150px;
+  }
 }
 
 .btn-threeEvents {
