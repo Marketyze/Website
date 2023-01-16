@@ -10,7 +10,7 @@ const  SignUpEvent = () => {
         <Title>Sign up for PITCH IT Now!</Title> 
         <Description>Registrations close on January 20, 2023!</Description>
         <JoinButtonContainer>
-            <a href = '/' className = 'buttonNewestEvent'>Sign Up</a>             
+            <a href = '/' className = 'buttonNewestEvent'>SIGN UP</a>             
         </JoinButtonContainer>
     </MainDiv>
   )
@@ -87,7 +87,8 @@ const Description = styled.p`
 
 //button styling
 const JoinButtonContainer = styled.div`
-    font-family: "Arial", sans-serif; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 700;
     position: relative; 
     height: 50px;
     width: 250px;
