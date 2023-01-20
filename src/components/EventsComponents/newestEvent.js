@@ -13,10 +13,10 @@ const NewestEvent = () => {
         <Goaldiv>
             <EventsDiv>
                     <EventsTitle>PITCH IT</EventsTitle>
-                        <InternButtonContainer to = '/'>
-                            <div class="btnEvents btn-threeEvents">
-                                <span>Sign Up</span>
-                            </div>
+                        <InternButtonContainer to = '/subEvents/latestEvent'>
+                            <Button>
+                                Learn More
+                            </Button>
                         </InternButtonContainer>
                 </EventsDiv>               
         </Goaldiv>
@@ -33,6 +33,8 @@ const EventsDiv = styled.div`
     background-image: url(${temporary});
     border-radius: 30px;
     margin-top: 50px;
+
+    
 
     @media screen and (max-width: 1200px)
     {
@@ -51,6 +53,12 @@ const EventsDiv = styled.div`
         height: 400px;
     }
 
+    @media screen and (max-width: 480px)
+    {
+        width: 340px;
+        height: 325px;
+    }
+
 `
 
 const EventsTitle = styled.h1`
@@ -58,11 +66,18 @@ const EventsTitle = styled.h1`
     position: relative;
     left: 1.5rem;
     font-size: 1.5rem;
-    top: 22rem;
+    top: 22rem;    
 
     @media screen and (max-width: 800px)
     {
         top: 18rem;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        width: 50%;
+        top: 14rem;
+
     }
 `
 
@@ -84,6 +99,10 @@ const Title = styled.h1`
         width: 80%;
     }
 
+    @media screen and (max-width: 480px){
+        left: 2.3rem;
+    }
+
  
 `
 
@@ -99,10 +118,15 @@ const Description = styled.p`
     position: relative;
     left: 27rem;
 
+
     @media screen and (max-width: 1700px)
     {
         left: 3rem;
         width: 70%;
+    }
+
+    @media screen and (max-width: 480px){
+        left: 2.3rem;
     }
 
    
@@ -128,9 +152,17 @@ const Goaldiv = styled.div`
     justify-content: center;
     margin: 0 auto;
 
+
+
     @media screen and (max-width: 800px)
     {
         width: 400px;
+    }
+    
+    @media screen and (max-width: 480px){
+        grid-column-gap: 0;
+        width: 360px;
+        height: 325px;
     }
 
 `
@@ -139,18 +171,47 @@ const Goaldiv = styled.div`
 //button styling 
 const InternButtonContainer = styled(Link)`
     position: relative; 
-    height: 50px;
-    width: 250px;
+    height: 45px;
+    width: 200px;
     top: 23rem;
-    left: 1.5rem;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    left: 1rem;
+
+
 
     @media screen and (max-width: 800px)
     {
-        top: 18.5rem;
+        top: 14.5rem;
     }
+`
+
+const Button = styled.div`
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    height: 45px;
+    width: 170px;
+    background: ${colors.darkTeal};
+    border-radius: 20px;
+    color: ${colors.white};
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    outline: none;
+
+    
+    &:hover {
+        transition: all 0.4s ease-in-out;
+        background: ${colors.primaryTeal};
+        color: ${colors.black};
+    }
+
 `
 
 export default NewestEvent

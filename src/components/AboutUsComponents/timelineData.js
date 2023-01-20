@@ -17,10 +17,6 @@ const dataSlider = [
     id: uuidv4(),
  
   },
-  {
-    id: uuidv4(),
-
-  },
 ];
 
 export default dataSlider;

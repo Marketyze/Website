@@ -26,6 +26,10 @@ const MainDiv = styled.div`
     @media screen and (max-width: 800px){
         height: 350px;
     }
+
+    @media screen and (max-width: 480px){
+        height: 420px;
+    }
 `
 
 const Title = styled.h1`
@@ -44,6 +48,10 @@ const Title = styled.h1`
         margin-left: 4rem;
         top: 2rem;
         
+    }
+
+    @media screen and (max-width: 480px){
+        margin-left: 3rem;
     }
    
     
@@ -68,6 +76,10 @@ const Description = styled.p`
         margin-left: 4rem;
         top: 2rem;
         
+    }
+
+    @media screen and (max-width: 480px){
+        margin-left: 3rem;
     }
    
    
@@ -100,6 +112,10 @@ const JoinButtonContainer = styled(Link)`
     @media screen and (max-width: 800px){
         left: 4rem;
         top: 4rem;
+    }
+
+    @media screen and (max-width: 480px){
+        left: 3rem;
     }
 
 `

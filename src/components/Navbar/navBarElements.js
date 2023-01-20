@@ -17,6 +17,10 @@ export const Nav = styled.nav`
     z-index: 999; 
     opacity: 0.97;
 
+
+    @media screen and (max-width: 960px) {
+        background: ${({click}) => (click ? "#fcfcfc" : `${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};`)}; 
+    }
 `
 
 export const NavbarContainer = styled.div`
@@ -36,8 +40,7 @@ export const NavLogo = styled(Link) `
     font-weight: bold;
     display: flex; 
     align-items: center; 
-    padding-left: 3rem;
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
+    padding-left: 3rem; 
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 `
@@ -53,12 +56,13 @@ export const NavMenu = styled.ul`
         display: flex; 
         flex-direction: column; 
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         position: absolute;
+        transition: all 0.3s ease;
         top: ${({click}) => (click ? "100%" : "-1000px")}; 
         opacity: 1; 
         transition: all 0.8 ease; 
-        background: #fff; 
+        background: #fcfcfc; 
     }
 `
 export const NavLinks = styled(Link)`

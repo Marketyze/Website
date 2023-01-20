@@ -74,6 +74,10 @@ const MainDiv = styled.div`
     @media screen and (max-width: 768px) {
         height: 1500px;
     }
+
+    @media screen and (max-width: 480px) {
+        height: 1400px;
+    }
 `
 
 const ContactTitle = styled.h1`
@@ -81,20 +85,25 @@ const ContactTitle = styled.h1`
     font-weight: 600;
     font-weight: 900;
     position: relative;
-    left: 25rem;
+    left: 22rem;
     color: ${colors.primaryTeal};
     width: 50%;
 
     @media screen and (max-width: 1300px) {
       left: 3rem;
     }
+
+    @media screen and (max-width: 480px) {
+      font-size: 3rem;
+    }
+      
 `
 
 const ContactDescription = styled.p`
     font-size: 1.8rem;
     margin-top: 2rem;
     position: relative;
-    left: 25rem;
+    left: 22rem;
     font-weight: 700;
     width: 60%;
 
