@@ -131,6 +131,10 @@ const ValuesTitle = styled.h1`
         {
             height: 2050px;
         }
+
+        @media screen and (max-width: 480px) {
+            height: 2250px;
+        {
       
       
   `
@@ -157,6 +161,12 @@ const ValuesTitle = styled.h1`
             width: 350px;
           
       }
+
+      @media screen and (max-width: 480px)
+      {     
+            bottom: 8rem;
+          
+      }
   
       
   `
@@ -170,10 +180,17 @@ const ValuesTitle = styled.h1`
       padding: 50px; 
       position: relative;
       margin-top: 2rem;
+
      
       @media screen and (max-width: 800px)
       {
         margin-top: 4.5rem;
+      }
+      
+      @media screen and (max-width: 480px)
+      {
+        padding: 40px;
+        margin-top: 9rem;
       }
   `
 
@@ -194,6 +211,10 @@ const PurposeSubtitle = styled.h3`
 
     @media screen and (max-width: 800px) {
         width: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
     }
 `
   

@@ -3,6 +3,7 @@ import dataSlider  from './timelineData'
 import './timeline.css'
 import styled from 'styled-components'
 import Arrow from './button'
+//import { StaticImage } from 'gatsby-plugin-image'
 import {colors} from '../globals/colors.js'
 
 const Timeline = () => {
@@ -41,7 +42,8 @@ const Timeline = () => {
             {dataSlider.map((slide, index) => {
                 return (
                     <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <img alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.jpg`).default}/>                            
+                        <img 
+                        alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.png`).default}/>                            
                     </div>
                 )
             })}
@@ -49,7 +51,7 @@ const Timeline = () => {
             <Arrow moveSlide={prevSlide} direction = {"prev"}/>
 
             <div className="container-dots">
-                {Array.from({length: 5}).map((item, index) => (
+                {Array.from({length: 4}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={slideIndex === index + 1 ? "dot active" : "dot"}
@@ -75,6 +77,10 @@ const MasterDiv = styled.div`
     @media screen and (max-width: 900px) {
         height: 600px;
     }
+
+    @media screen and (max-width: 480px) {
+        height: 500px;
+    }
 `
 
 const TimelineTitle = styled.h1`
@@ -90,6 +96,11 @@ const TimelineTitle = styled.h1`
         width: 60%;
         left: 2rem;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 80%;
+    }
+
 `
 
 const TimelineDescription = styled.p`

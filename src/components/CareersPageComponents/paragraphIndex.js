@@ -60,6 +60,10 @@ const HeroContainer = styled.div`
         height: 100vh;
     }
 
+    @media screen and (max-width: 480px) {
+        height: 1200px;
+    }
+
 `
 
 const HeroH1 = styled.h1`
@@ -73,6 +77,10 @@ const HeroH1 = styled.h1`
 
     @media screen and (max-width: 768px) {
         right: 0rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 2.5rem;
     }
 `
 

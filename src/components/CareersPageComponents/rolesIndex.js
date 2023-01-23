@@ -170,10 +170,15 @@ const SectionDiv = styled.div`
     flex-direction: column;
     position: relative;
     margin-top: 5rem;
-    margin-left: 20rem;
+    margin-left: 20rem;    
+
 
     @media screen and (max-width: 1700px) {
         margin-left: 6rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 200px;
     }
 
 `
@@ -183,13 +188,17 @@ const Title = styled.h1`
     font-size: 3.4rem;
     display: flex;
     position: relative;
-    left: 26rem;
+    left: 23rem;
     top: 7rem;
     font-weight: 900;
     width: 20%;
 
     @media screen and (max-width: 1700px) { 
         left: 3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        left: 2.2rem;
     }
   
 `
@@ -202,8 +211,13 @@ const Goaltitle = styled.h1`
     justify-content: center;
 
 
+
     @media screen and (max-width: 1000px) {
         font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.1rem;
     }
 `
 
@@ -213,7 +227,6 @@ const GoalSubtitle = styled.h3`
     position: absolute;
     width: 250px;
     margin-top: 11.5rem;
-
 `
 
 const Description = styled.p`
@@ -224,11 +237,17 @@ const Description = styled.p`
     position: relative;
     right: 4.5rem;
     font-weight: 900;
+    width: 700px;
 
     @media screen and (max-width: 1000px) {
         right: 2rem;
         font-size: 1.7rem;
     }   
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }   
+    
     
    
 `
@@ -241,9 +260,14 @@ const Goaldiv = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 8rem;
 
+
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr;
         height: 200px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 200px;
     }
  
 `
@@ -257,10 +281,15 @@ const GoalOutline = styled.div`
     width: 500px;
 
 
+
     @media screen and (max-width: 1000px) {
         position: relative;
         right: 3rem;
         width: 350px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 320px;
     }
 
 
@@ -273,6 +302,7 @@ const GoalOutlineButton = styled.div`
     justify-content: flex-start; 
     height: 300px;
     width: 100px;
+    
 `
 
 
@@ -291,6 +321,7 @@ const MobileFix = styled.div`
     @media screen and (max-width: 1000px) {
         position: relative;
         bottom: 13rem;
+        right: 3.2rem;
     }
 `
 

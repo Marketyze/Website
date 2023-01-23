@@ -71,6 +71,10 @@ const EventParagraphContainer = styled.div`
     @media screen and (max-width: 1000px) {
         height: 1600px;
     }
+
+    @media screen and (max-width: 480px) {
+        height: 1700px;
+    }
 `
 
 const HeroContainer = styled.div`
@@ -83,8 +87,15 @@ const HeroContainer = styled.div`
     font-family: 'Lato', sans-serif;
     flex-direction: column;
 
+
     @media screen and (max-width: 1000px) {
         height: 90vh;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 10rem;
+        margin-left: 3rem;
+        width: 80%;
     }
 
 `
@@ -130,9 +141,15 @@ const EligibilityContainer = styled.div`
     font-family: 'Lato', sans-serif;
     flex-direction: column;
 
+
     @media screen and (max-width: 1000px) {
         height: 90vh;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-top: 10rem;
+        margin-left: 3rem;
+        width: 80%;
 
 `
 const EligibilityH1 = styled.h1`

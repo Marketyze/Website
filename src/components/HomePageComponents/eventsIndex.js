@@ -51,7 +51,7 @@ const MainDiv = styled.div`
 
     @media screen and (max-width: 480px)
     {
-        height: 900px;
+        height: 850px;
     }
 `
 
@@ -82,6 +82,10 @@ const BackgroundNumber = styled.div`
     @media screen and (max-width: 750px) {
         font-size: 200px;
         bottom: 35rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 150px;
     }
 
     `
@@ -117,8 +121,11 @@ const Description = styled.p`
     top: 10rem;
     
     @media screen and (max-width: 750px) {
-        font-size: 0.5;
         padding: 1rem;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 1.4rem;
     }
 `
 
@@ -139,7 +146,7 @@ const Goaldiv = styled.div`
     @media screen and (max-width: 480px){
         margin-top: 1rem;
         position: relative;
-        top: 5%;
+        top: 10%;
     }   
 `
 

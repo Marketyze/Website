@@ -55,6 +55,11 @@ const Title = styled.h1`
     @media screen and (max-width: 768px) {
         margin-left: 6rem;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 5.5rem;
+        font-size: 2rem;
+    }
 `
 
 const Description = styled.p`
@@ -82,6 +87,11 @@ const Description = styled.p`
 
     @media screen and (max-width: 768px) {
         margin-left: 6rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 5.6rem;
+        font-size: 1rem;
     }
 `
 
@@ -117,6 +127,10 @@ const JoinButtonContainer = styled(Link)`
     @media screen and (max-width: 768px){
         left: 0;
         top: 2rem;
+    }
+
+    @media screen and (max-width: 480px){
+        left: 1.5rem;
     }
 
 `

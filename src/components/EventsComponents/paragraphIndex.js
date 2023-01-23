@@ -58,6 +58,10 @@ const HeroContainer = styled.div`
         height: 90vh;
     }
 
+    @media screen and (max-width: 480px) {
+        height: 900px;
+    }
+
 `
 
 const HeroH1 = styled.h1`

@@ -2,7 +2,6 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import temporary from '../../images/family.jpg'
-import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
 
 const Values = () => {
@@ -36,10 +35,9 @@ const Values = () => {
         </Goaldiv>
 
         <GoaldivImpact>
+
             <GoalOutlineImpact>
-
-       <GoaltitleImpact end={1700} />
-
+                <GoaltitleImpact end={1700} />
                 <GoalSubtitleImpact>Youths reached across the world</GoalSubtitleImpact>
             </GoalOutlineImpact>
 
@@ -73,6 +71,12 @@ const MainDiv = styled.div`
     {
         height: 2800px; 
     }
+
+    @media screen and (max-width: 480px)
+    {
+        height: 2600px;
+    {
+
 `
 //title/desc for values
 const Title = styled.h1`
@@ -90,6 +94,10 @@ const Title = styled.h1`
         margin-left: 5rem;
     }
 
+    @media screen and (max-width: 480px) {
+        margin-left: 2.5rem;
+    }
+
 `
 const Description = styled.div`
     color: ${colors.black};
@@ -104,6 +112,10 @@ const Description = styled.div`
     @media screen and (max-width: 1000px) {
         margin-left: 5.5rem;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 2.6rem;
+    }
     
 `
 
@@ -113,6 +125,11 @@ const ValuesDiv = styled.div`
     height: 300px;
     background-image: url(${temporary});
     border-radius: 20px;
+
+    @media screen and (max-width: 480px) {
+        width: 325px;
+        height: 275px;
+    }
 `
 
 const ValuesTitle = styled.h1`
@@ -122,6 +139,11 @@ const ValuesTitle = styled.h1`
     top: 16rem;
     left: 1.5rem;
     font-size: 1.3rem;
+
+    @media screen and (max-width: 480px) {
+        top: 14rem;
+        left: 1.2rem;
+    }
 `
 
 //styling for values and impact
@@ -136,6 +158,7 @@ const Goaldiv = styled.div`
     position: relative;
     top: 4rem;
 
+
     @media screen and (max-width: 1500px)
     {
         grid-column-gap: 5rem; 
@@ -145,12 +168,12 @@ const Goaldiv = styled.div`
     {
         grid-template-columns: 1fr; 
     }
-
+    
     @media screen and (max-width: 480px){
-        margin-top: 1rem;
-        position: relative;
-        top: 5%;
-    }   
+       grid-template-gap: 0rem;
+        width: 80%;
+    }
+
 `
 
 const GoaldivImpact = styled.div`
@@ -170,10 +193,14 @@ const GoaldivImpact = styled.div`
     }
 
     @media screen and (max-width: 480px){
-        margin-top: 1rem;
         position: relative;
-        top: 5%;
-    }   
+        bottom: 8.2rem;
+        height: 500px;
+        width: 80%;
+        left: 2rem;
+
+    }
+
 `
 
 const GoalOutline = styled.div`
@@ -193,6 +220,14 @@ const GoalOutline = styled.div`
     {
         width: 100%;
     }
+    @media screen and (max-width: 480px)
+    {
+        padding: 0px;
+        position: relative;
+        width: 80%;
+        left: 2rem;
+        top: 1rem;
+    {
 `
 
 const GoalSubtitle = styled.h3`
@@ -205,6 +240,8 @@ const GoalSubtitle = styled.h3`
     top: 3rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+
+
     @media screen and (max-width: 1000px)
     {
         width: 50%;
@@ -213,9 +250,9 @@ const GoalSubtitle = styled.h3`
     {
         width: 70%;
     }
-    @media screen and (max-width: 450px)
+    @media screen and (max-width: 480px)
     {
-        width: 80%;
+        width: 100%;
     }
 `
 
@@ -235,6 +272,12 @@ const GoalOutlineImpact = styled.div`
     {
         width: 100%;
     }
+
+    @media screen and (max-width: 480px){
+        max-height: 100px;
+        padding: 0px;
+        width: 80%;
+    }
 `
 
 const GoaltitleImpact = styled(CountUp)`
@@ -244,6 +287,7 @@ const GoaltitleImpact = styled(CountUp)`
     text-align: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+
 `
 
 const GoalSubtitleImpact = styled.h3`
@@ -255,6 +299,7 @@ const GoalSubtitleImpact = styled.h3`
     width: 250px;
     top: 6rem;
     font-family: 'Lato', sans-serif;
+
     @media screen and (max-width: 1000px)
     {
         width: 50%;
@@ -263,9 +308,9 @@ const GoalSubtitleImpact = styled.h3`
     {
         width: 70%;
     }
-    @media screen and (max-width: 450px)
+    @media screen and (max-width: 480px)
     {
-        width: 80%;
+        width: 100%;
     }
 `
 

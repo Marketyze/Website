@@ -7,16 +7,25 @@
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
   @media screen and (max-width: 1100px){
     .container-slider {
       max-width: 800px;
     height: 500px;
     }
   }
+
   @media screen and (max-width: 900px){
     .container-slider {
-      max-width: 400px;
+      max-width: 450px;
     height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .container-slider {
+      max-width: 350px;
+    height: 200px;
     }
   }
 
@@ -64,6 +73,20 @@
   .prev:hover {
       transform: scale(1.1);
   }
+
+  @media screen and (max-width: 900px){
+    .prev {
+      left: 0;
+      top: 45%;
+      padding-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .prev {
+      top: 40%;
+    }
+  }
   
   .next {
     top: 50%;
@@ -78,6 +101,18 @@
       transform: scale(1.1);
   }
   
+  @media screen and (max-width: 900px){
+    .next {
+      right: 13px;
+      top: 45%;
+      font-size: 1.8rem;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .next {
+      top: 40%;
+    }
+  }
   
   
   .container-dots {

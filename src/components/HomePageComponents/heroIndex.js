@@ -56,7 +56,7 @@ const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.9);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.88);
     margin-top: -80px;
     flex-direction: column;
 
@@ -89,6 +89,10 @@ const HeroH1 = styled.h1`
     @media screen and (max-width: 768px) {
         font-size: 3.5rem;
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 2.5rem;
+    }
 `
 
 const HeroP = styled.p`
@@ -112,9 +116,16 @@ const HeroP = styled.p`
     @media screen and (max-width: 768px) {
         font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.2rem;
+    }
 `
 
 const HeroLink = styled(Link)`
+    @media screen and (max-width: 768px) {
+            margin-top: 1rem;
+    }
 `
 const SmoothScroll = styled.div`
     position: relative;
@@ -127,6 +138,10 @@ const SmoothScroll = styled.div`
     @media screen and (max-width: 768px) {
         top: 10%;
     }   
+
+    @media screen and (max-width: 480px) { 
+        top: 10%;
+    }
 `
 
 

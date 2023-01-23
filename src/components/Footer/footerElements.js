@@ -95,6 +95,10 @@ const FooterLinksContainer = styled.div`
         position: relative;
         left: 2rem;
     }
+
+    @media screen and (max-width: 480px) {
+        left 0.5rem;
+    }
 `
 
 const FooterLinksWrapper = styled.div`

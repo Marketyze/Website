@@ -18,8 +18,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `450px`, height: `auto`
-                }}
+                className = 'Maker'
                 />
 
             </GoalOutline>
@@ -32,7 +31,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `400px`, height: `auto`}}
+                className = "PizzaVille"
                 />
 
             </GoalOutline>
@@ -45,7 +44,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `300px`, height: `auto`}}
+                className = "NextDoor"
                 />
 
             </GoalOutline>
@@ -60,7 +59,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `200px`, height: `auto`}}
+                className = "AlphaTrim"
                 />
 
             </GoalOutline>
@@ -73,7 +72,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '7rem'}}
+                className = "CreativeGenius"
                 />
 
             </GoalOutline>
@@ -86,9 +85,7 @@ const Sponsors = () => {
                 formats={["auto", "webp", "avif"]}
                 alt=""
                 placeholder="transparent"
-                style={{width: `300px`, height: `auto`, position: 'relative', bottom: '4rem',
-                }}
-                
+                className = "SweetsEarth"                
                 />
 
             </GoalOutline>
@@ -110,10 +107,18 @@ const Title = styled.h1`
     position: relative;
     left: 26rem;
 
+
+
     @media screen and (max-width: 1700px)
     {
         left: 3rem;
         width: 80%;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        margin-top: 6rem;
+        left: 2.3rem;
     }
 
 `
@@ -129,10 +134,18 @@ const Description = styled.p`
     position: relative;
     left: 26rem;
 
+
+
     @media screen and (max-width: 1700px)
     {
         left: 3rem;
         width: 70%;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        margin-top: 1rem;
+        left: 2.3rem;
     }
     
 `
@@ -146,9 +159,16 @@ const MainDiv = styled.div`
     background: 'transparent';
     margin-bottom: 0;
 
+
+
     @media screen and (max-width: 1400px)
     {
         height: 1900px;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        height: 1725px;
     }
 
 `
@@ -162,11 +182,15 @@ const Goaldiv = styled.div`
     grid-column-gap: 8rem;
     padding: 0 50px;     
     justify-content: center;
-
     
     @media screen and (max-width: 1400px)
     {   
         grid-template-columns: 1fr; 
+    }
+
+    @media screen and (max-width: 480px)
+    {   
+        padding: 10px;
     }
 
 `
@@ -181,6 +205,12 @@ const GoalOutline = styled.div`
     height: 300px;
     padding: 50px; 
 
+    @media screen and (max-width: 480px)
+    {
+        width: 200px;
+        height: 300px;
+    }
+    
 `
 
 

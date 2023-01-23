@@ -92,7 +92,7 @@ font-size: 3.4rem;
 line-height: 1.05em;
 display: flex;
 position: relative;
-left: 27rem;
+left: 25.5rem;
 width: 50%;
 
 @media screen and (max-width: 1700px) {
@@ -111,13 +111,14 @@ line-height: 1.05em;
 margin-top: 2rem;
 display: flex;
 position: relative;
-left: 27rem;
+left: 26rem;
 width: 40%;
 
 @media screen and (max-width: 1700px) {
   width: 70%;
   left: 2rem;
 }
+
 
 
 `
@@ -159,6 +160,7 @@ padding: 0 40px;
 justify-content: center;
 
 
+
 @media screen and (max-width: 1700px)
 {
     grid-template-columns: 1fr; 
@@ -193,7 +195,14 @@ const GoalSubtitle = styled.h3`
     @media screen and (max-width: 800px) {
         width: 400px;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
+
+
     `
+
 
 const GoalOutline = styled.div`
     display: flex; 
@@ -201,13 +210,18 @@ const GoalOutline = styled.div`
     justify-content: flex-start; 
     align-items: center;
     max-height: 600px; 
-    padding: 50px; 
+    padding: 20px; 
     position: relative;
     margin-top: 2rem;
 
     @media screen and (max-width: 800px)
     {
     margin-top: 4.5rem;
+    }
+
+    @media screen and (max-width: 480px)
+    {  
+        margin-top: 6rem;
     }
     `
 
