@@ -17,14 +17,18 @@ const  SignUpEvent = () => {
 }
 
 const MainDiv = styled.div`
-    height: 300px;
+    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     background: linear-gradient(90deg, rgba(0,140,160,1) 10%, rgba(145,215,221,1) 100%, rgba(226,225,238,1) 100%); 
 
+    @media screen and (max-width: 1800px) {
+        height: 300px;
+    }
+
     @media screen and (max-width: 768px) {
-        height: 450px;
+        height: 380px;
     }
 
     `
@@ -55,6 +59,10 @@ const Title = styled.h1`
     @media screen and (max-width: 768px) {
         margin-left: 6rem;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 4rem;
+    }
     `
 
 const Description = styled.p`
@@ -83,6 +91,11 @@ const Description = styled.p`
     @media screen and (max-width: 768px) {
         margin-left: 6rem;
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: 4rem;
+        width: 60%; 
+    }
     `
 
 //button styling
@@ -95,7 +108,8 @@ const JoinButtonContainer = styled.div`
     justify-self: center;
     margin: auto;
     left: 35rem;
-    bottom: 4rem;
+    margin-top: 5rem;
+    
 
     @media screen and (max-width: 1800px){
         bottom: 7rem;
@@ -117,6 +131,11 @@ const JoinButtonContainer = styled.div`
     @media screen and (max-width: 768px){
         left: 0;
         top: 2rem;
+    }
+
+    @media screen and (max-width: 480px){
+        left: 0;
+        top: 0;
     }
 
     `

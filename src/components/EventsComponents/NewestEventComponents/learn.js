@@ -120,6 +120,7 @@ width: 40%;
 }
 
 
+
 `
 
 //valuesDiv
@@ -159,6 +160,7 @@ padding: 0 40px;
 justify-content: center;
 
 
+
 @media screen and (max-width: 1700px)
 {
     grid-template-columns: 1fr; 
@@ -193,7 +195,14 @@ const GoalSubtitle = styled.h3`
     @media screen and (max-width: 800px) {
         width: 400px;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 300px;
+    }
+
+
     `
+
 
 const GoalOutline = styled.div`
     display: flex; 
@@ -208,6 +217,11 @@ const GoalOutline = styled.div`
     @media screen and (max-width: 800px)
     {
     margin-top: 4.5rem;
+    }
+
+    @media screen and (max-width: 480px)
+    {  
+        margin-top: 6rem;
     }
     `
 

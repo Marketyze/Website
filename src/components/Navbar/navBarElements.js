@@ -3,7 +3,6 @@ import {Link} from "gatsby"
 
 //colors
 const main_color = "#008CA0"
-const secondary_color = "#91D7DD"
 
 //with styled components, we can pass in props (active classes)
 export const Nav = styled.nav`
@@ -58,10 +57,10 @@ export const NavMenu = styled.ul`
         width: 100%;
         height: 100vh;
         position: absolute;
-        transition: all 0.3s ease;
-        top: ${({click}) => (click ? "100%" : "-1000px")}; 
+        transition: all 0.2s ease;
+        top: 60px;
+        left: ${({click}) => (click ? "0" : "-100%")}; 
         opacity: 1; 
-        transition: all 0.8 ease; 
         background: #fcfcfc; 
     }
 `
@@ -77,26 +76,14 @@ export const NavLinks = styled(Link)`
     font-weight: 700; 
     font-size: 1rem;
 
-
-    @media screen and (max-width: 960px) {
-        text-align: center;
-        padding: 2rem; 
-        width: 100%; 
-        display: table;
-    }
-
-    &:hover {
-        color: ${secondary_color};
-        transition: all 0.3 ease; 
-    }
-
 `
 
 export const NavItem = styled.li`
     height: 80px;
 
     @media screen and (max-width: 960px) {
-        width: 100%; 
+        display: none;
+
     }
 `
 

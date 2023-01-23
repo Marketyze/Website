@@ -4,6 +4,9 @@ import {IconContext} from "react-icons/lib" //this will change all icons from on
 import {MobileIcon, Nav, NavbarContainer, NavLogo, NavMenu, NavItem, NavLinks} from "./navBarElements"
 import { StaticImage } from "gatsby-plugin-image"
 import EventsDropDown from './dropdownEvents'
+import MobileSidebar from './MobileSidebar'
+import { SidebarData } from './MobileSidebarData'
+
 
 // for reference = () => are arrow functions 
 const Navbar = () => {
@@ -74,7 +77,7 @@ const Navbar = () => {
                             {click ? <FaTimes/> : <FaBars/>}
                         </MobileIcon>
                         
-                        <NavMenu onClick={handleClick} click={click}>
+                        <NavMenu click={click}>
                         
                             <NavItem>
                                 <NavLinks to="/aboutUs">About Us</NavLinks>
@@ -100,6 +103,9 @@ const Navbar = () => {
                             <NavItem>
                                 <NavLinks to="/career">Career/Contact</NavLinks>
                             </NavItem>
+                            {SidebarData.map((item, index) => {
+                                return <MobileSidebar item={item} key={index} />
+                            })}
                         </NavMenu>
 
                     </NavbarContainer>

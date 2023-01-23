@@ -54,6 +54,11 @@ const HeroH1 = styled.h1`
     position: relative;
     top: 15rem;
     padding: 0 1rem;
+
+    @media screen and (max-width: 480px) {
+        font-size: 3rem;
+        top: 13rem;
+    }
 `
 
 const HeroP = styled.p`
