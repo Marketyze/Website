@@ -38,11 +38,11 @@ const ContactUs = () => {
         <StyledContactForm>
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
-                <input type="text" name="user_name" />
+                <input type="text" name="user_name" required/>
                 <label>Email</label>
-                <input type="email" name="user_email" />
+                <input type="email" name="user_email" required/>
                 <label>Message</label>
-                <textarea name="message" />
+                <textarea name="message" required/>
                 <input type="submit" value="Send" />
             </form>
           </StyledContactForm>
@@ -67,9 +67,11 @@ export default ContactUs
 const MainDiv = styled.div`
     font-family: 'Lato', sans-serif;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     display: flex;
-    height: 1200px;
+    height: 1000px;
+    background: ${colors.white};
 
     @media screen and (max-width: 768px) {
         height: 1500px;
@@ -85,9 +87,8 @@ const ContactTitle = styled.h1`
     font-weight: 600;
     font-weight: 900;
     position: relative;
-    left: 22rem;
     color: ${colors.primaryTeal};
-    width: 50%;
+    width: 1500px;
 
     @media screen and (max-width: 1300px) {
       left: 3rem;
@@ -101,11 +102,10 @@ const ContactTitle = styled.h1`
 
 const ContactDescription = styled.p`
     font-size: 1.8rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     position: relative;
-    left: 22rem;
     font-weight: 700;
-    width: 60%;
+    width: 1500px;
 
     @media screen and (max-width: 1300px) {
       left: 3rem;
@@ -121,10 +121,10 @@ const ContactFormDiv = styled.div`
 
 const ContactFormBox = styled.div`
   padding: 5rem;
-  border: 2px solid transparent;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: ${colors.lightTeal};
+  height: 600px; 
 
 `
 
@@ -146,7 +146,7 @@ const SocialIconLink = styled.a`
 `
 
 const StyledContactForm = styled.div`
-  width: 40vw;
+  width: 1300px;
   display: flex;
 
   form {

@@ -79,7 +79,12 @@ const MainDiv = styled.div`
     }
 
     @media screen and (max-width: 800px) {
+        height: 2300px;
+    }
+
+    @media screen and (max-width: 480px) {
         height: 2700px;
+    
     }
 
     `

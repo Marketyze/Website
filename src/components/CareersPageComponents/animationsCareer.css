@@ -114,12 +114,16 @@
   }
 
   .buttonCareers{
-    display: inline-block;
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: .15rem;
     transition: all .3s;
     position: relative;
@@ -142,7 +146,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #008CA0;
+      background-color: #015A6D;
       border-radius: 10rem;
       z-index: -2;
     }

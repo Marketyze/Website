@@ -9,18 +9,21 @@ const ParagraphSection = () => {
         <HeroContainer>
 
             <HeroH1>
-                JOIN THE TEAM
-                <HeroP>
-                    At Marketyze, we believe that students deserve to have the chance to further their interest in business. Our mission is to create innovative virtual challenges, workshops, and events for youth to prepare them in pursuing a path in the business field, especially in marketing.  
-                </HeroP>
+                Join the team
 
-                <HeroP>
-                    Become a part of our team, where we are pioneers in providing accessible marketing opportunities to youth across the world. The talents of today’s youth will be needed in the business world of tomorrow!
-​                </HeroP>
+                <TextContainer>
+                    <HeroP>
+                        At Marketyze, we believe that students deserve to have the chance to further their interest in business. Our mission is to create innovative virtual challenges, workshops, and events for youth to prepare them in pursuing a path in the business field, especially in marketing.  
+                    </HeroP>
 
-                <HeroP>         
-                    Pro tip: to learn more about the culture at Marketyze and what we can do for you, please check out our brand-new Notion Careers Page! Since all of our currently open positions are part of our ongoing recruitment process, positions will be removed from the hiring package and the application form once they are filled. Don’t miss out on your chance to join us at Marketyze!
-                </HeroP>
+                    <HeroP>
+                        Become a part of our team, where we are pioneers in providing accessible marketing opportunities to youth across the world. The talents of today’s youth will be needed in the business world of tomorrow!
+    ​                </HeroP>
+
+                    <HeroP>         
+                        <span style = {{color: '#91D7DD', fontSize: '2.2rem'}}>Pro tip:</span> to learn more about the culture at Marketyze and what we can do for you, please check out our brand-new <a rel="noreferrer" target = '_blank' href='https://marketyze-org.notion.site/marketyze-org/Volunteer-with-Marketyze-3593c98f73be4f5c97b6d1147589b16e'>Notion Careers Page!</a> Since all of our currently open positions are part of our ongoing recruitment process, positions will be removed from the hiring package and the application form once they are filled. Don’t miss out on your chance to join us at Marketyze!
+                    </HeroP>
+                </TextContainer>
             </HeroH1>
 
             {/*
@@ -46,8 +49,8 @@ export default ParagraphSection
 
 
 const HeroContainer = styled.div`
-    background: white;
-    height: 70vh;
+    background: ${colors.white};
+    height: 900px;
     width: 100%;
     display: flex; 
     justify-content: center;
@@ -68,12 +71,10 @@ const HeroContainer = styled.div`
 
 const HeroH1 = styled.h1`
     color: ${colors.primaryTeal};
-    font-size: 3rem; 
-    margin-top: 8rem;
+    font-size: 4.5rem; 
     z-index: 2;
     font-weight: 900;
     position: relative;
-    right: 4rem;
 
     @media screen and (max-width: 768px) {
         right: 0rem;
@@ -84,16 +85,32 @@ const HeroH1 = styled.h1`
     }
 `
 
+const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 620px; 
+    margin-top: 3rem;
+    background: ${colors.primaryTeal};
+    border-radius: 30px;
+`
+
 const HeroP = styled.p`
-    width: 50vw;
-    color: black; 
+    width: 1300px;
+    color: white; 
     position: relative;
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     margin-top: 2rem;
     text-decoration: none;
     z-index: 2;
     font-weight: 400;
-    left: 4rem;
+
+    a{
+        text-decoration: none;
+        color: ${colors.darkTeal};
+    }
 
     @media screen and (max-width: 768px) {
         left: 0rem;

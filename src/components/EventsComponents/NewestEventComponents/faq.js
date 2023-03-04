@@ -38,7 +38,7 @@ export default Faq
 
 const HeroContainer = styled.div`
     background: white;
-    height: 900px;
+    height: 750px;
     width: 100%;
     display: flex; 
     justify-content: center;
@@ -51,6 +51,10 @@ const HeroContainer = styled.div`
     }
 
     @media screen and (max-width: 800px) {
+        height: 1600px;
+    }
+
+    @media screen and (max-width: 480px) {
         height: 1800px;
     }
 

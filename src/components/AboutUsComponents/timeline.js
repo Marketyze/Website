@@ -36,31 +36,30 @@ const Timeline = () => {
 
     return (
     <MasterDiv>
-        <TimelineTitle>Our Story</TimelineTitle>
-        <TimelineDescription>Learn more about our story</TimelineDescription>
-        <div className = "container-slider">
-            {dataSlider.map((slide, index) => {
-                return (
-                    <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <img 
-                        alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.png`).default}/>                            
-                    </div>
-                )
-            })}
-            <Arrow moveSlide={nextSlide} direction = {"next"}/>
-            <Arrow moveSlide={prevSlide} direction = {"prev"}/>
+            <TimelineTitle>Our Story</TimelineTitle>
+            <TimelineDescription>Learn more about our story</TimelineDescription>
+            <div className = "container-slider">
+                {dataSlider.map((slide, index) => {
+                    return (
+                        <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
+                            <img 
+                            alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.png`).default}/>                            
+                        </div>
+                    )
+                })}
+                <Arrow moveSlide={nextSlide} direction = {"next"}/>
+                <Arrow moveSlide={prevSlide} direction = {"prev"}/>
 
-            <div className="container-dots">
-                {Array.from({length: 4}).map((item, index) => (
-                    <div 
-                    onClick={() => moveDot(index + 1)}
-                    className={slideIndex === index + 1 ? "dot active" : "dot"}
-                    ></div>
-                ))}
+                <div className="container-dots">
+                    {Array.from({length: 4}).map((item, index) => (
+                        <div 
+                        onClick={() => moveDot(index + 1)}
+                        className={slideIndex === index + 1 ? "dot active" : "dot"}
+                        ></div>
+                    ))}
+                </div>
+
             </div>
-
-        </div>
-
     </MasterDiv>
     )
 }
@@ -70,9 +69,10 @@ export default Timeline
 const MasterDiv = styled.div`
     font-family: 'Lato', sans-serif;
     width: 100%;
-    height: 900px;
-    background-color: white;
-    z-index: 0;
+    height: 1000px;
+    background: #F8FCFF; 
+
+
 
     @media screen and (max-width: 900px) {
         height: 600px;
@@ -84,13 +84,14 @@ const MasterDiv = styled.div`
 `
 
 const TimelineTitle = styled.h1`
-    font-size: 3.5rem;
-    margin-top: 5rem;
+    font-size: 4.5rem;
     color: ${colors.primaryTeal};
     font-weight: 900;
-    width: 50%;
+    width: 1480px;
     position: relative;
-    left: 27rem;
+    margin: 50px auto 0;
+
+
 
     @media screen and (max-width: 1700px) {
         width: 60%;
@@ -106,11 +107,12 @@ const TimelineTitle = styled.h1`
 const TimelineDescription = styled.p`
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    width: 50%;
     position: relative;
-    left: 27rem;
+    left: 0.2rem;
+    width: 1480px;
+    margin: 10px auto 0;
+
+    position: relative;
 
     @media screen and (max-width: 1700px) {
         width: 60%;

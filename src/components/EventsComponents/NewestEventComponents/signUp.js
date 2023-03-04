@@ -17,7 +17,7 @@ const  SignUpEvent = () => {
 }
 
 const MainDiv = styled.div`
-    height: 200px;
+    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ const JoinButtonContainer = styled.div`
     justify-self: center;
     margin: auto;
     left: 35rem;
-    margin-top: 5rem;
+    bottom: 5rem;
     
 
     @media screen and (max-width: 1800px){

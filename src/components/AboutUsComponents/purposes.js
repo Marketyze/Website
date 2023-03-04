@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
-import temporary from '../../images/family.jpg'
+import { StaticImage } from 'gatsby-plugin-image'
 //import { Link } from 'gatsby'
 
 const Purposes = () => {
@@ -13,6 +13,15 @@ const Purposes = () => {
           <Goaldiv>
               <GoalOutline>
               <ValuesDiv>
+                 <StaticImage
+                    src= '../../images/Website Graphics - Pioneers.png'
+                    alt="pioneers"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "pioneers"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Pioneers</ValuesTitle>
                 </ValuesDiv>    
                 <PurposeSubtitle>We want to help students grow their skills, abilities and broaden their minds, in order to build the next generation of marketing leaders</PurposeSubtitle>   
@@ -21,6 +30,15 @@ const Purposes = () => {
             
               <GoalOutline>
               <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Preparation for the future.png'
+                    alt="preparation"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "preparation"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Preparation for the Future</ValuesTitle>
                 </ValuesDiv>  
                 <PurposeSubtitle>We don’t stop at just creating connections — we provide hands-on experience to learn and build marketing skills that will set them apart in university and beyond</PurposeSubtitle>        
@@ -30,6 +48,15 @@ const Purposes = () => {
           <Goaldiv>
               <GoalOutline>
               <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Outside the classroom.png'
+                    alt="classroom"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "classroom"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Outside the Classroom</ValuesTitle>
                 </ValuesDiv>
                 <PurposeSubtitle>Our programs are designed to go beyond the Canadian business high school curriculum, directly connecting youth with industry professionals to give them a chance to create valuable connections and provide a unique look into the business and marketing field</PurposeSubtitle>
@@ -37,6 +64,15 @@ const Purposes = () => {
   
               <GoalOutline>
               <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Not for profit corporation.png'
+                    alt="profit"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "profit"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Not-for-profit Corporation</ValuesTitle>
                 </ValuesDiv>
                 <PurposeSubtitle>We are a federally incorporated not-for-profit corporation that provides marketing opportunities to high school students through free or low-cost virtual challenges and conferences</PurposeSubtitle>          
@@ -47,44 +83,41 @@ const Purposes = () => {
     )
   }
   
-//valuesDiv
-const ValuesDiv = styled.div`
-    width: 550px;
-    height: 400px;
-    background-image: url(${temporary});
-    border-radius: 20px;
 
+const MainDiv = styled.div`
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: ${colors.white}; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1700px) {
+        height: 2600px;
+    }
 
     @media screen and (max-width: 800px) {
-        width: 300px;
-        height: 200px;
+    {
+        height: 2050px;
     }
-`
 
-const ValuesTitle = styled.h1`
-    font-family: 'Lato', sans-serif;
-    position: relative;
-    left: 1.5rem;
-    font-size: 1.5rem;
-    top: 21rem;
-
-    @media screen and (max-width: 800px) {
-        top: 10rem;
-        font-size: 1.2rem;
-    }
-`
-
+    @media screen and (max-width: 480px) {
+        height: 2250px;
+    {
   
-  const Title = styled.h1`
+  
+`
+const Title = styled.h1`
       color: ${colors.primaryTeal};
       font-family: 'Lato', sans-serif;
       font-weight: 900;
-      font-size: 3.4rem;
+      font-size: 4.5rem;
       line-height: 1.05em;
       display: flex;
       position: relative;
-      left: 27rem;
-      width: 50%;
+      width: 1500px;
 
       @media screen and (max-width: 1700px) {
         width: 70%;
@@ -100,11 +133,11 @@ const ValuesTitle = styled.h1`
       font-size: 1.5rem;
       font-weight: 400;
       line-height: 1.05em;
-      margin-top: 2rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
       display: flex;
       position: relative;
-      left: 27rem;
-      width: 40%;
+      width: 1500px;
 
       @media screen and (max-width: 1700px) {
         width: 70%;
@@ -113,41 +146,43 @@ const ValuesTitle = styled.h1`
       
 
   `
-  
-  const MainDiv = styled.div`
-      height: 1400px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 40px;
-      background: 'transparent'; 
-      margin-bottom: 0;
-  
-        @media screen and (max-width: 1700px) {
-            height: 2600px;
-        }
 
-        @media screen and (max-width: 800px) {
-        {
-            height: 2050px;
-        }
+//valuesDiv
+const ValuesDiv = styled.div`
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
 
-        @media screen and (max-width: 480px) {
-            height: 2250px;
-        {
-      
-      
-  `
+
+    @media screen and (max-width: 800px) {
+        width: 300px;
+        height: 200px;
+    }
+`
+
+const ValuesTitle = styled.h1`
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    left: 1.5rem;
+    font-size: 1.7rem;
+    bottom: 3rem;
+    color: white;
+
+    @media screen and (max-width: 800px) {
+        top: 10rem;
+        font-size: 1.2rem;
+    }
+`
+
   
+
   const Goaldiv = styled.div`
-      margin: 0 auto; 
       display: grid; 
+      width: 1400px;
       grid-template-columns: 1fr 1fr;
       align-items: center; 
       grid-column-gap: 5rem;
-      padding: 0 50px;     
       justify-content: center;
-
      
       @media screen and (max-width: 1700px)
       {
@@ -176,10 +211,12 @@ const ValuesTitle = styled.h1`
       flex-direction: column; 
       justify-content: flex-start; 
       align-items: center;
-      max-height: 600px; 
+      height: 850px; 
       padding: 50px; 
       position: relative;
       margin-top: 2rem;
+      background: ${colors.primaryTeal};
+      border-radius: 30px;
 
      
       @media screen and (max-width: 800px)
@@ -196,16 +233,21 @@ const ValuesTitle = styled.h1`
 
 
 const PurposeSubtitle = styled.h3`
-    color: black;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 1.5rem;
     line-height: 1.5em;
     position: relative;
     text-align: center;
-    width: 500px;
-    top: 1rem;
-    height: 50px;
+    width: 600px;
+    margin-top: 4rem;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    border-radius: 20px;
+    background: ${colors.darkTeal};
 
     }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { StaticImage } from 'gatsby-plugin-image'
 
 
@@ -10,33 +11,47 @@ const MarketyzeEvents = () => {
   return (
     <MainDiv>
         <Title>Ready to Get Ahead of the Competition?</Title> 
-        <Description>Every year, more than 100 competitors from all over the world come together participate in Marketyze's events</Description>
-        <Description>This year is no different and we are exicted to introduce: <span style={{color: '#008CA0', fontFamily: 'Lato, sans-serif', fontWeight: '900'}}>PITCH IT</span></Description>
+        <Description>At Marketyze, we offer plentiful of opportunities for young students to dive right into the business world. From our competitive and intense events, to internships, we will not stop until our goals are reach. </Description>
         
         <Goaldiv>
-                <StaticImage 
-                    src= '../../images/family.jpg'
-                    loading="eager"
-                    quality={100}
-                    formats={["auto", "webp", "avif"]}
-                    alt=""
-                    width={700}
-                    placeholder="transparent"
-                    style={{position: `relative`, border: `1px transparent`, borderRadius: `20px`, zIndex: '2', top: '4rem'}}/>
+            <EventsMainDiv>
+                <EventsDiv>
+                    <EventsInnerDiv>
+                        <h1>Events</h1>
+                        <p>Learn More <Arrow/></p>
+                    </EventsInnerDiv>
+                </EventsDiv>
+            </EventsMainDiv>
+
+            <OppotunityMainDiv>
+                <PositionsDiv>
+                    <PositionsInnerDiv>
+                        <h1>Careers</h1>
+                        <p>Learn More <Arrow/></p>
+                    </PositionsInnerDiv>
+                </PositionsDiv>
+
+                <InternshipDiv>
+                    <InternshipInnerDiv>
+                        <h1>Internships</h1>
+                        <p>Learn More <Arrow/></p>
+                    </InternshipInnerDiv>
+                </InternshipDiv>
+            </OppotunityMainDiv>
+                
         </Goaldiv>
 
-        <BackgroundNumber>100+</BackgroundNumber>
     </MainDiv>
   )
 }
 
 const MainDiv = styled.div`
-    height: 900px;
+    height: 1100px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    background: #fcfcfc; 
+    align-items: center;
+    background: #F8FCFF; 
 
     @media screen and (max-width: 1200px)
     {
@@ -55,53 +70,18 @@ const MainDiv = styled.div`
     }
 `
 
-const BackgroundNumber = styled.div`
-    color: ${colors.primaryTeal};
-    font-family: 'Lato', sans-serif;
-    font-size: 700px;
-    text-align: center;
-    position: relative;
-    bottom: 45rem;
-    z-index: 1;
-    opacity: 0.15;
-
-
-    @media screen and (max-width: 1800px) {
-        font-size: 600px;
-    }
-
-    @media screen and (max-width: 1500px) {
-        font-size: 350px;
-    }
-
-    @media screen and (max-width: 1200px) {
-        bottom: 40rem;
-        font-size: 300px;
-    }
-
-    @media screen and (max-width: 750px) {
-        font-size: 200px;
-        bottom: 35rem;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 150px;
-    }
-
-    `
-
     
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 3.4rem;
+    font-size: 4rem;
     display: block;
+    width: 1450px;
     position: relative;
-    top: 10rem;
     z-index: 99;
-    text-align: center;
+    margin-top: 4rem;
 
     @media screen and (max-width: 750px) {
         font-size: 2.4rem;
@@ -116,9 +96,9 @@ const Description = styled.p`
     font-size: 1.5rem;
     margin-top: 1rem;
     display: block;
-    text-align: center;
     position: relative;
-    top: 10rem;
+    width: 1450px;
+    line-height: 2.5rem;
     
     @media screen and (max-width: 750px) {
         padding: 1rem;
@@ -129,15 +109,17 @@ const Description = styled.p`
     }
 `
 
+//events, internships, and more
 const Goaldiv = styled.div`
-    max-width: 1150px; 
-    margin: 0 auto; 
-    display: flex; 
+    width: 1500px;
+    height: 800px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-columns-gap: 2rem;
     align-items: center; 
-    padding: 0 50px;     
     justify-content: center;
     position: relative;
-    top: 10rem;
+
     @media screen and (max-width: 1000px)
     {
         grid-template-columns: 1fr; 
@@ -148,6 +130,87 @@ const Goaldiv = styled.div`
         position: relative;
         top: 10%;
     }   
+`
+
+const EventsMainDiv = styled.div`
+    width: 750px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const EventsDiv = styled.div`
+    height: 750px;
+    width: 700px;
+    background: ${colors.primaryTeal};
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+`
+
+const EventsInnerDiv = styled.div`
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+`
+
+const OppotunityMainDiv = styled.div`
+    width: 750px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    position: relative;
+    
+`
+
+const PositionsDiv = styled.div`
+    height: 360px;
+    width: 700px;
+    background: ${colors.primaryTeal};
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+
+
+
+`
+
+const PositionsInnerDiv = styled.div`
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+
+`
+
+const InternshipDiv = styled.div`
+    height: 360px;
+    width: 700px;
+    background: ${colors.primaryTeal};
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+`
+
+const InternshipInnerDiv = styled.div`
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1rem;
+
+`
+
+//icons
+const Arrow = styled(BsFillArrowRightCircleFill)`
+
 `
 
 export default MarketyzeEvents

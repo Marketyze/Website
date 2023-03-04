@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
-import temporary from '../../images/family.jpg'
 import CountUp from 'react-countup';
-
+import { StaticImage } from 'gatsby-plugin-image';
 const Values = () => {
   
   return (
@@ -14,35 +13,71 @@ const Values = () => {
         <Goaldiv>
             <GoalOutline>
                 <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Accessibility.png'
+                    alt="Accessibility"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "accessibility"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Acessibility</ValuesTitle>
                 </ValuesDiv>
-                <GoalSubtitle>At Marketyze, we don't want students to break the bank in order to build their network, learn new skills and participate in one-of-a-kind opportunities</GoalSubtitle>
+
+                <ValueSubDiv>
+                    <GoalSubtitle>At Marketyze, we don't want students to break the bank in order to build their network, learn new skills and participate in one-of-a-kind opportunities</GoalSubtitle>
+                </ValueSubDiv>
             </GoalOutline>
 
             <GoalOutline>
                 <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Growth.png'
+                    alt="Growth"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "growth"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Foster Personal Growth</ValuesTitle>
                 </ValuesDiv>
-                <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthe the organization</GoalSubtitle>
+
+                <ValueSubDiv>
+                    <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthe the organization</GoalSubtitle>
+                </ValueSubDiv>
             </GoalOutline>
 
             <GoalOutline>
                 <ValuesDiv>
+                <StaticImage
+                    src= '../../images/Website Graphics - Quality Everytime.png'
+                    alt="Quality"
+                    placeholder="blurred"
+                    formats={["auto", "webp", "avif"]}
+                    className = "quality"
+                    imgStyle = {{borderRadius: '20px'}}
+                    quality = {100}
+                    />  
                     <ValuesTitle>Quality Every Time</ValuesTitle>
                 </ValuesDiv>
-                <GoalSubtitle>It is core to our culture to prioritize quality over efficiency. From project to project and team to team, we ensure that quality is there first before implementing efficiency next</GoalSubtitle>
+
+                <ValueSubDiv>
+                    <GoalSubtitle>It is core to our culture to prioritize quality over efficiency. From project to project and team to team, we ensure that quality is there first before implementing efficiency next</GoalSubtitle>
+                </ValueSubDiv>
             </GoalOutline>
         </Goaldiv>
 
         <GoaldivImpact>
 
             <GoalOutlineImpact>
-                <GoaltitleImpact end={1700} />
+                <GoalTitleImpactTogether><GoaltitleImpact end={1700} />+</GoalTitleImpactTogether>
                 <GoalSubtitleImpact>Youths reached across the world</GoalSubtitleImpact>
             </GoalOutlineImpact>
 
             <GoalOutlineImpact>
-                <GoaltitleImpact end = {55}/>
+            <GoalTitleImpactTogether><GoaltitleImpact end = {55}/>+</GoalTitleImpactTogether>
                 <GoalSubtitleImpact>Total volunteers with Marketyze</GoalSubtitleImpact>
             </GoalOutlineImpact>
 
@@ -54,13 +89,12 @@ const Values = () => {
 
 //main div
 const MainDiv = styled.div`
-    height: 1200px;
+    height: 1300px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top: 40px;
-    background: #fcfcfc; 
+    background: #F8FCFF; 
 
     @media screen and (max-width: 1200px)
     {
@@ -83,11 +117,13 @@ const Title = styled.h1`
     color: ${colors.primaryTeal};
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 3.4rem;
+    font-size: 4.5rem;
     display: flex;
     position: relative;
     top: 1rem;
-    margin-left: 15rem;
+    width: 1600px;
+    margin-top: 4rem;
+
 
 
     @media screen and (max-width: 1000px) {
@@ -104,9 +140,9 @@ const Description = styled.div`
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     position: relative;
-    top: 3rem;
-    margin-left: 15.5rem;
-    width: 70%;
+    top: 2rem;
+    width: 1600px;
+    margin-left: 1rem;
     font-weight: 400;
 
     @media screen and (max-width: 1000px) {
@@ -121,9 +157,8 @@ const Description = styled.div`
 
 //valuesDiv
 const ValuesDiv = styled.div`
-    width: 350px;
+    width: 400px;
     height: 300px;
-    background-image: url(${temporary});
     border-radius: 20px;
 
     @media screen and (max-width: 480px) {
@@ -136,9 +171,10 @@ const ValuesTitle = styled.h1`
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     position: relative;
-    top: 16rem;
     left: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: ${colors.white};
+    bottom: 2.5rem;
 
     @media screen and (max-width: 480px) {
         top: 14rem;
@@ -146,17 +182,54 @@ const ValuesTitle = styled.h1`
     }
 `
 
+const ValueSubDiv = styled.div`
+    width: 400px;
+    height: 175px;
+    background: ${colors.darkTeal};
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+`
+
+const GoalSubtitle = styled.h3`
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    width: 350px; 
+    position: relative;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+
+    @media screen and (max-width: 1000px)
+    {
+        width: 50%;
+    }
+    @media screen and (max-width: 650px)
+    {
+        width: 70%;
+    }
+    @media screen and (max-width: 480px)
+    {
+        width: 100%;
+    }
+`
+
+
 //styling for values and impact
 const Goaldiv = styled.div`
-    max-width: 1150px; 
-    margin: 0 auto; 
+    width: 900px; 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     align-items: center; 
-    grid-column-gap: 15rem;     
+    grid-column-gap: 3rem;     
     justify-content: center;
     position: relative;
     top: 4rem;
+
 
 
     @media screen and (max-width: 1500px)
@@ -176,42 +249,18 @@ const Goaldiv = styled.div`
 
 `
 
-const GoaldivImpact = styled.div`
-    font-family: 'UsualExtraBold', sans-serif;
-    max-width: 1150px; 
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    align-items: center; 
-    grid-column-gap: 9rem;     
-    justify-content: center;
-    position: relative;
-
-    @media screen and (max-width: 1000px)
-    {
-        grid-template-columns: 1fr; 
-    }
-
-    @media screen and (max-width: 480px){
-        position: relative;
-        bottom: 8.2rem;
-        height: 500px;
-        width: 80%;
-        left: 2rem;
-
-    }
-
-`
-
 const GoalOutline = styled.div`
     display: flex; 
     flex-direction: column; 
-    justify-content: flex-start; 
     align-items: center;
     max-height: 600px; 
-    width: 300px;
+    width: 500px;
     height: 700px;
     padding: 50px; 
+    border-radius: 25px;
+    background: ${colors.primaryTeal};
+
+
     @media screen and (max-width: 1150px)
     {
         width: 250px;
@@ -230,30 +279,34 @@ const GoalOutline = styled.div`
     {
 `
 
-const GoalSubtitle = styled.h3`
-    color: black;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-    position: relative;
-    text-align: center;
-    width: 270px;
-    top: 3rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
 
+//impact styles
+
+const GoaldivImpact = styled.div`
+    font-family: 'UsualExtraBold', sans-serif;
+    width: 700px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    grid-column-gap: 13rem;     
+    justify-content: center;
+    position: relative;
+    margin-top: 9rem;
 
     @media screen and (max-width: 1000px)
     {
-        width: 50%;
+        grid-template-columns: 1fr; 
     }
-    @media screen and (max-width: 650px)
-    {
-        width: 70%;
+
+    @media screen and (max-width: 480px){
+        position: relative;
+        bottom: 8.2rem;
+        height: 500px;
+        width: 80%;
+        left: 2rem;
+
     }
-    @media screen and (max-width: 480px)
-    {
-        width: 100%;
-    }
+
 `
 
 const GoalOutlineImpact = styled.div`
@@ -262,11 +315,12 @@ const GoalOutlineImpact = styled.div`
     justify-content: flex-start; 
     align-items: center;
     max-height: 600px; 
-    width: 300px;
+    width: 450px;
     height: 300px;
     padding: 50px; 
     position: relative;
-    top: 7rem;
+    border-radius: 30px;
+    border: 3px solid ${colors.primaryTeal};
  
     @media screen and (max-width: 1000px)
     {
@@ -283,11 +337,19 @@ const GoalOutlineImpact = styled.div`
 const GoaltitleImpact = styled(CountUp)`
     color: black;
     font-size: 4rem;
-    position: absolute;
     text-align: center;
+    font-weight: 700;
+    position: relative;
     justify-content: center;
     font-family: 'Lato', sans-serif;
 
+`
+
+const GoalTitleImpactTogether = styled.div`
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5rem;
+    
 `
 
 const GoalSubtitleImpact = styled.h3`
@@ -297,7 +359,7 @@ const GoalSubtitleImpact = styled.h3`
     position: relative;
     text-align: center;
     width: 250px;
-    top: 6rem;
+    top: 2rem;
     font-family: 'Lato', sans-serif;
 
     @media screen and (max-width: 1000px)
