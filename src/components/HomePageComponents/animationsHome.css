@@ -133,12 +133,12 @@
  
 
 .buttonHome {
-  display: inline-block;
+  display: flex;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
@@ -147,6 +147,10 @@
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  height: 60px;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
 }
 
   .buttonHome:hover {
@@ -179,4 +183,22 @@
     transition: all .3s;
     border-radius: 10rem;
     z-index: -1;
+  }
+
+
+  /*image styling*/
+
+  .accessibility{
+    height: 300px;
+    width: 400px;
+  }
+
+  .growth{
+    height: 300px;
+    width: 400px;
+  }
+
+  .quality{
+    height: 300px;
+    width: 400px;
   }

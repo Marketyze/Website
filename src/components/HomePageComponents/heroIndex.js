@@ -65,22 +65,22 @@ const HeroContainer = styled.div`
 const SecondaryContainer = styled.div`
     display: flex; 
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     position: relative;
-`
+    width: 1200px;
+    height: 600px;
+ `
 
 const HeroH1 = styled.h1`
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     color: white;
     font-size: 5rem; 
-    width: 40%;
+    width: 700px;
     position: relative;
     display: flex;
     flex-direction: column;
-    right: 10rem;
+
     
     @media screen and (max-width: 1200px) {
         width: 60%;
@@ -105,7 +105,6 @@ const HeroP = styled.p`
     width: 55%;
     position: relative;
     left: 0.25rem;
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');   
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 
@@ -123,6 +122,8 @@ const HeroP = styled.p`
 `
 
 const HeroLink = styled(Link)`
+    margin-top: 1.5rem;
+    text-decoration: none;  
     @media screen and (max-width: 768px) {
             margin-top: 1rem;
     }

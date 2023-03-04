@@ -7,13 +7,13 @@ const Careers = () => {
   return (
     <MainDiv>
         <Title>Positions</Title> 
-
+        
+        <WholeDiv>
          {/*Finance Department*/}
          <SectionDiv>
-
+            <Description>Finance Department</Description>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Finance Department</Description>
                     <Goaltitle>Director, Fundraising (DF)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
@@ -25,8 +25,6 @@ const Careers = () => {
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
-
-
             </Goaldiv>
 
             <Goaldiv>
@@ -42,7 +40,6 @@ const Careers = () => {
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
-
             </Goaldiv>
 
             <Goaldiv>
@@ -58,15 +55,15 @@ const Careers = () => {
                     </GoaltitleButton>
                 </GoalOutlineButton>
                 </MobileFix>
-
             </Goaldiv>
+
         </SectionDiv>
 
          {/*Marketing Department*/}
          <SectionDiv>
+            <Description>Marketing Department</Description>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Marketing Department</Description>
                     <Goaltitle>Associate Promotions (AP)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
@@ -85,9 +82,9 @@ const Careers = () => {
 
         {/*Technology Department*/}
          <SectionDiv>
+            <Description>Technology Department</Description>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Technology Department</Description>
                     <Goaltitle>UX/UI Designer (UD)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
@@ -105,9 +102,9 @@ const Careers = () => {
 
         {/*Logistics Department*/}
         <SectionDiv>
+            <Description>Logistics Department</Description>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Logistics Department</Description>
                     <Goaltitle>Associate, Logistics (AL)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
@@ -127,9 +124,9 @@ const Careers = () => {
 
         {/*Corporate Relations Department*/}
         <SectionDiv>
+            <Description>Corporate Relations Department</Description>
             <Goaldiv>
                 <GoalOutline>
-                    <Description>Corporate Relations Department</Description>
                     <Goaltitle>Associate, Corporate Relations (ACR)</Goaltitle>
                     <GoalSubtitle>Remote</GoalSubtitle>
                 </GoalOutline>
@@ -144,18 +141,21 @@ const Careers = () => {
 
             </Goaldiv>
         </SectionDiv>
+        </WholeDiv>
 
     </MainDiv>
   )
 }
 const MainDiv = styled.div`
-    height: 1400px;
+    height: 2170px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: 'transparent'; 
-    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: ${colors.white};
     font-family: 'Lato', sans-serif;
+
 
     @media screen and (max-width: 1000px)
     {
@@ -164,13 +164,44 @@ const MainDiv = styled.div`
    
 `
 
+const Title = styled.h1`
+    color: ${colors.primaryTeal};
+    font-size: 4.5rem;
+    display: flex;
+    position: relative;
+    font-weight: 900;
+    width: 1500px;
+
+    @media screen and (max-width: 1700px) { 
+        left: 3rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        left: 2.2rem;
+    }
+  
+`
+
+const WholeDiv = styled.div`
+    height: 2000px;
+    width: 1500px;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+    background: ${colors.primaryTeal};
+    border-radius: 30px;
+   
+`
+
+
 const SectionDiv = styled.div`
     display: flex;
     jiustify-content: center;
     flex-direction: column;
     position: relative;
     margin-top: 5rem;
-    margin-left: 20rem;    
+    width: 1300px;
 
 
     @media screen and (max-width: 1700px) {
@@ -183,32 +214,11 @@ const SectionDiv = styled.div`
 
 `
 
-const Title = styled.h1`
-    color: ${colors.primaryTeal};
-    font-size: 3.4rem;
-    display: flex;
-    position: relative;
-    left: 23rem;
-    top: 7rem;
-    font-weight: 900;
-    width: 20%;
-
-    @media screen and (max-width: 1700px) { 
-        left: 3rem;
-    }
-
-    @media screen and (max-width: 480px) {
-        left: 2.2rem;
-    }
-  
-`
-
 const Goaltitle = styled.h1`
-    color: ${colors.primaryTeal};
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 9rem;
+    color: white;
+    font-size: 2.5rem;
     justify-content: center;
+    margin-left: 1rem;
 
 
 
@@ -223,21 +233,24 @@ const Goaltitle = styled.h1`
 
 const GoalSubtitle = styled.h3`
     color: black;
-    font-size: 1rem;
-    position: absolute;
+    font-size: 1.8rem;
     width: 250px;
-    margin-top: 11.5rem;
+    margin-left: 1rem;
+
 `
 
 const Description = styled.p`
-    color: ${colors.black};
-    font-size: 2rem;
+    color: white;
+    font-size: 3rem;
     display: flex;
-    margin-top: 4rem;
     position: relative;
-    right: 4.5rem;
     font-weight: 900;
-    width: 700px;
+    width: 750px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background: ${colors.darkTeal};
+    border-radius: 30px;
 
     @media screen and (max-width: 1000px) {
         right: 2rem;
@@ -253,12 +266,13 @@ const Description = styled.p`
 `
 
 const Goaldiv = styled.div`
-    max-width: 1150px; 
+    width: 1400px; 
     height: 100px;
-    margin: 0 auto; 
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 8rem;
+    grid-column-gap: 14rem;
+    margin-top: 3rem;
+    position: relative;
 
 
     @media screen and (max-width: 1000px) {
@@ -273,14 +287,11 @@ const Goaldiv = styled.div`
 `
 
 const GoalOutline = styled.div`
-    border-style: transparent;
     display: flex; 
     flex-direction: column; 
-    justify-content: flex-start; 
+    gap: 0.5rem;
     height: 300px;
-    width: 500px;
-
-
+    width: 700px;
 
     @media screen and (max-width: 1000px) {
         position: relative;
@@ -307,10 +318,8 @@ const GoalOutlineButton = styled.div`
 
 
 const GoaltitleButton = styled.h1`
-    color: ${colors.primaryTeal};
     font-size: 1.5rem;
     position: absolute;
-    margin-top: 9rem;
     justify-content: center;
 
     @media screen and (max-width: 1000px) {
