@@ -69,7 +69,7 @@ export default Timeline
 const MasterDiv = styled.div`
     font-family: 'Lato', sans-serif;
     width: 100%;
-    height: 1000px;
+    height: 1075px;
     background: #F8FCFF; 
 
 
@@ -89,7 +89,8 @@ const TimelineTitle = styled.h1`
     font-weight: 900;
     width: 1480px;
     position: relative;
-    margin: 50px auto 0;
+    top: 8rem;
+    margin: 0px auto 0;
 
 
 
@@ -111,6 +112,8 @@ const TimelineDescription = styled.p`
     left: 0.2rem;
     width: 1480px;
     margin: 10px auto 0;
+    top: 8rem;
+
 
     position: relative;
 

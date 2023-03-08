@@ -2,6 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import './animationsHome.css'
+import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image'
 
 
@@ -18,7 +20,9 @@ const MarketyzeEvents = () => {
                 <EventsDiv>
                     <EventsInnerDiv>
                         <h1>Events</h1>
-                        <p>Learn More <Arrow/></p>
+                        <ButtonLink to = '/mainEvents'>
+                            <div className = 'buttonLinksFirst'>Learn More<Arrow/></div>             
+                        </ButtonLink>
                     </EventsInnerDiv>
                 </EventsDiv>
             </EventsMainDiv>
@@ -27,14 +31,18 @@ const MarketyzeEvents = () => {
                 <PositionsDiv>
                     <PositionsInnerDiv>
                         <h1>Careers</h1>
-                        <p>Learn More <Arrow/></p>
+                        <ButtonLink to = '/career'>
+                            <div className = 'buttonLinksFirst'>Learn More<Arrow/></div>             
+                        </ButtonLink>
                     </PositionsInnerDiv>
                 </PositionsDiv>
 
                 <InternshipDiv>
                     <InternshipInnerDiv>
                         <h1>Internships</h1>
-                        <p>Learn More <Arrow/></p>
+                        <ButtonLink to = '/programs'>
+                            <div className = 'buttonLinksFirst'>Learn More<Arrow/></div>             
+                        </ButtonLink>
                     </InternshipInnerDiv>
                 </InternshipDiv>
             </OppotunityMainDiv>
@@ -46,7 +54,7 @@ const MarketyzeEvents = () => {
 }
 
 const MainDiv = styled.div`
-    height: 1100px;
+    height: 1350px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -80,8 +88,7 @@ const Title = styled.h1`
     display: block;
     width: 1450px;
     position: relative;
-    z-index: 99;
-    margin-top: 4rem;
+    margin-top: 10rem;
 
     @media screen and (max-width: 750px) {
         font-size: 2.4rem;
@@ -154,7 +161,16 @@ const EventsInnerDiv = styled.div`
     width: 300px;
     position: absolute;
     bottom: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+
+    h1{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
 `
 
 const OppotunityMainDiv = styled.div`
@@ -186,7 +202,16 @@ const PositionsInnerDiv = styled.div`
     width: 300px;
     position: absolute;
     bottom: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+
+    h1{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
 
 `
 
@@ -204,13 +229,28 @@ const InternshipInnerDiv = styled.div`
     width: 300px;
     position: absolute;
     bottom: 0;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+
+    h1{
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
 
 `
 
 //icons
 const Arrow = styled(BsFillArrowRightCircleFill)`
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+`
 
+const ButtonLink = styled(Link)`
+    margin-top: 1.5rem;
+    text-decoration: none;  
 `
 
 export default MarketyzeEvents

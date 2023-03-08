@@ -85,7 +85,7 @@ const Purposes = () => {
   
 
 const MainDiv = styled.div`
-    height: 2000px;
+    height: 2300px;
     width: 100%;
     display: flex;
     flex-direction: column;

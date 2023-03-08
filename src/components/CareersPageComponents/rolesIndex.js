@@ -60,7 +60,7 @@ const Careers = () => {
         </SectionDiv>
 
          {/*Marketing Department*/}
-         <SectionDiv>
+         <SectionDiv style = {{marginTop: "10rem"}}>
             <Description>Marketing Department</Description>
             <Goaldiv>
                 <GoalOutline>
@@ -81,7 +81,7 @@ const Careers = () => {
         </SectionDiv>
 
         {/*Technology Department*/}
-         <SectionDiv>
+         <SectionDiv style = {{marginTop: "10rem"}}>
             <Description>Technology Department</Description>
             <Goaldiv>
                 <GoalOutline>
@@ -101,7 +101,7 @@ const Careers = () => {
         </SectionDiv>
 
         {/*Logistics Department*/}
-        <SectionDiv>
+        <SectionDiv style = {{marginTop: "10rem"}}>
             <Description>Logistics Department</Description>
             <Goaldiv>
                 <GoalOutline>
@@ -123,8 +123,8 @@ const Careers = () => {
 
 
         {/*Corporate Relations Department*/}
-        <SectionDiv>
-            <Description>Corporate Relations Department</Description>
+        <SectionDiv style = {{marginTop: "10rem"}}>
+            <Description style ={{fontSize: "2.8rem"}}>Corporate Relations Department</Description>
             <Goaldiv>
                 <GoalOutline>
                     <Goaltitle>Associate, Corporate Relations (ACR)</Goaltitle>
@@ -147,7 +147,7 @@ const Careers = () => {
   )
 }
 const MainDiv = styled.div`
-    height: 2170px;
+    height: 3050px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ const Title = styled.h1`
 `
 
 const WholeDiv = styled.div`
-    height: 2000px;
+    height: 2750px;
     width: 1500px;
     display: flex;
     margin-top: 3rem;
@@ -271,7 +271,7 @@ const Goaldiv = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 14rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     position: relative;
 
 

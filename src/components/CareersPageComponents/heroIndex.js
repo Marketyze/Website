@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import marketyzeFamily from '../../images/family.jpg'
+import marketyzeFamily from '../../images/contactUsBg.jpg'
 import './animationsCareer.css'
 
 const HeroSection = () => {
@@ -42,7 +42,7 @@ const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.88);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.82);
     margin-top: -80px;
 `
 
