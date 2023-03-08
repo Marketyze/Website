@@ -83,12 +83,12 @@ const Navbar = () => {
                                 <NavLinks to="/aboutUs">About Us</NavLinks>
                             </NavItem>
                             
-                            {/*}
+                            
                             <NavItem onMouseEnter = {onMouseEnter} onMouseLeave = {onMouseLeave}>
                                 <NavLinks to="/mainEvents">Events</NavLinks>
                                 {dropdown && <EventsDropDown/>}
                             </NavItem>
-                            */}
+                            
                             {/*
                             <NavItem>
                                 <NavLinks to="/ourTeam">Our Team</NavLinks>
