@@ -133,3 +133,8 @@
   .dot.active {
     background: #015A6D;
   }
+
+  .size {
+    height: 700px;
+    width: 1480px; 
+  }

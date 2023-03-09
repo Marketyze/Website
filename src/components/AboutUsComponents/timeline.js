@@ -3,7 +3,7 @@ import dataSlider  from './timelineData'
 import './timeline.css'
 import styled from 'styled-components'
 import Arrow from './button'
-//import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import {colors} from '../globals/colors.js'
 
 const Timeline = () => {
@@ -41,10 +41,27 @@ const Timeline = () => {
             <div className = "container-slider">
                 {dataSlider.map((slide, index) => {
                     return (
-                        <div key={slide.id} className = {slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                            <img 
-                            alt = "Marketyze_Story" src={require(`../../images/img${index + 1}.png`).default}/>                            
+                        <>
+                        <div key={slide.id} className = {slideIndex === 1 ? "slide active-anim" : "slide"}>
+                            <StaticImage className = 'size' placeholder="eager" quality = {100} imgStyle = {{borderRadius: '25px'}}
+                            formats={["auto", "webp", "avif"]} alt = "Marketyze_Story" src='../../images/img1.png'/>                            
                         </div>
+
+                        <div key={slide.id} className = {slideIndex === 2 ? "slide active-anim" : "slide"}>
+                            <StaticImage className = 'size' placeholder="eager" quality = {100} imgStyle = {{borderRadius: '25px'}}
+                            formats={["auto", "webp", "avif"]} alt = "Marketyze_Story" src='../../images/img2.png'/>                            
+                        </div>
+
+                        <div key={slide.id} className = {slideIndex === 3 ? "slide active-anim" : "slide"}>
+                            <StaticImage className = 'size' placeholder="eager" quality = {100} imgStyle = {{borderRadius: '25px'}}
+                            formats={["auto", "webp", "avif"]} alt = "Marketyze_Story" src='../../images/img3.png'/>                            
+                        </div>
+
+                        <div key={slide.id} className = {slideIndex === 4 ? "slide active-anim" : "slide"}>
+                            <StaticImage className = 'size' placeholder="eager" quality = {100} imgStyle = {{borderRadius: '25px'}}
+                            formats={["auto", "webp", "avif"]} alt = "Marketyze_Story" src='../../images/img4.png'/>                            
+                        </div>
+                        </>      
                     )
                 })}
                 <Arrow moveSlide={nextSlide} direction = {"next"}/>
