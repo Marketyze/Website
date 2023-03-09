@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import marketyzeFamily from '../../images/contactUsBg.jpg'
+import marketyzeFamily from '../../images/contactUsFamily.jpg'
 import './animationsCareer.css'
 
 const HeroSection = () => {

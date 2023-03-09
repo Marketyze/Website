@@ -70,7 +70,7 @@ const Timeline = () => {
                 <div className="container-dots">
                     {Array.from({length: 4}).map((item, index) => (
                         <div 
-                        onClick={() => moveDot(index + 1)}
+                        onKeyDown = {() => moveDot(index + 1)} onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "dot active" : "dot"}
                         ></div>
                     ))}

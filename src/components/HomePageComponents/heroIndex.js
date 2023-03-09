@@ -10,6 +10,7 @@ const HeroSection = () => {
         <HeroContainer>
 
             <SecondaryContainer>
+            <img src = {marketyzeFamily} style = {{display: 'none'}} />
             <HeroH1>
             IT'S TIME TO TURN THE TIDE IN MARKETING 
                 <HeroP>
