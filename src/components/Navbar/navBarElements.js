@@ -6,7 +6,7 @@ const main_color = "#008CA0"
 
 //with styled components, we can pass in props (active classes)
 export const Nav = styled.nav`
-    background: ${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
+    background: ${({active}) => active ? "#F8FCFF" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};
     transition: ${({active}) => active ? "0.3s all ease" : "0.4s all ease"};
     height: 60px;
     display: flex; 
@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 
 
     @media screen and (max-width: 960px) {
-        background: ${({click}) => (click ? "#fcfcfc" : `${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};`)}; 
+        background: ${({click}) => (click ? "#F8FCFF" : `${({active}) => active ? "#fcfcfc" : "linear-gradient(to bottom, rgba(255,255,255,0.9), 0%, rgba(255,255,255,0) 100%)"};`)}; 
     }
 `
 

@@ -45,7 +45,7 @@ const Values = () => {
                 </ValuesDiv>
 
                 <ValueSubDiv>
-                    <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthe the organization</GoalSubtitle>
+                    <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthen the organization</GoalSubtitle>
                 </ValueSubDiv>
             </GoalOutline>
 

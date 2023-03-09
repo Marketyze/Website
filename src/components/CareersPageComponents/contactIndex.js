@@ -103,7 +103,7 @@ const MainDiv = styled.div`
 `
 
 const ContactTitle = styled.h1`
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 900;
     margin-top: 5rem;
     position: relative;
@@ -121,7 +121,7 @@ const ContactTitle = styled.h1`
 `
 
 const ContactDescription = styled.p`
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     position: relative;
     font-weight: 700;

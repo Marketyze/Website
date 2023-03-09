@@ -176,7 +176,8 @@
 .buttonHomeFirst:hover {
   scale: 1.05;
   transition: all 0.3s ease;
-  color: #015A6D;
+  color: white;
+  background-color: #91D7DD;
 }
 
 
@@ -201,7 +202,8 @@
 .buttonLinksFirst:hover {
   scale: 1.05;
   transition: all 0.3s ease;
-  color: #91D7DD;
+  color: white;
+  background-color: #91D7DD;
 }
 
 

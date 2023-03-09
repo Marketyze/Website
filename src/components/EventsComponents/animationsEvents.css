@@ -107,74 +107,54 @@
   }
 
   /*Logo*/
-  .Maker{
-    width: 450px;
-    height: auto;
-  }
 
-  .PizzaVille{
-    width: 400px;
-    height: auto;
-  }
   
   .NextDoor{
     width: 300px;
-     height: auto;
-  }
-
-  .AlphaTrim{
-    width: 200px;
-     height: auto;
-  }
+    height: auto;
+    }
 
   .CreativeGenius{
     width: 300px;
     height: auto;
     position: relative;
-    bottom: 7rem;
   }
 
   .SweetsEarth{
     width: 300px; 
     height: auto;
     position: relative;
-    bottom: 4rem;
+  }
+
+  .gfm{
+    height: 700px;
+    width: 700px;
+  }
+
+  .gsmc{
+    height: 700px;
+    width: 700px;
+  }
+
+  .pitch{
+    height: 600px;
+    width: 700px;
   }
 
 @media only screen and (max-width: 480px) {
-    .Maker {
-      position: relative;
-      right: 1rem;
-      width: 350px;
-    }
-    .PizzaVille {
-      width: 250px;
-      position: relative;
-      right: 1rem;
-      bottom: 4rem;
-    }
+  
     .NextDoor {
       width: 200px;
+      height: 300px;
       position: relative;
-      right: 1rem;
-      bottom: 10rem;
     }
-    .AlphaTrim
-    {
-      position: relative;
-      right: 1rem;
-      bottom: 15rem;
-    }
+   
     .CreativeGenius {
       position: relative;
-      right: 1rem;
-      bottom: 22rem;
 
     }
     .SweetsEarth {
       position: relative;
-      right: 1rem;
-      bottom: 24rem;
       width: 250px;
     }
   }

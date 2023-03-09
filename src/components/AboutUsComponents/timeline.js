@@ -69,7 +69,7 @@ export default Timeline
 const MasterDiv = styled.div`
     font-family: 'Lato', sans-serif;
     width: 100%;
-    height: 1075px;
+    height: 975px;
     background: #F8FCFF; 
 
 
