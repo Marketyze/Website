@@ -2,7 +2,7 @@ import * as React from "react"
 import HeroSection from "../components/EventsComponents/heroSection"
 import NewestEvent from "../components/EventsComponents/newestEvent"
 import ParagraphSection from "../components/EventsComponents/paragraphIndex"
-//import PrevEvents from "../components/EventsComponents/prevEvents"
+import PrevEvents from "../components/EventsComponents/prevEvents"
 import Sponsors from "../components/EventsComponents/sponsorsIndex"
 
 
@@ -17,6 +17,7 @@ const MainEvents = () => (
     <ParagraphSection/>
     <Sponsors/>
     <NewestEvent/>
+    <PrevEvents/>
   </Layout>
 )
 

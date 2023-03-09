@@ -6,36 +6,11 @@ import {StaticImage} from 'gatsby-plugin-image'
 const Sponsors = () => {
   return (
     <MainDiv>
-        <Title>Past Sponsors</Title> 
-        <Description>Below are some of our past sponsors for our events</Description>
+        <Title>Past sponsors</Title> 
+        <Description>Some of our top sponsors from previous events</Description>
 
         <Goaldiv>
-            <GoalOutline>
-            <StaticImage
-                src= '../../images/maker.png'
-                loading="eager"
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                alt=""
-                placeholder="transparent"
-                className = 'Maker'
-                />
-
-            </GoalOutline>
-
-            <GoalOutline>
-            <StaticImage
-                src= '../../images/pizzaVille.png'
-                loading="eager"
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                alt=""
-                placeholder="transparent"
-                className = "PizzaVille"
-                />
-
-            </GoalOutline>
-
+        
             <GoalOutline>
             <StaticImage
                 src= '../../images/nextDoor.png'
@@ -48,21 +23,7 @@ const Sponsors = () => {
                 />
 
             </GoalOutline>
-        </Goaldiv>
 
-        <Goaldiv>
-            <GoalOutline>
-            <StaticImage
-                src= '../../images/alphaTrim.png'
-                loading="eager"
-                quality={100}
-                formats={["auto", "webp", "avif"]}
-                alt=""
-                placeholder="transparent"
-                className = "AlphaTrim"
-                />
-
-            </GoalOutline>
 
             <GoalOutline>
             <StaticImage
@@ -91,21 +52,45 @@ const Sponsors = () => {
             </GoalOutline>
         </Goaldiv>
 
+    
+
     </MainDiv>
   )
 }
+
+const MainDiv = styled.div`
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: ${colors.white};
+    margin-bottom: 0;
+
+
+
+    @media screen and (max-width: 1400px)
+    {
+        height: 1900px;
+    }
+
+    @media screen and (max-width: 480px)
+    {
+        height: 1725px;
+    }
+
+`
 
 const Title = styled.h1`
     color: ${colors.primaryTeal};
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 3.4rem;
+    font-size: 4.5rem;
     line-height: 1.05em;
     margin-top: 0;
     display: flex;
-    width: 50%;
+    width: 1500px;
     position: relative;
-    left: 26rem;
 
 
 
@@ -130,9 +115,8 @@ const Description = styled.p`
     font-size: 1.5rem;
     margin-top: 1.5rem;
     display: flex;
-    width: 50%;
+    width: 1500px;
     position: relative;
-    left: 26rem;
 
 
 
@@ -150,38 +134,15 @@ const Description = styled.p`
     
 `
 
-const MainDiv = styled.div`
-    height: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    background: 'transparent';
-    margin-bottom: 0;
-
-
-
-    @media screen and (max-width: 1400px)
-    {
-        height: 1900px;
-    }
-
-    @media screen and (max-width: 480px)
-    {
-        height: 1725px;
-    }
-
-`
-
 const Goaldiv = styled.div`
-    max-width: 1150px; 
-    margin: 0 auto; 
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    width: 1500px; 
+    display: flex;
+    flex-direction: row; 
     align-items: center; 
-    grid-column-gap: 8rem;
-    padding: 0 50px;     
     justify-content: center;
+    gap: 5rem;
+    margin-top: 3rem;
+
     
     @media screen and (max-width: 1400px)
     {   
@@ -197,13 +158,24 @@ const Goaldiv = styled.div`
 
 const GoalOutline = styled.div`
     display: flex; 
+    position: relative;
     flex-direction: column; 
-    justify-content: flex-start; 
+    justify-content: center;
     align-items: center;
-    max-height: 600px; 
-    width: 300px;
-    height: 300px;
-    padding: 50px; 
+    width: 450px;
+    height: 450px;
+
+    &:before {
+        background: ${colors.lightTeal};       
+        border-radius: 30px;
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.6; 
+    }
 
     @media screen and (max-width: 480px)
     {

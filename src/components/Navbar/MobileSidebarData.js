@@ -8,7 +8,7 @@ export const SidebarData = [
         path: '/aboutUs',
     },
     
-    /*{
+    {
         
         title: 'Events',
         path: '/mainEvents',
@@ -20,7 +20,18 @@ export const SidebarData = [
                 path: '/subEvents/latestEvent',
             }
         ],
-    },*/
+    },
+
+    {
+        title: 'Our Team',
+        path: '/ourTeam',
+    },
+
+    {/*
+        title: 'Programs',
+        path: '/programs',
+*/},
+
     { 
         title: 'Career/Contact',
         path: '/career',

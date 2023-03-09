@@ -50,7 +50,7 @@ export default ParagraphSection
 
 const HeroContainer = styled.div`
     background: ${colors.white};
-    height: 900px;
+    height: 1000px;
     width: 100%;
     display: flex; 
     justify-content: center;

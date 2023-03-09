@@ -114,52 +114,24 @@
   }
 
   .buttonCareers{
+    cursor: pointer;
+    width: 180px;
     height: 60px;
-    width: 200px;
-    display: flex;
-    align-items: center;
+    color: #008CA0;
+    border: none;
     justify-content: center;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 3;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 20px;
+    background: white;
+    position: absolute;
     text-decoration: none;
   }
   
-    .buttonCareers:hover {
-      color: white;
-    }
-    .buttonCareers:hover::before{
-      width: 100%;
-    }
-  
-    .buttonCareers:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #015A6D;
-      border-radius: 10rem;
-      z-index: -2;
-    }
-  
-    .buttonCareers:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width:  0%;
-      height: 100%;
-      background-color: #91D7DD;
-      transition: all .5s;
-      border-radius: 10rem;
-      z-index: -1;
-    }
+  .buttonCareers:hover {
+    scale: 1.05;
+    transition: all 0.3s ease;
+    color: #015A6D;
+  }

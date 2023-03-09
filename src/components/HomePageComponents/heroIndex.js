@@ -10,6 +10,7 @@ const HeroSection = () => {
         <HeroContainer>
 
             <SecondaryContainer>
+            <img src = {marketyzeFamily} style = {{display: 'none'}} />
             <HeroH1>
             IT'S TIME TO TURN THE TIDE IN MARKETING 
                 <HeroP>
@@ -17,7 +18,7 @@ const HeroSection = () => {
                 </HeroP>
 
                 <HeroLink to = '/aboutUs'>
-                <div className = 'buttonHome'>Learn More</div>             
+                <div className = 'buttonHomeFirst'>Learn More</div>             
                 </HeroLink>
             </HeroH1>
 
@@ -56,7 +57,7 @@ const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.88);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.82);
     margin-top: -80px;
     flex-direction: column;
 

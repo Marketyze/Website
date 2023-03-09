@@ -45,7 +45,7 @@ const Values = () => {
                 </ValuesDiv>
 
                 <ValueSubDiv>
-                    <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthe the organization</GoalSubtitle>
+                    <GoalSubtitle>At Marketyze, we encourage our team members to become stronger versions of themselves day by day. Strengthen the people; strengthen the organization</GoalSubtitle>
                 </ValueSubDiv>
             </GoalOutline>
 
@@ -89,7 +89,7 @@ const Values = () => {
 
 //main div
 const MainDiv = styled.div`
-    height: 1300px;
+    height: 1500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -120,9 +120,8 @@ const Title = styled.h1`
     font-size: 4.5rem;
     display: flex;
     position: relative;
-    top: 1rem;
     width: 1600px;
-    margin-top: 4rem;
+    margin-top: 9rem;
 
 
 
@@ -140,7 +139,7 @@ const Description = styled.div`
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     position: relative;
-    top: 2rem;
+    top: 1rem;
     width: 1600px;
     margin-left: 1rem;
     font-weight: 400;
@@ -291,7 +290,7 @@ const GoaldivImpact = styled.div`
     grid-column-gap: 13rem;     
     justify-content: center;
     position: relative;
-    margin-top: 9rem;
+    margin-top: 13rem;
 
     @media screen and (max-width: 1000px)
     {
